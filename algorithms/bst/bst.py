@@ -11,8 +11,10 @@ class BST:
     def inorderUtil(self, root):
         if root:
             self.inorderUtil(root.left)
-            print(root.val, end=' ')
+            self.result += str(root.val)+' '
             self.inorderUtil(root.right)
     def inorder(self):
+        self.result = ''
         self.inorderUtil(self.root)
+        return self.result
     

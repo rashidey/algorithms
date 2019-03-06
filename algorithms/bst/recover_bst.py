@@ -36,29 +36,30 @@ Output: [2,1,4,null,null,3]
   3
 '''
 
-from bst import *
+def traverse(root,first, prev, last):
+    if root:
+        first, prev, last = traverse(root.left, first, prev, last)
+        if prev and prev.val > root.val:
+            if not first:
+                first = prev
+                last = root
+            else:
+                last = root
+        prev = root
+        first, prev, last = traverse(root.right, first, prev, last)
+    return first, prev, last
 
 def recover_tree(root) -> None:
     '''
     Nothing is returned. Tree is modified in place
     '''
     first, prev, last = None, None, None
-    def traverse(root,first, prev, last):
-        if root:
-            first, prev, last = traverse(root.left, first, prev, last)
-            if prev and prev.val > root.val:
-                if not first:
-                    first = prev
-                    last = root
-                else:
-                    last = root
-            prev = root
-            first, prev, last = traverse(root.right, first, prev, last)
-        return first, prev, last
     first, prev, last = traverse(root, first, prev, last)
     first.val, last.val = last.val, first.val
+
+
 '''
-def recoverTree(self, root: TreeNode) -> None:
+def recover_tree_v2(self, root: TreeNode) -> None:
         """
         Do not return anything, modify root in-place instead.
         """
@@ -74,15 +75,15 @@ def recoverTree(self, root: TreeNode) -> None:
 '''
 
 if __name__ == '__main__':
-    
+    #from bst import *
     bst1 = BST()
     bst1.root = TreeNode(1)
     bst1.root.left = TreeNode(3)
     bst1.root.left.right = TreeNode(2)
-    bst1.inorder()
-    print()
+    result = bst1.inorder()
+    print(result)
     recover_tree(bst1.root)
-    bst1.inorder()
-    print()
+    result = bst1.inorder()
+    print(result)
 
 
