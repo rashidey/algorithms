@@ -42,7 +42,7 @@ Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 '''
 
 
-def intToRoman(num:int) -> str:
+def int_to_roman(num:int) -> str:
     '''
     @param1: num to be converted to roman
     @return: string roman value

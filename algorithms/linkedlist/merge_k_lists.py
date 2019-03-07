@@ -16,7 +16,7 @@ from .singly_linked_list import Node as ListNode
 import heapq
 import itertools
 
-def mergeKLists(lists) -> ListNode:
+def merge_k_lists(lists) -> ListNode:
     '''
     @param1: a list of the heads of the k linked lists
     @return: head of merged list

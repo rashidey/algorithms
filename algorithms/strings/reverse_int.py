@@ -14,7 +14,7 @@ Input: 120
 Output: 21
 '''
 
-def reverseInt(x):
+def reverse_int(x):
     """
     :type x: int
     :rtype: int

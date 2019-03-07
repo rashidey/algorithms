@@ -10,7 +10,7 @@ After removing the second node from the end, the linked list becomes 1->2->3->5.
 
 from .singly_linked_list import Node as ListNode
 
-def removeNthFromEnd(head: ListNode, n: int) -> ListNode:
+def remove_nth_end(head: ListNode, n: int) -> ListNode:
     slow = head
     fast = head
     while n > 0:

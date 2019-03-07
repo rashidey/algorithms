@@ -13,7 +13,7 @@ Because nums[0] + nums[1] = 2 + 7 = 9,
 return [0, 1].
 '''
 
-def twoSum(nums, target):
+def two_sum(nums, target):
     """
     :type nums: List[int]
     :type target: int

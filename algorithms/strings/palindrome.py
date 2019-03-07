@@ -16,7 +16,7 @@ Output: false
 Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 '''
 
-def isPalindrome(x: int) -> bool:
+def is_palindrome(x: int) -> bool:
     x = str(x)
     l, r = 0, len(x)-1
     while l < r:

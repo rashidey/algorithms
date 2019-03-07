@@ -14,11 +14,11 @@ An example of running an algorithm:
 #Check if a string containing brackets is valid or not
 #Returns bool value
 
-from algorithms.stack import valid_paran
+from algorithms.stack import is_valid
 
 if __name__ == '__main__':
-	isValid = valid_paran('()[]')
-	print(isValid)
+	test = is_valid('()[]')
+	print(test)
 ```
 
 If an algorithm is listed in this repository but is not in the pip package, it means that I have not uploaded the latest version. I will be doing that once a week. 

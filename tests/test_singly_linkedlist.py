@@ -74,29 +74,29 @@ class TestSLLFunctions(TestSetup):
         answer = add_two_numbers(convert_to_list([1,2]), convert_to_list([2,3,4]))
         self.assertEqual('354', print_list(answer))
 
-    def test_mergeKLists(self):
+    def test_merge_k_lists(self):
         list1 = []
         list1.append(convert_to_list([1,4,5]))
         list1.append(convert_to_list([1,3,4]))
         list1.append(convert_to_list([2,6]))
-        self.assertEqual('11234456', print_list(mergeKLists(list1)))
+        self.assertEqual('11234456', print_list(merge_k_lists(list1)))
 
-    def test_mergeTwoLists(self):
+    def test_merge_two_lists(self):
         list1 = convert_to_list([1,2,4])
         list2 = convert_to_list([1,3,4])
-        self.assertEqual('112344', print_list(mergeTwoLists(list1, list2)))
+        self.assertEqual('112344', print_list(merge_two_lists(list1, list2)))
 
-    def test_removeNthFromEnd(self):
+    def test_remove_nth_end(self):
         list1 = convert_to_list([1,2,3,4,5])
         list2 = convert_to_list([])
         list3 = convert_to_list([1,2])
-        self.assertEqual('1234', print_list(removeNthFromEnd(list1, 1)))
-        self.assertEqual('124', print_list(removeNthFromEnd(list1, 2)))
-        #self.assertEqual('1234', print_list(removeNthFromEnd(list2, 0)))
-        self.assertEqual('1', print_list(removeNthFromEnd(list3, 1)))
-        self.assertEqual('12', print_list(removeNthFromEnd(list1, 1)))
-        self.assertEqual('2', print_list(removeNthFromEnd(list1, 2)))
-        #self.assertEqual('', print_list(removeNthFromEnd(list1, 1)))
+        self.assertEqual('1234', print_list(remove_nth_end(list1, 1)))
+        self.assertEqual('124', print_list(remove_nth_end(list1, 2)))
+        #self.assertEqual('1234', print_list(remove_nth_end(list2, 0)))
+        self.assertEqual('1', print_list(remove_nth_end(list3, 1)))
+        self.assertEqual('12', print_list(remove_nth_end(list1, 1)))
+        self.assertEqual('2', print_list(remove_nth_end(list1, 2)))
+        #self.assertEqual('', print_list(remove_nth_end(list1, 1)))
 
 
 

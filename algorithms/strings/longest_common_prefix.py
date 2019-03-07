@@ -13,7 +13,7 @@ Output: ""
 Explanation: There is no common prefix among the input strings.
 '''
 
-def longestCommonPrefix(m):
+def longest_common_prefix(m):
     if not m: return ''
     s1 = min(m)
     s2 = max(m)

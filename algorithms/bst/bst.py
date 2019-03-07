@@ -13,6 +13,7 @@ class BST:
             self.inorderUtil(root.left)
             self.result += str(root.val)+' '
             self.inorderUtil(root.right)
+    
     def inorder(self):
         self.result = ''
         self.inorderUtil(self.root)

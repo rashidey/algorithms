@@ -29,7 +29,7 @@ Input: "{[]}"
 Output: true
 '''
 
-def isValid(S:str) -> bool:
+def is_valid(S:str) -> bool:
     stack = []
     map_brackets = {'{':'}', '[':']', '(':')'}
     for char in S:
