@@ -29,34 +29,34 @@ If you want to uninstall, simply run:
 ## Tests
 I have written basic tests for most of the modules. To run all the tests at once run:
 	
-	$python3 -m unittest discover tests
+	$python3 *m unittest discover tests
 
 ## List of Implementations
 
-- [bst](algorithms/bst)
-	-[Binary Search Tree Implementation](algorithms/bst/bst.py)
-	-[Recover BST swapped nodes](algorithms/bst/recover_bst.py)
+* [Binary Search Tree](algorithms/bst)
+	* [Binary Search Tree Implementation](algorithms/bst/bst.py)
+	* [Recover BST swapped nodes](algorithms/bst/recover_bst.py)
 
-- [hashtables](algorithms/hashtables)
-	-[Two Sum](algorithms/hashtables/two_sum.py)
+* [Hash Tables](algorithms/hashtables)
+	* [Two Sum](algorithms/hashtables/two_sum.py)
 
-- [linkedlist](algorithms/linkedlist)
-	-[Singly Linked List implementation](algorithms/linkedlist/singly_linked_list.py)
-	-[Add two numbers as Linked List](algorithms/linkedlist/add_two_numbers.py)
-	-[Merge k lists](algorithms/linkedlist/merge_k_lists.py)
-	-[Merge 2 lists](algorithms/linkedlist/merge_two_lists.py)
-	-[Remove nth node from end](algorithms/linkedlist/remove_nth_end.py)
+* [Linked List](algorithms/linkedlist)
+	* [Singly Linked List implementation](algorithms/linkedlist/singly_linked_list.py)
+	* [Add two numbers as Linked List](algorithms/linkedlist/add_two_numbers.py)
+	* [Merge k lists](algorithms/linkedlist/merge_k_lists.py)
+	* [Merge 2 lists](algorithms/linkedlist/merge_two_lists.py)
+	* [Remove nth node from end](algorithms/linkedlist/remove_nth_end.py)
 
-- [stack](algorithms/stack)
-	-[Check Valid Paranthesis](algorithms/stack/valid_paran.py)
+* [Stack](algorithms/stack)
+	* [Check Valid Paranthesis](algorithms/stack/valid_paran.py)
 
-- [strings](algorithms/strings)
-	-[Integer to Roman](algorithms/strings/int_to_roman.py)
-	-[Roman to Integer](algorithms/strings/roman_to_int.py)
-	-[Check integer palindrome](algorithms/strings/palindrome.py)
-	-[Reverse Integer](algorithms/strings/reverse_int.py)
-	-[Longest Common Prefix](algorithms/strings/longest_common_prefix.py)
+* [Strings](algorithms/strings)
+	* [Integer to Roman](algorithms/strings/int_to_roman.py)
+	* [Roman to Integer](algorithms/strings/roman_to_int.py)
+	* [Check integer palindrome](algorithms/strings/palindrome.py)
+	* [Reverse Integer](algorithms/strings/reverse_int.py)
+	* [Longest Common Prefix](algorithms/strings/longest_common_prefix.py)
 
 ## Contributers
-	[Omar Shalla](https://github.com/gulshalla)
+	* [Omar Shalla](https://github.com/gulshalla)
 
