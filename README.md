@@ -26,7 +26,7 @@ If an algorithm is listed in this repository but is not in the pip package, it m
 ## Uninstall
 If you want to uninstall, simply run:
 
-	$pip3 uninstall algorithms
+	$pip3 uninstall algorithms3
 
 ## Tests
 I have written basic tests for most of the modules. To run all the tests at once run:
