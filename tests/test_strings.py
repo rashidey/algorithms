@@ -32,6 +32,12 @@ class TestSuite(unittest.TestCase):
         self.assertEqual('fl', longest_common_prefix(["flower","flow","flight"]))
         self.assertEqual('', longest_common_prefix(['dog', 'racercar', 'car']))
 
+    def test_strstr(self):
+        self.assertEqual(strstr('hello', 'll'), 2)
+        self.assertEqual(strstr('aaaaa', 'bba'), -1)
+        self.assertEqual(strstr('aa', 'aaaa'), -1)
+        self.assertEqual(strstr('a','a'), 0)
+
 if __name__ == '__main__':
     unittest.main()
 
