@@ -11,6 +11,8 @@ You can use this as an API in your code as follows:
 An example of running an algorithm:
 
 ```python3
+#Check if a string containing brackets is valid or not
+#Returns bool value
 
 from algorithms.stack import valid_paran
 
@@ -29,7 +31,7 @@ If you want to uninstall, simply run:
 ## Tests
 I have written basic tests for most of the modules. To run all the tests at once run:
 	
-	$python3 *m unittest discover tests
+	$python3 -m unittest discover tests
 
 ## List of Implementations
 
@@ -57,6 +59,4 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Reverse Integer](algorithms/strings/reverse_int.py)
 	* [Longest Common Prefix](algorithms/strings/longest_common_prefix.py)
 
-## Contributers
-	* [Omar Shalla](https://github.com/gulshalla)
 
