@@ -61,7 +61,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Reverse Integer](algorithms/strings/reverse_int.py)
 	* [Longest Common Prefix](algorithms/strings/longest_common_prefix.py)
 	* [strstr implementation](algorithms/strings/strstr.py)
-	* [Longest Palindromic String](algorithms/strings/longest_palin.substring.py)
+	* [Longest Palindromic String](algorithms/strings/longest_palin_substring.py)
 	* [String to Integer](algorithms/strings/string_to_integer.py)
 
 * [Two Pointers](algorithms/twopointers)
