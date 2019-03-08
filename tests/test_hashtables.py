@@ -17,7 +17,14 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(three_sum([0,0,0,0]), [[0,0,0]])
 
     def test_four_sum(self):
-        self.assertEqual(four_sum([1, 0, -1, 0, -2, 2], 0), [(-1,  0, 0, 1),(-2,  0, 0, 2),(-2, -1, 1, 2)])
+        self.assertEqual(four_sum([1, 0, -1, 0, -2, 2], 0),
+                                  [(-1,  0, 0, 1),(-2,  0, 0, 2),(-2, -1, 1, 2)])
+
+    def test_substring_concat(self):
+        self.assertEqual(substring_concat('barfoothefoobarman', ['foo', 'bar']), [0, 9])
+        self.assertEqual(substring_concat('wordgoodgoodgoodbestword', 
+                                          ["word","good","best","word"]), [])
+
 
 if __name__ == '__main__':
     unittest.main()
