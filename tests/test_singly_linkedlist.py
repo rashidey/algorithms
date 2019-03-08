@@ -62,6 +62,98 @@ class TestLinkedListBase(TestSetup):
         self.l1.push_end(2)
         self.assertEqual('2', str(self.l1))
 
+    def test_is_empty(self):
+        l1 = SinglyLinkedList()
+        l1.push_end(1)
+        l1.push_end(2)
+        self.assertEqual(False, l1.is_empty())
+        l1.pop_back()
+        l1.pop_front()
+        self.assertEqual(True, l1.is_empty())
+        l1.push_end(1)
+        l1.push_front(2)
+        self.assertEqual(False, l1.is_empty())
+        self.assertEqual(False, l1.is_empty())
+
+    def test_pop_front(self):
+        self.assertEqual(1, self.l2.pop_front())
+        self.assertEqual(None, self.l1.pop_front())
+        self.assertEqual(1, self.l5.pop_front())
+
+    def test_pop_back(self):
+        self.assertEqual(1, self.l2.pop_back())
+        self.assertEqual(4, self.l5.pop_back())
+
+    def test_get_item(self):
+        self.assertEqual(3, self.l4[2])
+        self.assertEqual(None, self.l4[12])
+
+    def test_front_list(self):
+        self.assertEqual(None, self.l1.front_list())
+        self.assertEqual(1, self.l2.front_list())
+
+    def test_back_list(self):
+        self.assertEqual(None, self.l1.back_list())
+        self.assertEqual(3, self.l4.back_list())
+
+    def test_insert_list(self):
+        l1 = SinglyLinkedList()
+        l1.push_end(1)
+        l1.push_end(2)
+        l1.push_end(3)
+        self.assertEqual('1->2->3', str(l1))
+        l1.insert_list(0, 5)
+        self.assertEqual('5->1->2->3', str(l1))
+        l1.pop_front()
+        l1.pop_front()
+        l1.pop_front()
+        l1.pop_front()
+        l1.insert_list(0, 1)
+        self.assertEqual('1', str(l1))
+        l1.insert_list(1, 2)
+        self.assertEqual('1->2', str(l1))
+        l1.insert_list(1, 3)
+        self.assertEqual('1->3->2', str(l1))
+
+    def test_erase_list(self):
+        l1 = SinglyLinkedList()
+        l1.push_end(1)
+        l1.push_end(2)
+        l1.push_end(3)
+        l1.head = l1.erase_list(2)
+        self.assertEqual(str(l1), '1->2')
+        l1.head = l1.erase_list(0)
+        self.assertEqual(str(l1), '2')
+        l1.head = l1.erase_list(1)
+        self.assertEqual(str(l1), '2')
+        l1.head = l1.erase_list(0)
+        self.assertEqual(str(l1), '')
+
+    def test_remove_value(self):
+        l1 = SinglyLinkedList()
+        l1.push_end(1)
+        l1.push_end(2)
+        l1.push_end(3)
+        l1.head = l1.remove_value(1)
+        self.assertEqual(str(l1), '2->3')
+        l1.head = l1.remove_value(3)
+        self.assertEqual(str(l1), '2')
+        l1.head = l1.remove_value(2)
+        self.assertEqual(str(l1), '')
+        l1.push_end(1)
+        l1.push_end(2)
+        l1.push_end(3)
+        l1.head = l1.remove_value(2)
+        self.assertEqual(str(l1), '1->3')
+
+    def test_reverse_list(self):
+        l1 = SinglyLinkedList()
+        l1.push_end(1)
+        l1.push_end(2)
+        l1.push_end(3)
+        l1.head = l1.reverse_list()
+        self.assertEqual(str(l1), '3->2->1')
+
 class TestSLLFunctions(TestSetup):
     def test_add_two_numbers(self):
         head = Node(2)
