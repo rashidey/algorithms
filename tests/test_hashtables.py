@@ -15,6 +15,10 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(three_sum([-1,0,1,2,-1,-4]), [[-1,-1,2], [-1,0,1]])
         self.assertEqual(three_sum([-2,0,1,1,2]), [[-2, 0, 2], [-2, 1, 1]])
         self.assertEqual(three_sum([0,0,0,0]), [[0,0,0]])
+
+    def test_four_sum(self):
+        self.assertEqual(four_sum([1, 0, -1, 0, -2, 2], 0), [(-1,  0, 0, 1),(-2,  0, 0, 2),(-2, -1, 1, 2)])
+
 if __name__ == '__main__':
     unittest.main()
 

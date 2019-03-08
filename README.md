@@ -42,6 +42,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 * [Hash Tables](algorithms/hashtables)
 	* [Two Sum](algorithms/hashtables/two_sum.py)
 	* [Three Sum](algorithms/hashtables/three_sum.py)
+	* [Four Sum](algorithms/hashtables/four_sum.py)
 
 * [Linked List](algorithms/linkedlist)
 	* [Singly Linked List implementation](algorithms/linkedlist/singly_linked_list.py)
@@ -60,6 +61,8 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Reverse Integer](algorithms/strings/reverse_int.py)
 	* [Longest Common Prefix](algorithms/strings/longest_common_prefix.py)
 	* [strstr implementation](algorithms/strings/strstr.py)
+	* [Longest Palindromic String](algorithms/strings/longest_palin.substring.py)
+	* [String to Integer](algorithms/strings/string_to_integer.py)
 
 * [Two Pointers](algorithms/twopointers)
 	* [Remove Duplicates](algorithms/twopointers/remove_duplicates.py)

@@ -38,6 +38,17 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(strstr('aa', 'aaaa'), -1)
         self.assertEqual(strstr('a','a'), 0)
 
+    def test_longest_palin_substring(self):
+        self.assertEqual('aba', longest_palin_substring('babad'))
+        self.assertEqual('bb', longest_palin_substring('cbbd'))
+    
+    def test_string_to_integer(self):
+        self.assertEqual(42, string_to_integer('42'))
+        self.assertEqual(-42, string_to_integer('-42'))
+        self.assertEqual(0, string_to_integer('words and 987'))
+        self.assertEqual(-2147483648, string_to_integer('-91283472332'))
+        self.assertEqual(4193, string_to_integer('4193 with words'))
+        
 if __name__ == '__main__':
     unittest.main()
 
