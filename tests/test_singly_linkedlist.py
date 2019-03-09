@@ -190,7 +190,18 @@ class TestSLLFunctions(TestSetup):
         self.assertEqual('2', print_list(remove_nth_end(list1, 2)))
         #self.assertEqual('', print_list(remove_nth_end(list1, 1)))
 
+    def test_swap_pairs(self):
+        list1 = convert_to_list([1,2,3,4])
+        self.assertEqual('2143', print_list(swap_pairs(list1)))
+        list2 = convert_to_list([1,2,3,4])
+        self.assertEqual('2143', print_list(swap_pairs_v2(list2)))
 
+    def test_reverse_k_group(self):
+        list1 = convert_to_list([1,2,3,4,5])
+        list2 = convert_to_list([1,2,3,4,5])
+
+        self.assertEqual('21435', print_list(reverse_k_group(list1, 2)))
+        self.assertEqual('32145', print_list(reverse_k_group(list2, 3)))
 
 if __name__ == '__main__':
     unittest.main()

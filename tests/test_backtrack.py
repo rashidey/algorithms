@@ -1,4 +1,4 @@
-from algorithms.backtrack import *
+from algorithms.backtracking import *
 import unittest
 
 class TestSuite(unittest.TestCase):

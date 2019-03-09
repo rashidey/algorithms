@@ -62,6 +62,15 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(zigzag_v2('PAYPALISHIRING', 3), 'PAHNAPLSIIGYIR')
         self.assertEqual(zigzag_v2('PAYPALISHIRING', 4), 'PINALSIGYAHRPI')
 
+    def test_count_say(self):
+        self.assertEqual(count_say(3), 21)
+        self.assertEqual(count_say(4), 1211)
+
+    def test_length_last_word(self):
+        self.assertEqual(length_of_last_word('hello world'), 5)
+        self.assertEqual(length_of_last_word(' '), 0)
+        self.assertEqual(length_of_last_word('hello world'), 5)
+
 if __name__ == '__main__':
     unittest.main()
 

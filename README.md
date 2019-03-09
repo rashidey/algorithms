@@ -35,8 +35,14 @@ I have written basic tests for most of the modules. To run all the tests at once
 
 ## List of Implementations
 
+* [Arrays](algorithms/arrays)
+	* [Number plus one](algorithms/arrays/number_plus_one.py)
+
 * [Backtracking](algorithms/backtrack)
 	* [Letter combinations of phone](algorithms/backtrack/letter_combinations.py)
+
+* [Binary Search](algorithms/binarysearch)
+	* [Search Insert Position](algorithms/binarysearch/search_insert_position.py)
 
 * [Binary Search Tree](algorithms/bst)
 	* [Binary Search Tree Implementation](algorithms/bst/bst.py)
@@ -46,6 +52,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Two Sum](algorithms/hashtables/two_sum.py)
 	* [Three Sum](algorithms/hashtables/three_sum.py)
 	* [Four Sum](algorithms/hashtables/four_sum.py)
+	* [Substring with Concatenation of all words](algorithms/hashtables/substring_concat.py)
 
 * [Heaps](algorithms/heaps)
 	* [Kth Largest element](algorithms/heaps/kth_largest.py)
@@ -56,6 +63,8 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Merge k lists](algorithms/linkedlist/merge_k_lists.py)
 	* [Merge 2 lists](algorithms/linkedlist/merge_two_lists.py)
 	* [Remove nth node from end](algorithms/linkedlist/remove_nth_end.py)
+	* [Swap Nodes in Pairs](algorithms/linkedlist/swap_pairs.py)
+	* [Reverse Nodes in k Groups](algorithms/linkedlist/reverse_k_groups.py)
 
 * [Stack](algorithms/stack)
 	* [Check Valid Paranthesis](algorithms/stack/valid_paran.py)
@@ -63,15 +72,17 @@ I have written basic tests for most of the modules. To run all the tests at once
 * [Strings](algorithms/strings)
 	* [Integer to Roman](algorithms/strings/int_to_roman.py)
 	* [Roman to Integer](algorithms/strings/roman_to_int.py)
-	* [Check integer palindrome](algorithms/strings/palindrome.py)
+	* [Check integer Palindrome](algorithms/strings/palindrome.py)
 	* [Reverse Integer](algorithms/strings/reverse_int.py)
 	* [Longest Common Prefix](algorithms/strings/longest_common_prefix.py)
 	* [strstr implementation](algorithms/strings/strstr.py)
 	* [Longest Palindromic String](algorithms/strings/longest_palin_substring.py)
 	* [String to Integer](algorithms/strings/string_to_integer.py)
-	* [Substring with Concatenation of all words](algorithms/strings/substring_concat.py)
 	* [Longest Substring Without repitition](algorithms/strings/longest_substring_without_repeating.py)
 	* [Zig zag conversion string](algorithms/strings/zigzag_conversion.py)
+	* [Length of last Word](algorithms/strings/length_of_last_word.py)
+	* [Count and Say](algorithms/strings/count_say.py)
+
 
 * [Two Pointers](algorithms/twopointers)
 	* [Remove Duplicates](algorithms/twopointers/remove_duplicates.py)
