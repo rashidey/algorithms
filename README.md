@@ -38,8 +38,8 @@ I have written basic tests for most of the modules. To run all the tests at once
 * [Arrays](algorithms/arrays)
 	* [Number plus one](algorithms/arrays/number_plus_one.py)
 
-* [Backtracking](algorithms/backtrack)
-	* [Letter combinations of phone](algorithms/backtrack/letter_combinations.py)
+* [Backtracking](algorithms/backtracking)
+	* [Letter combinations of phone](algorithms/backtracking/letter_combinations.py)
 
 * [Binary Search](algorithms/binarysearch)
 	* [Search Insert Position](algorithms/binarysearch/search_insert_position.py)
