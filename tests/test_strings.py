@@ -48,7 +48,20 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(0, string_to_integer('words and 987'))
         self.assertEqual(-2147483648, string_to_integer('-91283472332'))
         self.assertEqual(4193, string_to_integer('4193 with words'))
-        
+    
+    def test_longest_unique_substring(self):
+        self.assertEqual(3, longest_unique_substring('abcabcbb'))
+        self.assertEqual(1, longest_unique_substring('bbbbb'))
+        self.assertEqual(3, longest_unique_substring('pwwkew'))
+        self.assertEqual(0, longest_unique_substring(''))
+        self.assertEqual(2, longest_unique_substring('au'))
+
+    def test_zigzag_conversion(self):
+        self.assertEqual(zigzag_conversion('PAYPALISHIRING', 3), 'PAHNAPLSIIGYIR')
+        self.assertEqual(zigzag_conversion('PAYPALISHIRING', 4), 'PINALSIGYAHRPI')
+        self.assertEqual(zigzag_v2('PAYPALISHIRING', 3), 'PAHNAPLSIIGYIR')
+        self.assertEqual(zigzag_v2('PAYPALISHIRING', 4), 'PINALSIGYAHRPI')
+
 if __name__ == '__main__':
     unittest.main()
 

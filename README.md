@@ -35,6 +35,9 @@ I have written basic tests for most of the modules. To run all the tests at once
 
 ## List of Implementations
 
+* [Backtracking](algorithms/backtrack)
+	* [Letter combinations of phone](algorithms/backtrack/letter_combinations.py)
+
 * [Binary Search Tree](algorithms/bst)
 	* [Binary Search Tree Implementation](algorithms/bst/bst.py)
 	* [Recover BST swapped nodes](algorithms/bst/recover_bst.py)
@@ -67,6 +70,8 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Longest Palindromic String](algorithms/strings/longest_palin_substring.py)
 	* [String to Integer](algorithms/strings/string_to_integer.py)
 	* [Substring with Concatenation of all words](algorithms/strings/substring_concat.py)
+	* [Longest Substring Without repitition](algorithms/strings/longest_substring_without_repeating.py)
+	* [Zig zag conversion string](algorithms/strings/zigzag_conversion.py)
 
 * [Two Pointers](algorithms/twopointers)
 	* [Remove Duplicates](algorithms/twopointers/remove_duplicates.py)
