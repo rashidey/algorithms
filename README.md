@@ -33,8 +33,8 @@ I have written basic tests for most of the modules. To run all the tests at once
 	
 	$python3 -m unittest discover tests
 
-[comment]: <> (Data Structures -> 4)
-[comment]: <> (Algorithms -> 36)
+[//]: # (Data Structures -> 4)
+[//]: # (Algorithms -> 36)
 
 ## List of Implementations
 
