@@ -35,6 +35,10 @@ Output: [2,1,4,null,null,3]
    /
   3
 '''
+try:
+    from .bst_implementation import * 
+except Exception: 
+    from bst_implementation import *
 
 def traverse(root,first, prev, last):
     if root:
@@ -58,7 +62,7 @@ def recover_tree(root) -> None:
     first.val, last.val = last.val, first.val
 
 
-'''
+
 def recover_tree_v2(self, root: TreeNode) -> None:
         """
         Do not return anything, modify root in-place instead.
@@ -72,17 +76,34 @@ def recover_tree_v2(self, root: TreeNode) -> None:
             if node.val < prev.val: drops.append((prev, node))                 
             prev, cur = node, node.right                                       
         drops[0][0].val, drops[-1][1].val = drops[-1][1].val, drops[0][0].val
-'''
+
+def recover_tree_v3(root):
+    def traverse(root, inorder):
+        if root:
+            traverse(root.left, inorder)
+            inorder.append(root.val)
+            traverse(root.right, inorder)
+        return inorder
+
+    def insert_bst_inorder(root, inorder):
+        if root:
+            insert_bst_inorder(root.left, inorder)
+            root.val = inorder[0]
+            inorder.pop(0)
+            insert_bst_inorder(root.right, inorder)
+    inorder = traverse(root, [])
+    inorder.sort()
+    insert_bst_inorder(root, inorder)
+
 
 if __name__ == '__main__':
-    #from bst import *
     bst1 = BST()
     bst1.root = TreeNode(1)
     bst1.root.left = TreeNode(3)
     bst1.root.left.right = TreeNode(2)
     result = bst1.inorder()
     print(result)
-    recover_tree(bst1.root)
+    recover_tree_v3(bst1.root)
     result = bst1.inorder()
     print(result)
 

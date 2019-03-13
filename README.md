@@ -33,10 +33,16 @@ I have written basic tests for most of the modules. To run all the tests at once
 	
 	$python3 -m unittest discover tests
 
+## Number of implementations
+Data Structures -> 4
+Algorithms      -> 36
+
 ## List of Implementations
 
 * [Arrays](algorithms/arrays)
+	* [Dynamic Array Implementation](algorithms/arrays/dynamic_array_implementation.py)
 	* [Number plus one](algorithms/arrays/number_plus_one.py)
+	* [Remove duplicates from array II](algorithms/arrays/remove_duplicates.py)
 
 * [Backtracking](algorithms/backtracking)
 	* [Letter combinations of phone](algorithms/backtracking/letter_combinations.py)
@@ -53,6 +59,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Three Sum](algorithms/hashtables/three_sum.py)
 	* [Four Sum](algorithms/hashtables/four_sum.py)
 	* [Substring with Concatenation of all words](algorithms/hashtables/substring_concat.py)
+	* [Valid Sudoku](algorithms/hashtables/valid_sudoku.py)
 
 * [Heaps](algorithms/heaps)
 	* [Kth Largest element](algorithms/heaps/kth_largest.py)
@@ -65,6 +72,14 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Remove nth node from end](algorithms/linkedlist/remove_nth_end.py)
 	* [Swap Nodes in Pairs](algorithms/linkedlist/swap_pairs.py)
 	* [Reverse Nodes in k Groups](algorithms/linkedlist/reverse_k_groups.py)
+
+* [Matrix](algorithms/matrix)
+	* [Rotate Image](algorithms/matrix/rotate_image.py)
+	* [Spiral Matrix](algorithms/matrix/spiral_matrix.py)
+	* [Generate Spiral Matrix](algorithms/matrix/spiral_matrix_generate.py)
+
+* [Queues](algorithms/queues)
+ 	* [Queue implementation using Linked List](algorithms/queues/queue_implementation.py)
 
 * [Stack](algorithms/stack)
 	* [Check Valid Paranthesis](algorithms/stack/valid_paran.py)
@@ -82,6 +97,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Zig zag conversion string](algorithms/strings/zigzag_conversion.py)
 	* [Length of last Word](algorithms/strings/length_of_last_word.py)
 	* [Count and Say](algorithms/strings/count_say.py)
+	* [Multiply Strings](algorithms/strings/multiply_strings.py)
 
 
 * [Two Pointers](algorithms/twopointers)

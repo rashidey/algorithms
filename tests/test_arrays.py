@@ -10,5 +10,6 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(plus_one([0]), [1])
         self.assertEqual(plus_one([1, 0]), [1, 1])
 
-        
-        
+    def test_remove_duplicates(self):
+        self.assertEqual(remove_duplicates_two([1,1,1,2,2,3]), 5)
+        self.assertEqual(remove_duplicates_two([0,0,1,1,1,1,2,3,3]), 7)

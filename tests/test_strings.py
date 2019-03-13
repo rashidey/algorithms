@@ -71,6 +71,15 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(length_of_last_word(' '), 0)
         self.assertEqual(length_of_last_word('hello world'), 5)
 
+    def test_multiply_strings(self):
+        self.assertEqual(multiply_strings('2','3'), '6')
+        self.assertEqual(multiply_strings('20','3'), '60')
+        self.assertEqual(multiply_strings('02','3'), '6')
+        self.assertEqual(multiply_strings('2','30'), '60')
+        self.assertEqual(multiply_strings('0','3'), '0')
+        self.assertEqual(multiply_strings('0','0'), '0')
+        self.assertEqual(multiply_strings('1','1'), '1')
+
 if __name__ == '__main__':
     unittest.main()
 
