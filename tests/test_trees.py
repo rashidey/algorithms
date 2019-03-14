@@ -34,6 +34,15 @@ class TestSetup(unittest.TestCase):
         self.tree4.root.right.left = TreeNode(15)
         self.tree4.root.right.right = TreeNode(7)
 
+        self.tree5 = Tree()
+        self.tree5.root = TreeNode(1)
+        self.tree5.root.left = TreeNode(2)
+        self.tree5.root.right = TreeNode(2)
+        self.tree5.root.left.left = TreeNode(3)
+        self.tree5.root.left.right = TreeNode(4)
+        self.tree5.root.right.left = TreeNode(4)
+        self.tree5.root.right.right = TreeNode(3)
+
 class TestTree(TestSetup):
     
     def test_tree(self):
@@ -72,6 +81,66 @@ class TestTree(TestSetup):
         self.assertEqual(zigzag_level_order(self.tree4.root), [[3],[20,9],[15,7]])
 
 
+    def test_symmetric(self):
+        self.assertEqual(is_symmetric(self.tree2.root), False)
+        self.assertEqual(is_symmetric(self.tree5.root), True)
+        self.assertEqual(is_symmetric_iterative(self.tree5.root), True)
+
+    def test_same(self):
+        self.assertEqual(same_tree(self.tree1.root, self.tree1.root), True)
+        self.assertEqual(same_tree(self.tree2.root, self.tree2.root), True)
+        self.assertEqual(same_tree(self.tree3.root, self.tree3.root), True)
+        self.assertEqual(same_tree(self.tree4.root, self.tree4.root), True)
+        self.assertEqual(same_tree(self.tree5.root, self.tree5.root), True)
+        self.assertEqual(same_tree(self.tree5.root, self.tree1.root), False)
+        self.assertEqual(same_tree(self.tree4.root, self.tree2.root), False)
+        self.assertEqual(same_tree(self.tree3.root, self.tree3.root), True)
+        self.assertEqual(same_tree(self.tree2.root, self.tree4.root), False)
+        self.assertEqual(same_tree(self.tree1.root, self.tree5.root), False)
+        self.assertEqual(same_tree(self.tree5.root, self.tree4.root), False)
+        self.assertEqual(same_tree(self.tree5.root, self.tree3.root), False)
+        self.assertEqual(same_tree(self.tree5.root, self.tree2.root), False)
+
+    def test_max_depth(self):
+        tree1 = Tree()
+        tree2 = Tree()
+        tree2.root = TreeNode(1)
+        self.assertEqual(max_depth(self.tree1.root), 3)
+        self.assertEqual(max_depth(self.tree2.root), 3)
+        self.assertEqual(max_depth(self.tree3.root), 3)
+        self.assertEqual(max_depth(self.tree4.root), 3)
+        self.assertEqual(max_depth(self.tree5.root), 3)
+        self.assertEqual(max_depth(tree1.root), 0)
+        self.assertEqual(max_depth(tree2.root), 1)
+        self.assertEqual(max_depth_v2(self.tree1.root), 3)
+        self.assertEqual(max_depth_v2(self.tree2.root), 3)
+        self.assertEqual(max_depth_v2(self.tree3.root), 3)
+        self.assertEqual(max_depth_v2(self.tree4.root), 3)
+        self.assertEqual(max_depth_v2(self.tree5.root), 3)
+        self.assertEqual(max_depth_v2(tree1.root), 0)
+        self.assertEqual(max_depth_v2(tree2.root), 1)
+
+    def test_min_depth(self):
+        self.assertEqual(min_depth(self.tree1.root), 3)
+        self.assertEqual(min_depth(self.tree4.root), 2)
+
+
+    def test_build_inpre(self):
+        self.assertEqual(inorder_recursive(build_tree_inpre([3,9,20,15,7],[9,3,15,20,7])), 
+                         '9,3,15,20,7')
+
+    def test_build_post(self):
+        self.assertEqual(inorder_recursive(build_tree_postorder([9,3,15,20,7],[9,15,7,20,3])),
+                         '9,3,15,20,7')
+
+    def test_invert_tree(self):
+        self.assertEqual(inorder_recursive(invert_tree(self.tree2.root)), '7,3,6,1,5,2,4')
+
+    def test_average_levels(self):
+        self.assertEqual(average_levels(self.tree1.root), [50,55,48.75])
+
+    def test_max_levels(self):
+        self.assertEqual(max_levels(self.tree1.root), [50, 100, 110])
 
 
 if __name__ == '__main__':

@@ -33,7 +33,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 	$python3 -m unittest discover tests
 
 [//]: # (Data Structures -> 6)
-[//]: # (Algorithms -> 43)
+[//]: # (Algorithms -> 49)
 
 ## List of Implementations
 
@@ -51,8 +51,10 @@ I have written basic tests for most of the modules. To run all the tests at once
 * [Binary Search Tree](algorithms/bst)
 	* [Binary Search Tree Implementation](algorithms/bst/bst.py)
 	* [Recover BST swapped nodes](algorithms/bst/recover_bst.py)
+	* [Delete Node](algorithms/bst/delete_node.py)
 
 * [Hash Tables](algorithms/hashtables)
+	* [Hash table implementation using linear probing](algorithms/hashtables/hashmap_implementation.py)
 	* [Two Sum](algorithms/hashtables/two_sum.py)
 	* [Three Sum](algorithms/hashtables/three_sum.py)
 	* [Four Sum](algorithms/hashtables/four_sum.py)
@@ -62,6 +64,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 * [Heaps](algorithms/heaps)
 	* [Heap implementation](algorithms/heaps/heap_implementation.py)
 	* [Kth Largest element](algorithms/heaps/kth_largest.py)
+	* [Top k frequent elements](algorithms/heaps/k_most_frequent.py)
 
 * [Linked List](algorithms/linkedlist)
 	* [Singly Linked List implementation](algorithms/linkedlist/singly_linked_list.py)
@@ -102,12 +105,23 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Multiply Strings](algorithms/strings/multiply_strings.py)
 
 * [Trees](algorithms/trees)
+	* [Binary Tree Implementation](algorithms/trees/tree_implementation.py)
 	* [Inorder Traversal](algorithms/trees/inorder.py)
 	* [Postorder Traversal](algorithms/trees/postorder.py)
 	* [Preorder Traversal](algorithms/trees/preorder.py)
 	* [Level order traversal I](algorithms/trees/level_order_one.py)
 	* [Level order traversal II](algorithms/trees/level_order_two.py)
 	* [ZigZag Level order traversal](algorithms/trees/zigzag_level_order.py)
+	* [Build tree from postorder, inorder](algorithms/trees/build_tree_postorder.py)
+	* [Build tree from inorder, preorder](algorithms/trees/construct_pre_in.py)
+	* [Max Depth Tree](algorithms/trees/max_depth.py)
+	* [Min Depth Tree](algorithms/trees/min_depth.py)
+	* [Same Tree](algorithms/trees/same_tree.py)
+	* [Symmetric Tree](algorithms/trees/symmetric.py)
+	* [Largest Value in level order](algorithms/trees/largest_value_level.py)
+	* [Average Value in level order](algorithms/trees/average_levels.py)
+	* [Invert tree](algorithms/trees/invert_tree.py)
+
 
 * [Two Pointers](algorithms/twopointers)
 	* [Remove Duplicates](algorithms/twopointers/remove_duplicates.py)

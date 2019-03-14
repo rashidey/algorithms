@@ -77,6 +77,15 @@ class TestBSTFunctions(unittest.TestCase):
         recover_tree(bst1.root)
         self.assertEqual('1,2,3', str(bst1))
 
+    def test_delete_node(self):
+        bst1 = BST()
+        bst1.root = TreeNode(1)
+        bst1.root.left = TreeNode(2)
+        bst1.root.right = TreeNode(3)
+        self.assertEqual(str(bst1), '2,1,3')
+        bst1.root = delete_node(bst1.root, 1)
+        self.assertEqual(str(bst1), '2,3')
+
         
 if __name__ == '__main__':
     unittest.main()
