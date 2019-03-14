@@ -102,9 +102,9 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Multiply Strings](algorithms/strings/multiply_strings.py)
 
 * [Trees](algorithms/trees)
-	* [Inorder Traversal](algroithms/trees/inorder.py)
+	* [Inorder Traversal](algorithms/trees/inorder.py)
 	* [Postorder Traversal](algorithms/trees/postorder.py)
-	* [PreOrder Traversal](algorithms/trees/preorder.py)
+	* [Preorder Traversal](algorithms/trees/preorder.py)
 	* [Level order traversal I](algorithms/trees/level_order_one.py)
 	* [Level order traversal II](algorithms/trees/level_order_two.py)
 	* [ZigZag Level order traversal](algorithms/trees/zigzag_level_order.py)
