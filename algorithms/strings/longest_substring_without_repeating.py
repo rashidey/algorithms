@@ -38,5 +38,3 @@ def longest_unique_substring(s:str) -> int:
         max_total = max_current
     
     return max_total
-
-

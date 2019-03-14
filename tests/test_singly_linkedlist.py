@@ -18,6 +18,7 @@ def print_list(A):
     return result
 
 class TestSetup(unittest.TestCase):
+    
     def setUp(self):
         self.l1 = SinglyLinkedList()
         self.l2 = SinglyLinkedList()

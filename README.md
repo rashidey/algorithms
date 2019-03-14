@@ -12,7 +12,6 @@ An example of running an algorithm:
 
 ```python3
 #Check if a string containing brackets is valid or not
-#Returns bool value
 
 from algorithms.stack import is_valid
 
@@ -33,8 +32,8 @@ I have written basic tests for most of the modules. To run all the tests at once
 	
 	$python3 -m unittest discover tests
 
-[//]: # (Data Structures -> 4)
-[//]: # (Algorithms -> 36)
+[//]: # (Data Structures -> 6)
+[//]: # (Algorithms -> 43)
 
 ## List of Implementations
 
@@ -61,6 +60,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Valid Sudoku](algorithms/hashtables/valid_sudoku.py)
 
 * [Heaps](algorithms/heaps)
+	* [Heap implementation](algorithms/heaps/heap_implementation.py)
 	* [Kth Largest element](algorithms/heaps/kth_largest.py)
 
 * [Linked List](algorithms/linkedlist)
@@ -71,6 +71,9 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Remove nth node from end](algorithms/linkedlist/remove_nth_end.py)
 	* [Swap Nodes in Pairs](algorithms/linkedlist/swap_pairs.py)
 	* [Reverse Nodes in k Groups](algorithms/linkedlist/reverse_k_groups.py)
+
+* [Math](algorithms/math)
+	* [Add two binary numbers](algorithms/math/add_binary.py)
 
 * [Matrix](algorithms/matrix)
 	* [Rotate Image](algorithms/matrix/rotate_image.py)
@@ -98,6 +101,13 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Count and Say](algorithms/strings/count_say.py)
 	* [Multiply Strings](algorithms/strings/multiply_strings.py)
 
+* [Trees](algorithms/trees)
+	* [Inorder Traversal](algroithms/trees/inorder.py)
+	* [Postorder Traversal](algorithms/trees/postorder.py)
+	* [PreOrder Traversal](algorithms/trees/preorder.py)
+	* [Level order traversal I](algorithms/trees/level_order_one.py)
+	* [Level order traversal II](algorithms/trees/level_order_two.py)
+	* [ZigZag Level order traversal](algorithms/trees/zigzag_level_order.py)
 
 * [Two Pointers](algorithms/twopointers)
 	* [Remove Duplicates](algorithms/twopointers/remove_duplicates.py)

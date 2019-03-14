@@ -80,6 +80,8 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(multiply_strings('0','0'), '0')
         self.assertEqual(multiply_strings('1','1'), '1')
 
+
+
 if __name__ == '__main__':
     unittest.main()
 

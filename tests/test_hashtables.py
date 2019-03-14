@@ -46,6 +46,26 @@ class TestSuite(unittest.TestCase):
                                        [".",".",".",".","8",".",".","7","9"]]), False)
 
 
+    def test_hash_map(self):
+        hashmap = HashTable()
+        hashmap[1] = 1
+        hashmap[11] = 2
+        hashmap[21] = 3
+        hashmap[31] = 4
+        self.assertEqual(str(hashmap), '(1, 1) (11, 2) (21, 3) (31, 4) ')
+        del hashmap[11]
+        self.assertEqual(str(hashmap), '(1, 1) (21, 3) (31, 4) ')
+        hashmap[31] = 4
+        hashmap[2] = 4
+        hashmap[3] = 4
+        hashmap[4] = 4
+        hashmap[5] = 4
+        self.assertEqual(str(hashmap), '(1, 1) (21, 3) (2, 4) (3, 4) (4, 4) (5, 4) (31, 4) ')
+        self.assertEqual(hashmap[5], 4)
+        self.assertEqual(len(hashmap), 7)
+
+
+
 if __name__ == '__main__':
     unittest.main()
 
