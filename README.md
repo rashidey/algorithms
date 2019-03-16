@@ -32,8 +32,8 @@ I have written basic tests for most of the modules. To run all the tests at once
 	
 	$python3 -m unittest discover tests
 
-[//]: # (Data Structures -> 6)
-[//]: # (Algorithms -> 49)
+[//]: # (Data Structures -> 7)
+[//]: # (Algorithms -> 58)
 
 ## List of Implementations
 
@@ -52,6 +52,10 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Binary Search Tree Implementation](algorithms/bst/bst.py)
 	* [Recover BST swapped nodes](algorithms/bst/recover_bst.py)
 	* [Delete Node](algorithms/bst/delete_node.py)
+
+* [Dynamic Programming](algorithms/dp)
+	* [Pascal's Triangle](algorithms/dp/pascal.py)
+	* [Pascal's Triangle Row](algorithms/dp/pascal_row.py)
 
 * [Hash Tables](algorithms/hashtables)
 	* [Hash table implementation using linear probing](algorithms/hashtables/hashmap_implementation.py)
@@ -74,6 +78,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Remove nth node from end](algorithms/linkedlist/remove_nth_end.py)
 	* [Swap Nodes in Pairs](algorithms/linkedlist/swap_pairs.py)
 	* [Reverse Nodes in k Groups](algorithms/linkedlist/reverse_k_groups.py)
+	* [Reverse a linked list](algorithms/linkedlist/reverse_linkedlist.py)
 
 * [Math](algorithms/math)
 	* [Add two binary numbers](algorithms/math/add_binary.py)
@@ -103,6 +108,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Length of last Word](algorithms/strings/length_of_last_word.py)
 	* [Count and Say](algorithms/strings/count_say.py)
 	* [Multiply Strings](algorithms/strings/multiply_strings.py)
+	* [Reverse a string](algorithms/strings/reverse_string.py)
 
 * [Trees](algorithms/trees)
 	* [Binary Tree Implementation](algorithms/trees/tree_implementation.py)
@@ -121,7 +127,6 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Largest Value in level order](algorithms/trees/largest_value_level.py)
 	* [Average Value in level order](algorithms/trees/average_levels.py)
 	* [Invert tree](algorithms/trees/invert_tree.py)
-
 
 * [Two Pointers](algorithms/twopointers)
 	* [Remove Duplicates](algorithms/twopointers/remove_duplicates.py)

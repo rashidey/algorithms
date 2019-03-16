@@ -80,6 +80,13 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(multiply_strings('0','0'), '0')
         self.assertEqual(multiply_strings('1','1'), '1')
 
+    def test_reverse_string(self):
+        self.assertEqual(reverse1('12345'), '54321')
+        self.assertEqual(reverse2('12345'), '54321')
+        self.assertEqual(reverse3('12345'), '54321')
+        self.assertEqual(reverse4('12345'), '54321')
+        self.assertEqual(reverse5('12345'), '54321')
+
 
 
 if __name__ == '__main__':
