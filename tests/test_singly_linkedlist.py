@@ -210,6 +210,10 @@ class TestSLLFunctions(TestSetup):
         self.assertEqual(print_list(reverse_list_recursive(list1)), '54321')
         self.assertEqual(print_list(reverse_list_v2(list2)), '54321')
 
+    def test_reverse_mn(self):
+        list1 = convert_to_list([1,2,3,4,5])
+        self.assertEqual(print_list(reverse_mn(list1, 2, 4)), '14325')
+
 if __name__ == '__main__':
     unittest.main()
 

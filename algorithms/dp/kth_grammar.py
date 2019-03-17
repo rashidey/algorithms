@@ -37,6 +37,3 @@ def kth_grammar(n, k):
                 temp.append(0)
         row = temp
     return row[k-1]
-
-#print(kth_grammar(43, 5))
-print(1^1)

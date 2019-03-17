@@ -33,7 +33,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 	$python3 -m unittest discover tests
 
 [//]: # (Data Structures -> 7)
-[//]: # (Algorithms -> 58)
+[//]: # (Algorithms -> 65)
 
 ## List of Implementations
 
@@ -44,6 +44,8 @@ I have written basic tests for most of the modules. To run all the tests at once
 
 * [Backtracking](algorithms/backtracking)
 	* [Letter combinations of phone](algorithms/backtracking/letter_combinations.py)
+	* [Permutations I](algorithms/backtracking/permutations_one.py)
+	* [Permutations II](algorithms/backtracking/permutations_two.py)
 
 * [Binary Search](algorithms/binarysearch)
 	* [Search Insert Position](algorithms/binarysearch/search_insert_position.py)
@@ -51,11 +53,16 @@ I have written basic tests for most of the modules. To run all the tests at once
 * [Binary Search Tree](algorithms/bst)
 	* [Binary Search Tree Implementation](algorithms/bst/bst.py)
 	* [Recover BST swapped nodes](algorithms/bst/recover_bst.py)
-	* [Delete Node](algorithms/bst/delete_node.py)
+	* [Delete Node in BST](algorithms/bst/delete_node.py)
 
 * [Dynamic Programming](algorithms/dp)
 	* [Pascal's Triangle](algorithms/dp/pascal.py)
 	* [Pascal's Triangle Row](algorithms/dp/pascal_row.py)
+	* [Kth symbol in Grammar](algorithms/dp/kth_grammar.py)
+	* [Implement power function](algorithms/dp/pow.py)
+	* [Climbing stairs](algorithms/dp/climbing_stairs.py)
+	* [Fibonacci](algorithms/dp/fibonacci.py)
+
 
 * [Hash Tables](algorithms/hashtables)
 	* [Hash table implementation using linear probing](algorithms/hashtables/hashmap_implementation.py)
@@ -79,6 +86,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Swap Nodes in Pairs](algorithms/linkedlist/swap_pairs.py)
 	* [Reverse Nodes in k Groups](algorithms/linkedlist/reverse_k_groups.py)
 	* [Reverse a linked list](algorithms/linkedlist/reverse_linkedlist.py)
+	* [Reverse a linked list II](algorithms/linkedlist/reverse_mn.py)
 
 * [Math](algorithms/math)
 	* [Add two binary numbers](algorithms/math/add_binary.py)

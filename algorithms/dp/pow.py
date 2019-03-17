@@ -66,4 +66,3 @@ def pow_v5(x, n):
         res *= x
     return res
 
-print(pow_v4(2,9))
