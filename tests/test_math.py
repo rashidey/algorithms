@@ -8,3 +8,6 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(add_binary('0', '0'), '0')
         self.assertEqual(add_binary('011', '1'), '100')
         self.assertEqual(add_binary('101', '1'), '110')
+
+    def test_divide_two(self):
+    	self.assertEqual(divide_two_numbers(3, -3), -1)

@@ -10,3 +10,6 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(remove_element([3,2,2,3], 3), 2)
         self.assertEqual(remove_element([0,1,2,2,3,0,4,2], 2), 5)
     
+    def test_three_sum(self):
+    	self.assertEqual(three_sum_closest([-1,2,1,-4], 1), 2)
+    	self.assertEqual(three_sum_closest([1,2,3,4,5,6,7,8,9,10], 27), 27)

@@ -33,7 +33,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 	$python3 -m unittest discover tests
 
 [//]: # (Data Structures -> 7)
-[//]: # (Algorithms -> 65)
+[//]: # (Algorithms -> 71)
 
 ## List of Implementations
 
@@ -46,6 +46,11 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Letter combinations of phone](algorithms/backtracking/letter_combinations.py)
 	* [Permutations I](algorithms/backtracking/permutations_one.py)
 	* [Permutations II](algorithms/backtracking/permutations_two.py)
+	* [Subsets I](algorithms/backtracking/subsets.py)
+	* [Subsets II](algorithms/backtracking/subsets_duplicates.py)
+	* [Combinations Sum](algorithms/backtracking/combinations_sum.py)
+	* [Combinations Sum II](algorithms/backtracking/combinations_sum_two.py)
+	* [Generate Paranthesis](algorithms/backtracking/generate_paranthesis.py)
 
 * [Binary Search](algorithms/binarysearch)
 	* [Search Insert Position](algorithms/binarysearch/search_insert_position.py)
@@ -63,6 +68,8 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Climbing stairs](algorithms/dp/climbing_stairs.py)
 	* [Fibonacci](algorithms/dp/fibonacci.py)
 
+* [Graphs](algorithms/graphs)
+	* [Word Ladder](algorithms/graphs/word_ladder.py)
 
 * [Hash Tables](algorithms/hashtables)
 	* [Hash table implementation using linear probing](algorithms/hashtables/hashmap_implementation.py)
