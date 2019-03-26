@@ -38,6 +38,7 @@ Explanation: The endWord "cog" is not in wordList, therefore no possible transfo
 '''
 
 from collections import defaultdict, deque
+import string
 
 def word_ladder(begin_word, end_word, word_list):
 	transformations = defaultdict(list)
@@ -62,3 +63,57 @@ def word_ladder(begin_word, end_word, word_list):
 			transformations[intermediate_word] = []
 	return 0
 
+
+def adjacent(word1, word2):
+	count = 0
+	for i in range(len(word1)):
+		if word1[i] != word2[i]:
+			count += 1
+		if count > 1:
+			return False
+	return True
+
+def word_ladder_v2(begin_word, end_word, word_list):
+	que = deque([(begin_word, 1)])
+
+	while que:
+		current_word, level = que.popleft()
+		for word in word_list:
+			temp = word
+			if isadjacent(current_word, temp):
+				que.append((temp, level+1))
+				word_list.remove(temp)
+				if temp == end_word:
+					return level + 1
+				
+	return 0
+
+def isadjacent(a, b): 
+    count = 0
+    n = len(a) 
+  
+    for i in range(n): 
+        if a[i] != b[i]: 
+            count += 1
+        if count > 1: 
+            break
+  
+    return True if count == 1 else False
+  
+def shortestChainLen(start, target, D): 
+    Q = [] 
+    Q.append([start, 1]) 
+  
+    while Q: 
+        curr, length = Q.pop() 
+        for it in D: 
+            temp = it 
+            if isadjacent(curr, temp) == True: 
+                if temp == target: 
+                    return length
+                
+                Q.append((temp, length+1)) 
+                D.remove(temp) 
+
+print(word_ladder_v2('hit', 'cog', ["hot","dot","dog","lot","log", "cog"]))
+print(shortestChainLen("hit", "cog", ["hot","dot","dog","lot","log", "cog"]))

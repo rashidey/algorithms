@@ -87,6 +87,9 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(reverse4('12345'), '54321')
         self.assertEqual(reverse5('12345'), '54321')
 
+    def test_permutations(self):
+        self.assertEqual(permutations_string('bo', 'eidboaoo'), True)
+
 
 
 if __name__ == '__main__':

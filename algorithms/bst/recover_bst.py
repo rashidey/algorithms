@@ -95,16 +95,37 @@ def recover_tree_v3(root):
     inorder.sort()
     insert_bst_inorder(root, inorder)
 
+def recoverBST(root):
+    first, second, prev = None, None, None
+
+    def traverse(root):
+        nonlocal first, second, prev
+        if root:
+            traverse(root.left)
+            if prev and prev.val > root.val:
+                if not first:
+                    first = prev
+                    second = root
+                else:
+                    second = root
+            prev = root
+            traverse(root.right)
+
+    traverse(root)
+    first.val, second.val = second.val, first.val
+
+
+
 
 if __name__ == '__main__':
     bst1 = BST()
     bst1.root = TreeNode(1)
     bst1.root.left = TreeNode(3)
     bst1.root.left.right = TreeNode(2)
-    result = bst1.inorder()
-    print(result)
-    recover_tree_v3(bst1.root)
-    result = bst1.inorder()
-    print(result)
+    #result = bst1.inorder()
+    #print(result)
+    recoverBST(bst1.root)
+    #result = bst1.inorder()
+    print(bst1)
 
 
