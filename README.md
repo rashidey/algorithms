@@ -32,8 +32,8 @@ I have written basic tests for most of the modules. To run all the tests at once
 	
 	$python3 -m unittest discover tests
 
-[//]: # (Data Structures -> 7)
-[//]: # (Algorithms -> 71)
+[//]: # (Data Structures -> 8)
+[//]: # (Algorithms -> 86)
 
 ## List of Implementations
 
@@ -41,6 +41,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Dynamic Array Implementation](algorithms/arrays/dynamic_array_implementation.py)
 	* [Number plus one](algorithms/arrays/number_plus_one.py)
 	* [Remove duplicates from array II](algorithms/arrays/remove_duplicates.py)
+	* [Merge Sorted Array](algorithms/array/merge_sorted_array.py)
 
 * [Backtracking](algorithms/backtracking)
 	* [Letter combinations of phone](algorithms/backtracking/letter_combinations.py)
@@ -72,6 +73,9 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Graph Implementation](algorithms/graphs/graph_implementation.py)
 	* [Word Ladder](algorithms/graphs/word_ladder.py)
 	* [Word Ladder II](algorithms/graphs/word_ladder_two.py)
+	* [Number of Islands](algorithms/graphs/number_islands.py)
+	* [Clone Graph](algorithms/graphs/clone_graph.py)
+	* [Is Bipartite](algorithms/graphs/is_bipartate.py)
 
 * [Hash Tables](algorithms/hashtables)
 	* [Hash table implementation using linear probing](algorithms/hashtables/hashmap_implementation.py)
@@ -96,9 +100,15 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Reverse Nodes in k Groups](algorithms/linkedlist/reverse_k_groups.py)
 	* [Reverse a linked list](algorithms/linkedlist/reverse_linkedlist.py)
 	* [Reverse a linked list II](algorithms/linkedlist/reverse_mn.py)
+	* [LinkedList Cycle](algorithms/linkedlist/linked_cycle.py)
+	* [Delete Duplicates](algorithms/linkedlist/delete_duplicates.py)
 
 * [Math](algorithms/math)
 	* [Add two binary numbers](algorithms/math/add_binary.py)
+	* [Count Primes](algorithms/math/count_primes.py)
+	* [Divide Two numbers](algorithms/math/divide_two_numbers.py)
+	* [Happy Numbers](algorithms/math/happy_numbers.py)
+
 
 * [Matrix](algorithms/matrix)
 	* [Rotate Image](algorithms/matrix/rotate_image.py)
@@ -129,6 +139,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Permutations in string](algorithms/strings/permutations_in_string.py)
 	* [Jewels and stones](algorithms/strings/jewels.py)
 	* [To lower case](algorithms/strings/to_lower.py)
+	* [Valid Palindrome](algorithms/strings/valid_palin.py)
 	
 
 * [Trees](algorithms/trees)

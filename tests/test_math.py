@@ -11,3 +11,10 @@ class TestSuite(unittest.TestCase):
 
     def test_divide_two(self):
     	self.assertEqual(divide_two_numbers(3, -3), -1)
+
+    def test_happy_number(self):
+    	self.assertEqual(happy_numbers(19), True)
+    	self.assertEqual(happy_numbers(191), False)
+
+    def test_count_primes(self):
+        self.assertEqual(count_primes(10), 4)

@@ -218,6 +218,13 @@ class TestSLLFunctions(TestSetup):
         list1 = convert_to_list([1,1,2,3,3])
         self.assertEqual(print_list(delete_duplicates(list1)), '123')
 
+    def test_has_cycle(self):
+        head = Node(1)
+        head.next = Node(2)
+        head.next.next = head
+        self.assertEqual(has_cycle(head), True)
+
+        
 if __name__ == '__main__':
     unittest.main()
 

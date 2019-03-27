@@ -1,14 +1,7 @@
 from algorithms.graphs import *
 import unittest
 
-class TestSuite(unittest.TestCase):
-	def test_word_ladder(self):
-		self.assertEqual(word_ladder('hit', 'cog', ['hot', 'dot', 'dog', 'lot', 'log']), 0)
-		self.assertEqual(word_ladder('hit', 'cog', ["hot","dot","dog","lot","log","cog"]), 5)
-
-	def test_word_ladder2(self):
-		self.assertEqual(len(word_ladder_v2('hit', 'cog', ["hot","dot","dog","lot","log","cog"])), 2)
-
+class TestGraph(unittest.TestCase):
 	def test_graph_list(self):
 		graph = GraphList()
 		graph.add_edge(0, 1) 
@@ -87,3 +80,27 @@ class TestSuite(unittest.TestCase):
 		self.assertEqual(g.print_shortest_paths(0), [[0, 1], [0, 1, 2], [0, 1, 2, 3], 
 													 [0, 7, 6, 5, 4], [0, 7, 6, 5], [0, 7, 6], [0, 7], 
 													 [0, 1, 2, 8]])
+
+class TestGraphFunctions(unittest.TestCase):
+	def test_word_ladder(self):
+		self.assertEqual(word_ladder('hit', 'cog', ['hot', 'dot', 'dog', 'lot', 'log']), 0)
+		self.assertEqual(word_ladder('hit', 'cog', ['hot', 'dot', 'dog', 'lot', 'log']), 0)
+		self.assertEqual(word_ladder_v2('hit', 'cog', ["hot","dot","dog","lot","log","cog"]), 5)
+		self.assertEqual(word_ladder_v2('hit', 'cog', ['hot', 'dot', 'dog', 'lot', 'log']), 0)
+
+	def test_word_ladder_two(self):
+		self.assertEqual(len(word_ladder_two('hit', 'cog', ["hot","dot","dog","lot","log","cog"])), 2)
+
+	
+
+	def test_is_bipartate(self):
+		self.assertEqual(is_bipartate([[1,3], [0,2], [1,3], [0,2]]), True)
+		self.assertEqual(is_bipartate([[1,2,3], [0,2], [0,1,3], [0,2]]), False)
+		self.assertEqual(is_bipartate([[], [2,4,6],[1,4,8,9],[7,8],[],[1,2,8,9],[6,9],[1,5,7,8,9],
+			                          [3,6,9],[2,3,4,6,9],[2,4,5,6,7,8]]), False)
+		self.assertEqual(is_bipartate([[]]), True)
+
+	def test_surround(self):
+		board = [["X","X","X","X"],["X","O","O","X"],["X","X","O","X"],["X","O","X","X"]]
+		self.assertEqual(surround(board), [['X', 'X', 'X', 'X'], ['X', 'X', 'X', 'X'], 
+										   ['X', 'X', 'X', 'X'], ['X', 'O', 'X', 'X']])

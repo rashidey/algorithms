@@ -57,7 +57,7 @@ def createAllPaths(parentDict, word, beginWord):
            output.append(l)
     return output
 
-def word_ladder_v2(beginWord, endWord, wordList):
+def word_ladder_two(beginWord, endWord, wordList):
     q = deque([beginWord ])
     seen = set([beginWord])
     wordList = set(wordList)
@@ -68,24 +68,19 @@ def word_ladder_v2(beginWord, endWord, wordList):
         seen_this_level = set()
         for i in range(num_in_level):
             q_item = q.popleft()
-            for candidate in generateNeighbors(q_item, wordList):
-                if candidate == endWord:
-                    finished = True
-                elif candidate in seen:
-                    continue
-                if candidate not in seen_this_level:
-                    q.append(candidate)
-                seen_this_level.add(candidate)
-                parents[candidate].add(q_item)
+            for i in range(len(beginWord)):
+                for letter in string.ascii_lowercase:
+                    candidate = q_item[:i] + letter + q_item[i+1:]
+                    if candidate in wordList:
+                        if candidate == endWord:
+                            finished = True
+                        elif candidate in seen:
+                            continue
+                        if candidate not in seen_this_level:
+                            q.append(candidate)
+                        seen_this_level.add(candidate)
+                        parents[candidate].add(q_item)
         if finished:
             break
         seen |= seen_this_level
     return createAllPaths(parents, endWord, beginWord)
-
-
-#print(word_ladder_v2('hit', 'cog', ["hot","dot","dog","lot","log","cog"]))
-#print(word_ladder_v2('a', 'c', ['a', 'b', 'c']))
-
-
-
-

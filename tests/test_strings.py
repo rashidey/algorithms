@@ -96,6 +96,9 @@ class TestSuite(unittest.TestCase):
     def test_to_lower(self):
         self.assertEqual(to_lower_case('aBc'), 'abc')
 
+    def test_palin(self):
+        self.assertEqual(is_palindrome_v1('A man, a plan, a canal: Panama'), True)
+        self.assertEqual(is_palindrome_v2('A man, a plan, a canal: Panama'), True)
 
 if __name__ == '__main__':
     unittest.main()
