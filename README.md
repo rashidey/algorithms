@@ -69,7 +69,9 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Fibonacci](algorithms/dp/fibonacci.py)
 
 * [Graphs](algorithms/graphs)
+	* [Graph Implementation](algorithms/graphs/graph_implementation.py)
 	* [Word Ladder](algorithms/graphs/word_ladder.py)
+	* [Word Ladder II](algorithms/graphs/word_ladder_two.py)
 
 * [Hash Tables](algorithms/hashtables)
 	* [Hash table implementation using linear probing](algorithms/hashtables/hashmap_implementation.py)
@@ -124,6 +126,10 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Count and Say](algorithms/strings/count_say.py)
 	* [Multiply Strings](algorithms/strings/multiply_strings.py)
 	* [Reverse a string](algorithms/strings/reverse_string.py)
+	* [Permutations in string](algorithms/strings/permutations_in_string.py)
+	* [Jewels and stones](algorithms/strings/jewels.py)
+	* [To lower case](algorithms/strings/to_lower.py)
+	
 
 * [Trees](algorithms/trees)
 	* [Binary Tree Implementation](algorithms/trees/tree_implementation.py)
@@ -146,5 +152,5 @@ I have written basic tests for most of the modules. To run all the tests at once
 * [Two Pointers](algorithms/twopointers)
 	* [Remove Duplicates](algorithms/twopointers/remove_duplicates.py)
 	* [Remove element](algorithms/twopointers/remove_element.py)
-
+	* [Three Sum closest](algorithms/twopointers/three_sum_closest.py)
 

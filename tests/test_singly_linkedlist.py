@@ -214,6 +214,10 @@ class TestSLLFunctions(TestSetup):
         list1 = convert_to_list([1,2,3,4,5])
         self.assertEqual(print_list(reverse_mn(list1, 2, 4)), '14325')
 
+    def test_delete_duplicates(self):
+        list1 = convert_to_list([1,1,2,3,3])
+        self.assertEqual(print_list(delete_duplicates(list1)), '123')
+
 if __name__ == '__main__':
     unittest.main()
 

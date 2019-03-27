@@ -13,3 +13,10 @@ class TestSuite(unittest.TestCase):
     def test_remove_duplicates(self):
         self.assertEqual(remove_duplicates_two([1,1,1,2,2,3]), 5)
         self.assertEqual(remove_duplicates_two([0,0,1,1,1,1,2,3,3]), 7)
+
+    def test_merge_sorted(self):
+        self.assertEqual(merge_sorted([1,2,3,0,0,0],3,[2,5,6],3), [1,2,2,3,5,6])
+
+    def test_number_plus_one(self):
+        self.assertEqual(plus_one([1,2,3]), [1,2,4])
+        self.assertEqual(plus_one([4,3,2,1]), [4,3,2,2])

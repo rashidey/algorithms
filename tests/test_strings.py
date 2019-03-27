@@ -90,6 +90,11 @@ class TestSuite(unittest.TestCase):
     def test_permutations(self):
         self.assertEqual(permutations_string('bo', 'eidboaoo'), True)
 
+    def test_jewels(self):
+        self.assertEqual(num_jewels('aA', 'aAAbbbb'), 3)
+
+    def test_to_lower(self):
+        self.assertEqual(to_lower_case('aBc'), 'abc')
 
 
 if __name__ == '__main__':

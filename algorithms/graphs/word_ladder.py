@@ -115,5 +115,3 @@ def shortestChainLen(start, target, D):
                 Q.append((temp, length+1)) 
                 D.remove(temp) 
 
-print(word_ladder_v2('hit', 'cog', ["hot","dot","dog","lot","log", "cog"]))
-print(shortestChainLen("hit", "cog", ["hot","dot","dog","lot","log", "cog"]))
