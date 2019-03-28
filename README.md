@@ -32,8 +32,9 @@ I have written basic tests for most of the modules. To run all the tests at once
 	
 	$python3 -m unittest discover tests
 
-[//]: # (Data Structures -> 8)
-[//]: # (Algorithms -> 86)
+## Progress
+**Data Structures** : 8  
+**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 101
 
 ## List of Implementations
 
@@ -41,7 +42,9 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Dynamic Array Implementation](algorithms/arrays/dynamic_array_implementation.py)
 	* [Number plus one](algorithms/arrays/number_plus_one.py)
 	* [Remove duplicates from array II](algorithms/arrays/remove_duplicates.py)
-	* [Merge Sorted Array](algorithms/array/merge_sorted_array.py)
+	* [Merge Sorted Array](algorithms/arrays/merge_sorted_array.py)
+	* [Rotate Array](algorithms/arrays/rotate_array.py)
+	* [Contains Duplicate I](algorithms/arrays/contains_duplicate_one.py)
 
 * [Backtracking](algorithms/backtracking)
 	* [Letter combinations of phone](algorithms/backtracking/letter_combinations.py)
@@ -55,11 +58,14 @@ I have written basic tests for most of the modules. To run all the tests at once
 
 * [Binary Search](algorithms/binarysearch)
 	* [Search Insert Position](algorithms/binarysearch/search_insert_position.py)
+	* [Valid Perfect Square](algorithms/binarysearch/valid_perfect_square.py)
 
 * [Binary Search Tree](algorithms/bst)
 	* [Binary Search Tree Implementation](algorithms/bst/bst.py)
 	* [Recover BST swapped nodes](algorithms/bst/recover_bst.py)
 	* [Delete Node in BST](algorithms/bst/delete_node.py)
+	* [Validate BST](algorithms/bst/validate_bst.py)
+
 
 * [Dynamic Programming](algorithms/dp)
 	* [Pascal's Triangle](algorithms/dp/pascal.py)
@@ -76,6 +82,9 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Number of Islands](algorithms/graphs/number_islands.py)
 	* [Clone Graph](algorithms/graphs/clone_graph.py)
 	* [Is Bipartite](algorithms/graphs/is_bipartate.py)
+	* [Course Schedule](algorithms/graphs/course_order.py)
+	* [BT Right Side View](algorithms/graphs/bt_right_view.py)
+
 
 * [Hash Tables](algorithms/hashtables)
 	* [Hash table implementation using linear probing](algorithms/hashtables/hashmap_implementation.py)
@@ -102,12 +111,19 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Reverse a linked list II](algorithms/linkedlist/reverse_mn.py)
 	* [LinkedList Cycle](algorithms/linkedlist/linked_cycle.py)
 	* [Delete Duplicates](algorithms/linkedlist/delete_duplicates.py)
+	* [Linked List palindrome](algorithms/linkedlist/list_palindrome.py)
+	* [Remove List elements](algorithms/linkedlist/remove_element.py)
+	* [Intersection Lists](algorithms/linkedlist/intersection.py)
+
 
 * [Math](algorithms/math)
 	* [Add two binary numbers](algorithms/math/add_binary.py)
 	* [Count Primes](algorithms/math/count_primes.py)
 	* [Divide Two numbers](algorithms/math/divide_two_numbers.py)
 	* [Happy Numbers](algorithms/math/happy_numbers.py)
+	* [Majority Element](algorithms/math/majority_element.py)
+	* [Excel Column to Number](algorithms/math/convert_to_number.py)
+	* [Excel Number to Column](algorithms/math/num_to_col.py)
 
 
 * [Matrix](algorithms/matrix)
@@ -140,6 +156,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Jewels and stones](algorithms/strings/jewels.py)
 	* [To lower case](algorithms/strings/to_lower.py)
 	* [Valid Palindrome](algorithms/strings/valid_palin.py)
+	* [Isomorphic Strings](algorithms/strings/isomorphic.py)
 	
 
 * [Trees](algorithms/trees)
@@ -159,6 +176,8 @@ I have written basic tests for most of the modules. To run all the tests at once
 	* [Largest Value in level order](algorithms/trees/largest_value_level.py)
 	* [Average Value in level order](algorithms/trees/average_levels.py)
 	* [Invert tree](algorithms/trees/invert_tree.py)
+	* [Array to BST](algorithms/trees/array_bst.py)
+	* [Balanced Tree](algorithms/trees/is_balanced.py)
 
 * [Two Pointers](algorithms/twopointers)
 	* [Remove Duplicates](algorithms/twopointers/remove_duplicates.py)

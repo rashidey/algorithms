@@ -86,6 +86,20 @@ class TestBSTFunctions(unittest.TestCase):
         bst1.root = delete_node(bst1.root, 1)
         self.assertEqual(str(bst1), '2,3')
 
+    def test_is_valid(self):
+        bst1 = BST()
+        bst1.root = TreeNode(2)
+        bst1.root.left = TreeNode(1)
+        bst1.root.right = TreeNode(3)
+        bst2 = BST()
+        bst2.root = TreeNode(1)
+        bst2.root.left = TreeNode(1)
+
+        self.assertEqual(is_valid_bst(bst1.root), True)
+        self.assertEqual(is_valid_bst(bst2.root), False)
+        self.assertEqual(is_valid_bst_v2(bst1.root), True)
+        self.assertEqual(is_valid_bst_v2(bst2.root), False)
+
         
 if __name__ == '__main__':
     unittest.main()

@@ -100,6 +100,12 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(is_palindrome_v1('A man, a plan, a canal: Panama'), True)
         self.assertEqual(is_palindrome_v2('A man, a plan, a canal: Panama'), True)
 
+    def test_isomorphic(self):
+        self.assertEqual(is_isomorphic('egg', 'add'), True)
+        self.assertEqual(is_isomorphic('foo', 'bar'), False)
+        self.assertEqual(is_isomorphic('paper', 'title'), True)
+        self.assertEqual(is_isomorphic('ab', 'aa'), False)
+
 if __name__ == '__main__':
     unittest.main()
 

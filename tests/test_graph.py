@@ -104,3 +104,27 @@ class TestGraphFunctions(unittest.TestCase):
 		board = [["X","X","X","X"],["X","O","O","X"],["X","X","O","X"],["X","O","X","X"]]
 		self.assertEqual(surround(board), [['X', 'X', 'X', 'X'], ['X', 'X', 'X', 'X'], 
 										   ['X', 'X', 'X', 'X'], ['X', 'O', 'X', 'X']])
+
+	def test_number_islands(self):
+		self.assertEqual(number_islands([["1","1","1","1","0"],["1","1","0","1","0"],
+			                            ["1","1","0","0","0"],["0","0","0","0","0"]]), 1)
+
+	def test_right_side(self):
+		class Node:
+			def __init__(self, x):
+				self.data = x
+				self.left = None
+				self.right = None
+
+		root = Node(1)
+		root.left = Node(2)
+		root.right = Node(3)
+		root.left.right = Node(5)
+		root.right.right = Node(4)
+
+		self.assertEqual(right_side(root), [1,3,4])
+		self.assertEqual(right_side_v2(root), [1,3,4])
+
+	def test_course_order(self):
+		self.assertEqual(course_order(2, [[1, 0]]), True)
+		self.assertEqual(course_order(2, [[1, 0], [0,1]]), False)

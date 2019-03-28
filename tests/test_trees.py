@@ -142,6 +142,11 @@ class TestTree(TestSetup):
     def test_max_levels(self):
         self.assertEqual(max_levels(self.tree1.root), [50, 100, 110])
 
+    def test_array_bst(self):
+        self.assertEqual(inorder_recursive(array_bst([-10,-3,0,5,9])), '-10,-3,0,5,9')
+        self.assertEqual(inorder_recursive(array_bst_v2([-10,-3,0,5,9])), '-10,-3,0,5,9')
 
+    def test_is_balanced(self):
+        self.assertEqual(is_balanced(self.tree1.root), True)
 if __name__ == '__main__':
     unittest.main()

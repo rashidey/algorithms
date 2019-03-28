@@ -20,3 +20,9 @@ class TestSuite(unittest.TestCase):
     def test_number_plus_one(self):
         self.assertEqual(plus_one([1,2,3]), [1,2,4])
         self.assertEqual(plus_one([4,3,2,1]), [4,3,2,2])
+
+    def test_rotate_array(self):
+        self.assertEqual(rotate_array([1,2,3,4,5,6,7], 3), [5,6,7,1,2,3,4])
+
+    def test_contains_duplicates(self):
+        self.assertEqual(contains_duplicates([1,2,3,1]), True)

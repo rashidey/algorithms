@@ -18,3 +18,17 @@ class TestSuite(unittest.TestCase):
 
     def test_count_primes(self):
         self.assertEqual(count_primes(10), 4)
+
+    def test_convert_to_title(self):
+        self.assertEqual(convert_to_title(1), 'A')
+        self.assertEqual(convert_to_title(28), 'AB')
+        self.assertEqual(convert_to_title(701), 'ZY')
+
+    def test_convert_to_number(self):
+        self.assertEqual(convert_to_number('A'), 1)
+        self.assertEqual(convert_to_number('AB'), 28)
+        self.assertEqual(convert_to_number('ZY'), 701)
+
+    def test_majority_element(self):
+        self.assertEqual(majority_element([3,2,3]), 3)
+        self.assertEqual(majority_element([2,2,1,1,1,2,2]), 2)

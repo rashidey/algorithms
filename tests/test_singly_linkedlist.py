@@ -224,7 +224,31 @@ class TestSLLFunctions(TestSetup):
         head.next.next = head
         self.assertEqual(has_cycle(head), True)
 
-        
+    def test_intersection(self):
+        head1 = Node(1)
+        head1.next = Node(2)
+        head1.next.next = Node(3)
+
+        head2 = Node(4)
+        head2.next = head1.next
+
+        self.assertEqual(get_intersection(head1, head2), head1.next)
+
+    def test_remove_elements(self):
+        list1 = convert_to_list([1,2,6,3,4,5,6])
+        self.assertEqual(print_list(remove_elements(list1, 6)), '12345')
+
+    def test_list_palindrome(self):
+        list1 = convert_to_list([1,2,3,4,3,2,1])
+        list2 = convert_to_list([1,2,3,4,4,3,2,1])
+        list3 = convert_to_list([1,2,1,2])
+        list4 = convert_to_list([1,1,2,1])
+        self.assertEqual(list_palindrome(list1), True)
+        self.assertEqual(list_palindrome(list2), True)
+        self.assertEqual(list_palindrome(list3), False)
+        self.assertEqual(list_palindrome(list4), False)
+
+
 if __name__ == '__main__':
     unittest.main()
 
