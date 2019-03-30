@@ -26,3 +26,7 @@ class TestSuite(unittest.TestCase):
 
     def test_contains_duplicates(self):
         self.assertEqual(contains_duplicates([1,2,3,1]), True)
+
+    def test_merge_intervals(self):
+        self.assertEqual(merge_intervals([[1,3],[2,6],[8,10],[15,18]]), [[1,6],[8,10],[15,18]])
+        self.assertEqual(merge_intervals([[1,4],[4,5]]), [[1,5]])

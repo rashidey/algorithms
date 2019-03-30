@@ -32,3 +32,17 @@ class TestSuite(unittest.TestCase):
     def test_majority_element(self):
         self.assertEqual(majority_element([3,2,3]), 3)
         self.assertEqual(majority_element([2,2,1,1,1,2,2]), 2)
+
+    def test_next_perm(self):
+        self.assertEqual(next_permutation([1,2,3]), [1,3,2])
+        self.assertEqual(next_permutation([3,2,1]), [1,2,3])
+        self.assertEqual(next_permutation([1,1,5]), [1,5,1])
+        self.assertEqual(next_permutation([1,3,2]), [2,1,3])
+
+    def test_divide_two_numbers_v2(self):
+        self.assertEqual(divide_two_numbers_v2(10, 2), 5)
+        self.assertEqual(divide_two_numbers_v2(2342523443242523, 2), 2147483647)
+        self.assertEqual(divide_two_numbers_v2(-43564356345235346324, 2), -2147483648)
+        self.assertEqual(divide_two_numbers_v2(10, 3), 3)
+        self.assertEqual(divide_two_numbers_v2(102, 2), 51)
+        self.assertEqual(divide_two_numbers_v2(6, 2), 3)

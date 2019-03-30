@@ -14,7 +14,7 @@ class ListNode:
         self.val = x
         self.next = None
 '''
-from .singly_linked_list import Node as ListNode
+from .singly_linked_list_implementation import Node as ListNode
 def merge_two_lists(l1: ListNode, l2: ListNode) -> ListNode:
     newList = ListNode(0)
     current = newList

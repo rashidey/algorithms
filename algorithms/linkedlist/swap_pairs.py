@@ -5,7 +5,7 @@ You may not modify the values in the list's nodes, only nodes itself may be chan
 Example:
 Given 1->2->3->4, you should return the list as 2->1->4->3.
 '''
-from .singly_linked_list import Node as ListNode
+from .singly_linked_list_implementation import Node as ListNode
 
 def swap_pairs(head):
     def helper(head, k):

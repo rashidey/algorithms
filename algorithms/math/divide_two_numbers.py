@@ -36,3 +36,28 @@ def divide_two_numbers(dividend, divisor):
 	    ans += 1
 	    
 	return sign * ans
+
+def divide_two_numbers_v2(dividend, divisor):
+	if divisor == 0: return -1 
+
+	sign = 1 if ((dividend < 0) ^ (divisor < 0)) else 0
+	dividend = abs(dividend)
+	divisor = abs(divisor)
+
+	dividend_copy = dividend
+	divisor_copy = divisor
+
+	result, multiple = 0, 1
+
+	while dividend_copy >= divisor:
+		dividend_copy -= divisor_copy
+		result += multiple
+		multiple += multiple
+		divisor_copy += divisor_copy
+		if dividend_copy < divisor_copy:
+			divisor_copy = divisor
+			multiple = 1
+
+	if sign: return max(-result, -2**31)
+	else: return min(result, 2**31-1)
+

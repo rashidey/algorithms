@@ -12,7 +12,7 @@ Input:
 Output: 1->1->2->3->4->4->5->6
 '''
 
-from .singly_linked_list import Node as ListNode
+from .singly_linked_list_implementation import Node as ListNode
 import heapq
 import itertools
 

@@ -24,6 +24,7 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(substring_concat('barfoothefoobarman', ['foo', 'bar']), [0, 9])
         self.assertEqual(substring_concat('wordgoodgoodgoodbestword', 
                                           ["word","good","best","word"]), [])
+    
     def test_valid_sudoku(self):
         self.assertEqual(valid_sudoku([["5","3",".",".","7",".",".",".","."],
                                        ["6",".",".","1","9","5",".",".","."],
@@ -45,7 +46,6 @@ class TestSuite(unittest.TestCase):
                                        [".",".",".","4","1","9",".",".","5"],
                                        [".",".",".",".","8",".",".","7","9"]]), False)
 
-
     def test_hash_map(self):
         hashmap = HashTable()
         hashmap[1] = 1
@@ -64,7 +64,10 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(hashmap[5], 4)
         self.assertEqual(len(hashmap), 7)
 
-
+    def test_group_anagrams(self):
+        words = ["eat", "tea", "tan", "ate", "nat", "bat"]
+        result = group_anagrams(words)
+        self.assertEqual(len(result), 3)
 
 if __name__ == '__main__':
     unittest.main()

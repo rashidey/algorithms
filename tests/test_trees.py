@@ -148,5 +148,45 @@ class TestTree(TestSetup):
 
     def test_is_balanced(self):
         self.assertEqual(is_balanced(self.tree1.root), True)
+
+    def test_path_sum(self):
+        self.assertEqual(path_sum(self.tree1.root, 65), True)
+
+    def test_path_sums_two(self):
+        self.assertEqual(path_sums_all(self.tree1.root, 65), [[50, 10, 5]])
+
+    def test_sum_path(self):
+        root = TreeNode(4)
+        root.left = TreeNode(9)
+        root.right = TreeNode(0)
+        root.left.left = TreeNode(5)
+        root.left.right = TreeNode(1)
+
+        root1 = TreeNode(1)
+        root1.left = TreeNode(2)
+        root1.right = TreeNode(3)
+
+        self.assertEqual(sum_paths(root), 1026)
+        self.assertEqual(sum_paths(root1), 25)
+
+    def test_paths(self):
+        root = TreeNode(1)
+        root.left = TreeNode(2)
+        root.right = TreeNode(3)
+        root.left.right = TreeNode(5)
+
+        self.assertEqual(tree_paths(root), [[1,2,5], [1,3]])
+
+    def test_merge_trees(self):
+        root = TreeNode(1)
+        root.left = TreeNode(2)
+        root.right = TreeNode(3)
+        root1 = TreeNode(4)
+        root1.left = TreeNode(5)
+        root1.right = TreeNode(6)
+        self.assertEqual(inorder_recursive(merge_two_trees(root, root1)), '7,5,9')
+
+    
+
 if __name__ == '__main__':
     unittest.main()

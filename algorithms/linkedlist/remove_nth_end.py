@@ -8,7 +8,7 @@ Given linked list: 1->2->3->4->5, and n = 2.
 After removing the second node from the end, the linked list becomes 1->2->3->5.
 '''
 
-from .singly_linked_list import Node as ListNode
+from .singly_linked_list_implementation import Node as ListNode
 
 def remove_nth_end(head: ListNode, n: int) -> ListNode:
     slow = head

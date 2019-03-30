@@ -13,7 +13,7 @@ For k = 2, you should return: 2->1->4->3->5
 For k = 3, you should return: 3->2->1->4->5
 '''
 
-from .singly_linked_list import Node as ListNode
+from .singly_linked_list_implementation import Node as ListNode
 
 def reverse_k_group(head, k):
     jump = dummy = ListNode(0)
