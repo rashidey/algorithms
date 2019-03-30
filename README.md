@@ -49,6 +49,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Number Plus One](/algorithms/arrays/number_plus_one.py)  
     - [Remove Duplicates Two](/algorithms/arrays/remove_duplicates_two.py)  
     - [Rotate Array](/algorithms/arrays/rotate_array.py)  
+  
 * [**Backtracking**](/algorithms/backtracking)  
     - [Combinations Sum Two](/algorithms/backtracking/combinations_sum_two.py)  
     - [Combinations Sum](/algorithms/backtracking/combinations_sum.py)  
@@ -58,6 +59,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Permutations Two](/algorithms/backtracking/permutations_two.py)  
     - [Subsets Duplicates](/algorithms/backtracking/subsets_duplicates.py)  
     - [Subsets](/algorithms/backtracking/subsets.py)  
+  
 * [**Binarysearch**](/algorithms/binarysearch)  
     - [Binary Search](/algorithms/binarysearch/binary_search.py)  
     - [Find Peak](/algorithms/binarysearch/find_peak.py)  
@@ -68,13 +70,16 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Search Rotated Array](/algorithms/binarysearch/search_rotated_array.py)  
     - [Sqrt Number](/algorithms/binarysearch/sqrt_number.py)  
     - [Valid Perfect Square](/algorithms/binarysearch/valid_perfect_square.py)  
+  
 * [**Bits**](/algorithms/bits)  
     - [Single Number](/algorithms/bits/single_number.py)  
+  
 * [**Binary Search Tree**](/algorithms/bst)  
     - [*Bst Implementation*](/algorithms/bst/bst_implementation.py)  
     - [Delete Node](/algorithms/bst/delete_node.py)  
     - [Recover Bst](/algorithms/bst/recover_bst.py)  
     - [Validate Bst](/algorithms/bst/validate_bst.py)  
+  
 * [**Dynamic Programming**](/algorithms/dp)  
     - [Climbing Stairs](/algorithms/dp/climbing_stairs.py)  
     - [Fibonacci](/algorithms/dp/fibonacci.py)  
@@ -82,6 +87,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Pascal Row](/algorithms/dp/pascal_row.py)  
     - [Pascal](/algorithms/dp/pascal.py)  
     - [Pow](/algorithms/dp/pow.py)  
+  
 * [**Graphs**](/algorithms/graphs)  
     - [*Graph Implementation*](/algorithms/graphs/graph_implementation.py)  
     - [Bt Right View](/algorithms/graphs/bt_right_view.py)  
@@ -92,6 +98,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Surround Region](/algorithms/graphs/surround_region.py)  
     - [Word Ladder Two](/algorithms/graphs/word_ladder_two.py)  
     - [Word Ladder](/algorithms/graphs/word_ladder.py)  
+  
 * [**Hash Tables**](/algorithms/hashtables)  
     - [*Hashmap Implementation*](/algorithms/hashtables/hashmap_implementation.py)  
     - [Four Sum](/algorithms/hashtables/four_sum.py)  
@@ -100,10 +107,12 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Three Sum](/algorithms/hashtables/three_sum.py)  
     - [Two Sum](/algorithms/hashtables/two_sum.py)  
     - [Valid Sudoku](/algorithms/hashtables/valid_sudoku.py)  
+  
 * [**Heaps**](/algorithms/heaps)  
     - [*Heap Implementation*](/algorithms/heaps/heap_implementation.py)  
     - [K Most Frequent](/algorithms/heaps/k_most_frequent.py)  
     - [Kth Largest](/algorithms/heaps/kth_largest.py)  
+  
 * [**Linked List**](/algorithms/linkedlist)  
     - [*Singly Linked List Implementation*](/algorithms/linkedlist/singly_linked_list_implementation.py)  
     - [Add Two Numbers](/algorithms/linkedlist/add_two_numbers.py)  
@@ -119,6 +128,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Reverse Linkedlist](/algorithms/linkedlist/reverse_linkedlist.py)  
     - [Reverse Mn](/algorithms/linkedlist/reverse_mn.py)  
     - [Swap Pairs](/algorithms/linkedlist/swap_pairs.py)  
+  
 * [**Math**](/algorithms/math)  
     - [Add Binary](/algorithms/math/add_binary.py)  
     - [Convert To Number](/algorithms/math/convert_to_number.py)  
@@ -128,14 +138,18 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Majority Element](/algorithms/math/majority_element.py)  
     - [Next Permutation](/algorithms/math/next_permutation.py)  
     - [Num To Col](/algorithms/math/num_to_col.py)  
+  
 * [**Matrix**](/algorithms/matrix)  
     - [Rotate Image](/algorithms/matrix/rotate_image.py)  
     - [Spiral Matrix Generate](/algorithms/matrix/spiral_matrix_generate.py)  
     - [Spiral Matrix](/algorithms/matrix/spiral_matrix.py)  
+  
 * [**Queues**](/algorithms/queues)  
     - [*Queue Implementation*](/algorithms/queues/queue_implementation.py)  
+  
 * [**Stack**](/algorithms/stack)  
     - [Valid Paran](/algorithms/stack/valid_paran.py)  
+  
 * [**Strings**](/algorithms/strings)  
     - [Add Binary](/algorithms/strings/add_binary.py)  
     - [Count Say](/algorithms/strings/count_say.py)  
@@ -157,6 +171,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [To Lower](/algorithms/strings/to_lower.py)  
     - [Valid Palin](/algorithms/strings/valid_palin.py)  
     - [Zigzag Conversion](/algorithms/strings/zigzag_conversion.py)  
+  
 * [**Trees**](/algorithms/trees)  
     - [*Tree Implementation*](/algorithms/trees/tree_implementation.py)  
     - [Array Bst](/algorithms/trees/array_bst.py)  
@@ -181,8 +196,10 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Symmetric](/algorithms/trees/symmetric.py)  
     - [Tree Paths](/algorithms/trees/tree_paths.py)  
     - [Zigzag Level Order](/algorithms/trees/zigzag_level_order.py)  
+  
 * [**Two Pointers**](/algorithms/twopointers)  
     - [Container With Most Water](/algorithms/twopointers/container_with_most_water.py)  
     - [Remove Duplicates](/algorithms/twopointers/remove_duplicates.py)  
     - [Remove Element](/algorithms/twopointers/remove_element.py)  
     - [Three Sum Closest](/algorithms/twopointers/three_sum_closest.py)  
+  
