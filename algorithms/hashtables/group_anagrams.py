@@ -18,11 +18,11 @@ The order of your output does not matter.
 
 from collections import defaultdict
 def group_anagrams(words:list) -> list:
-	word_map = defaultdict(list)
-	for word in words:
-		hash_word = 0
-		for char in word:
-			hash_word += hash(char)
-		word_map[hash_word].append(word)
-	return [x for x in word_map.values()]
+    word_map = defaultdict(list)
+    for word in words:
+        hash_word = 0
+        for char in word:
+            hash_word += hash(char)
+        word_map[hash_word].append(word)
+    return [x for x in word_map.values()]
 

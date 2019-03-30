@@ -24,8 +24,8 @@ Could you do it in-place with O(1) extra space?
 '''
 
 def rotate_array(nums, k):
-	nums.reverse()
-	nums = nums[k-1::-1] + nums[:k-1:-1]
+    nums.reverse()
+    nums = nums[k-1::-1] + nums[:k-1:-1]
 
-	return nums
+    return nums
 

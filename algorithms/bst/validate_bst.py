@@ -26,37 +26,37 @@ Explanation: The input is: [5,1,4,null,null,3,6]. The root node's value
 '''
 
 def is_valid_bst(root):
-	prev = None
+    prev = None
 
-	def helper(root):
-		nonlocal prev
-		if not root: return True
-		if not helper(root.left):
-			return False
-		if prev and prev.val >= root.val:
-			return False
-		prev = root
-		return helper(root.right)
+    def helper(root):
+        nonlocal prev
+        if not root: return True
+        if not helper(root.left):
+            return False
+        if prev and prev.val >= root.val:
+            return False
+        prev = root
+        return helper(root.right)
 
-	return helper(root)
+    return helper(root)
 
 def is_valid_bst_v2(root):
-	stack = []
-	done = False
-	current = root
-	prev = None
-	while not done:
-		if current:
-			stack.append(current)
-			current = current.left
-		else:
-			if stack:
-				current = stack.pop()
-				if prev and prev.val >= current.val:
-					return False
-				prev = current
-				current = current.right
-			else:
-				done = True
-	return True
+    stack = []
+    done = False
+    current = root
+    prev = None
+    while not done:
+        if current:
+            stack.append(current)
+            current = current.left
+        else:
+            if stack:
+                current = stack.pop()
+                if prev and prev.val >= current.val:
+                    return False
+                prev = current
+                current = current.right
+            else:
+                done = True
+    return True
 

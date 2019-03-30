@@ -17,26 +17,26 @@ Output: 6
 '''
 
 class GuessGame:
-	def __init__(self, pick, pick_range):
-		self.pick = pick
-		self.pick_range = pick_range
+    def __init__(self, pick, pick_range):
+        self.pick = pick
+        self.pick_range = pick_range
 
-	def guess(self, n):
-		if self.pick < n: return -1
-		if self.pick > n: return 1
-		if self.pick == n: return 0
+    def guess(self, n):
+        if self.pick < n: return -1
+        if self.pick > n: return 1
+        if self.pick == n: return 0
 
 
-	def guess_number(self):
-		left, right = 0, self.pick_range
-		while left <= right:
-			mid = (left + right) // 2
-			if self.guess(mid) == 0:
-				return mid
-			elif self.guess(mid) == 1:
-				left = mid + 1
-			else:
-				right = mid - 1
+    def guess_number(self):
+        left, right = 0, self.pick_range
+        while left <= right:
+            mid = (left + right) // 2
+            if self.guess(mid) == 0:
+                return mid
+            elif self.guess(mid) == 1:
+                left = mid + 1
+            else:
+                right = mid - 1
 
-		return -1 
+        return -1 
 

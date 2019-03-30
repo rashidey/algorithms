@@ -16,21 +16,21 @@ corresponding outputs are in the right-hand column.
 '''
 
 def next_permutation(nums):
-	found = False
-	for i in range(len(nums)-1, 0, -1):
-		if nums[i] > nums[i-1]:
-			found = True
-			break
-	
-	if not found:
-		nums.reverse()
-		return nums
+    found = False
+    for i in range(len(nums)-1, 0, -1):
+        if nums[i] > nums[i-1]:
+            found = True
+            break
+    
+    if not found:
+        nums.reverse()
+        return nums
 
-	index = i
-	for j in range(i+1, len(nums)):
-		if nums[j] > nums[i-1] and nums[j] < nums[index]:
-			index = j
+    index = i
+    for j in range(i+1, len(nums)):
+        if nums[j] > nums[i-1] and nums[j] < nums[index]:
+            index = j
 
-	nums[i-1], nums[index] = nums[index], nums[i-1]
-	nums[i:] = sorted(nums[i:])
-	return nums
+    nums[i-1], nums[index] = nums[index], nums[i-1]
+    nums[i:] = sorted(nums[i:])
+    return nums

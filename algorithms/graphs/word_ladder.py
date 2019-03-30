@@ -41,43 +41,43 @@ from collections import defaultdict, deque
 import string
 
 def word_ladder(begin_word, end_word, word_list):
-	transformations = defaultdict(list)
-	for word in word_list:
-		for i in range(len(begin_word)):
-			transformations[word[:i] + '*' + word[i+1:]].append(word)
+    transformations = defaultdict(list)
+    for word in word_list:
+        for i in range(len(begin_word)):
+            transformations[word[:i] + '*' + word[i+1:]].append(word)
 
-	que = deque([(begin_word, 1)])
-	visited = set()
-	visited.add(begin_word)
+    que = deque([(begin_word, 1)])
+    visited = set()
+    visited.add(begin_word)
 
-	while que:
-		current_word, level = que.popleft()
-		for i in range(len(begin_word)):
-			intermediate_word = current_word[:i] + '*' + current_word[i+1:]
-			for word in transformations[intermediate_word]:
-				if word == end_word:
-					return level + 1
-				if word not in visited:
-					visited.add(word)
-					que.append((word, level+1))
-			transformations[intermediate_word] = []
-	return 0
+    while que:
+        current_word, level = que.popleft()
+        for i in range(len(begin_word)):
+            intermediate_word = current_word[:i] + '*' + current_word[i+1:]
+            for word in transformations[intermediate_word]:
+                if word == end_word:
+                    return level + 1
+                if word not in visited:
+                    visited.add(word)
+                    que.append((word, level+1))
+            transformations[intermediate_word] = []
+    return 0
 
 def word_ladder_v2(start, end, words):
-	que = deque([(start, 1)])
-	words = set(words)
+    que = deque([(start, 1)])
+    words = set(words)
 
-	while que:
-		current, level = que.popleft()
+    while que:
+        current, level = que.popleft()
 
-		if current == end:
-			return level
+        if current == end:
+            return level
 
-		for i in range(len(start)):
-			for letter in string.ascii_lowercase:
-				candidate = current[:i] + letter + current[i+1:]
-				if candidate in words:
-					que.append((candidate, level+1))
-					words.remove(candidate)
-	return 0
+        for i in range(len(start)):
+            for letter in string.ascii_lowercase:
+                candidate = current[:i] + letter + current[i+1:]
+                if candidate in words:
+                    que.append((candidate, level+1))
+                    words.remove(candidate)
+    return 0
 

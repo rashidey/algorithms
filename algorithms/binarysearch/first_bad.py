@@ -23,16 +23,16 @@ Then 4 is the first bad version.
 '''
 
 def is_bad_version(version):
-	versions = [True for x in range(100)] + [False for x in range(150)]
-	return versions[version]
+    versions = [True for x in range(100)] + [False for x in range(150)]
+    return versions[version]
 
 def first_bad(n):
-	left, right = 1, n
-	while left < right:
-		mid = (left + right) // 2
-		if not is_bad_version(mid):
-			right = mid
-		else:
-			left = mid + 1
+    left, right = 1, n
+    while left < right:
+        mid = (left + right) // 2
+        if not is_bad_version(mid):
+            right = mid
+        else:
+            left = mid + 1
 
-	return left
+    return left

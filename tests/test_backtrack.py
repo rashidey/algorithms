@@ -15,15 +15,15 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(permute_unique_v2([1,1,2]), [[1,1,2],[1,2,1],[2,1,1]])
 
     def test_subsets(self):
-    	self.assertEqual(subsets([1,2,3]), [[],[1],[1,2],[1,2,3],[1,3],[2],[2,3],[3]])
-    	self.assertEqual(subsets_duplicates([1,2,2]), [[],[1],[1,2],[1,2,2],[2],[2,2]])
+        self.assertEqual(subsets([1,2,3]), [[],[1],[1,2],[1,2,3],[1,3],[2],[2,3],[3]])
+        self.assertEqual(subsets_duplicates([1,2,2]), [[],[1],[1,2],[1,2,2],[2],[2,2]])
 
     def test_combinations_sum(self):
-    	self.assertEqual(combinations_sum([2,3,6,7], 7), [[2,2,3],[7]])
-    	self.assertEqual(combinations_sum([2,3,5], 8), [[2,2,2,2],[2,3,3],[3,5]])
+        self.assertEqual(combinations_sum([2,3,6,7], 7), [[2,2,3],[7]])
+        self.assertEqual(combinations_sum([2,3,5], 8), [[2,2,2,2],[2,3,3],[3,5]])
 
     def test_combinations_sum_two(self):
-    	self.assertEqual(combinations_sum_two([2,5,2,1,2], 5), [[1,2,2],[5]])
+        self.assertEqual(combinations_sum_two([2,5,2,1,2], 5), [[1,2,2],[5]])
 
     def test_generate_paran(self):
-    	self.assertEqual(generate_paran(3), ["((()))","(()())","(())()","()(())","()()()"])
+        self.assertEqual(generate_paran(3), ["((()))","(()())","(())()","()(())","()()()"])

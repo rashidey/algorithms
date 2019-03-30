@@ -14,13 +14,13 @@ Explanation: Intervals [1,4] and [4,5] are considered overlapping.
 '''
 
 def merge_intervals(intervals):
-	intervals.sort()
-	result = list()
+    intervals.sort()
+    result = list()
 
-	for interval in intervals:
-		if not result or result[-1][1] < interval[0]:
-			result.append(interval)
-		else:
-			result[-1] = [result[-1][0], interval[1]]
+    for interval in intervals:
+        if not result or result[-1][1] < interval[0]:
+            result.append(interval)
+        else:
+            result[-1] = [result[-1][0], interval[1]]
 
-	return result
+    return result

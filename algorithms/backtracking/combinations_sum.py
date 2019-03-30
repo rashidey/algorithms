@@ -27,20 +27,20 @@ A solution set is:
 '''
 
 def combinations_sum(nums:list, target:int) -> list:
-	result = []
-	nums.sort()
+    result = []
+    nums.sort()
 
-	def backtrack(temp, start, remain):
-		if remain < 0: return
-		if remain == 0: result.append(temp[:])
-		else:
-			for i in range(start, len(nums)):
-				temp.append(nums[i])
-				backtrack(temp, i, remain-nums[i])
-				temp.pop()
+    def backtrack(temp, start, remain):
+        if remain < 0: return
+        if remain == 0: result.append(temp[:])
+        else:
+            for i in range(start, len(nums)):
+                temp.append(nums[i])
+                backtrack(temp, i, remain-nums[i])
+                temp.pop()
 
-	backtrack([], 0, target)
-	return result
+    backtrack([], 0, target)
+    return result
 
 
 

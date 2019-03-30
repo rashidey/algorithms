@@ -15,15 +15,15 @@ Output: false
 '''
 
 def valid_square(num):
-	start, end = 0, num
-	    
-	while start <= end:
-	    mid = (start + end) // 2
-	    if mid*mid == num:
-	        return True
-	    elif mid*mid > num:
-	        end = mid - 1
-	    else:
-	        start = mid + 1
+    start, end = 0, num
+        
+    while start <= end:
+        mid = (start + end) // 2
+        if mid*mid == num:
+            return True
+        elif mid*mid > num:
+            end = mid - 1
+        else:
+            start = mid + 1
 
-	return False
+    return False

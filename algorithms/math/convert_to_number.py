@@ -26,9 +26,9 @@ Output: 701
 '''
 
 def convert_to_number(s):
-	result = 0
-	for char in s:
-		result *= 26
-		result += ord(char) - ord('A') + 1
+    result = 0
+    for char in s:
+        result *= 26
+        result += ord(char) - ord('A') + 1
 
-	return result
+    return result

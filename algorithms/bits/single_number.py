@@ -18,8 +18,8 @@ Output: 4
 '''
 
 def single_number(nums:list) -> int:
-	res = nums[0]
-	for i in range(1, len(nums)):
-		res ^= nums[i]
-	return res
+    res = nums[0]
+    for i in range(1, len(nums)):
+        res ^= nums[i]
+    return res
 

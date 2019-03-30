@@ -18,26 +18,26 @@ The length of both given strings is in range [1, 10,000].
 '''
 
 def permutations_string(small, big):
-	if len(small) > len(big): return False
-	small_hash = 0
-	for char in small:
-	    small_hash += hash(char)
+    if len(small) > len(big): return False
+    small_hash = 0
+    for char in small:
+        small_hash += hash(char)
 
-	big_hash = 0
-	for i in range(len(small)):
-	    big_hash += hash(big[i])
+    big_hash = 0
+    for i in range(len(small)):
+        big_hash += hash(big[i])
 
-	if small_hash == big_hash:
-	    return True
+    if small_hash == big_hash:
+        return True
 
-	start = 0
-	for i in range(len(small), len(big)):
-	    big_hash -= hash(big[start])
-	    big_hash += hash(big[i])
-	    
-	    if small_hash == big_hash:
-	        return True
-	    i += 1
-	    start += 1
-	return False
+    start = 0
+    for i in range(len(small), len(big)):
+        big_hash -= hash(big[start])
+        big_hash += hash(big[i])
+        
+        if small_hash == big_hash:
+            return True
+        i += 1
+        start += 1
+    return False
 

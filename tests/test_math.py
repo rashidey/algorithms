@@ -10,11 +10,11 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(add_binary('101', '1'), '110')
 
     def test_divide_two(self):
-    	self.assertEqual(divide_two_numbers(3, -3), -1)
+        self.assertEqual(divide_two_numbers(3, -3), -1)
 
     def test_happy_number(self):
-    	self.assertEqual(happy_numbers(19), True)
-    	self.assertEqual(happy_numbers(191), False)
+        self.assertEqual(happy_numbers(19), True)
+        self.assertEqual(happy_numbers(191), False)
 
     def test_count_primes(self):
         self.assertEqual(count_primes(10), 4)

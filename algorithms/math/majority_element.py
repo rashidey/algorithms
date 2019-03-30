@@ -16,20 +16,20 @@ Output: 2
 '''
 
 def majority_element(nums):
-	if not nums: return 
+    if not nums: return 
 
-	candidate = nums[0]
-	count = 1
+    candidate = nums[0]
+    count = 1
 
-	for i in range(1, len(nums)):
-		if nums[i] == candidate:
-			count += 1
-		elif nums[i] != candidate:
-			count -= 1
-		if count == 0:
-			candidate = nums[i]
-			count = 1
+    for i in range(1, len(nums)):
+        if nums[i] == candidate:
+            count += 1
+        elif nums[i] != candidate:
+            count -= 1
+        if count == 0:
+            candidate = nums[i]
+            count = 1
 
-	return candidate
+    return candidate
 
 

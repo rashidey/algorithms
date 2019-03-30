@@ -30,20 +30,20 @@ A solution set is:
 
 
 def combinations_sum_two(nums, target):
-	result = []
-	nums.sort()
+    result = []
+    nums.sort()
 
-	def backtrack(temp, start, remain):
-		if remain < 0: return
-		if remain == 0: result.append(temp[:])
-		else:
-			for i in range(start, len(nums)):
-				if i > start and nums[i] == nums[i-1]:
-					continue
-				temp.append(nums[i])
-				backtrack(temp, i+1, remain-nums[i])
-				temp.pop()
+    def backtrack(temp, start, remain):
+        if remain < 0: return
+        if remain == 0: result.append(temp[:])
+        else:
+            for i in range(start, len(nums)):
+                if i > start and nums[i] == nums[i-1]:
+                    continue
+                temp.append(nums[i])
+                backtrack(temp, i+1, remain-nums[i])
+                temp.pop()
 
-	backtrack([], 0, target)
-	return result
+    backtrack([], 0, target)
+    return result
 

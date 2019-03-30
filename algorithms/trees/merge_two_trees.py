@@ -6,7 +6,7 @@ You need to merge them into a new binary tree. The merge rule is that if two nod
 Example 1:
 
 Input: 
-	Tree 1                     Tree 2                  
+    Tree 1                     Tree 2                  
           1                         2                             
          / \                       / \                            
         3   2                     1   3                        
@@ -14,22 +14,22 @@ Input:
       5                             4   7                  
 Output: 
 Merged tree:
-	     3
-	    / \
-	   4   5
-	  / \   \ 
-	 5   4   7
+         3
+        / \
+       4   5
+      / \   \ 
+     5   4   7
  
 
 Note: The merging process must start from the root nodes of both trees.
 '''
 
 def merge_two_trees(root1, root2):
-	if not root1: return root2
-	if not root2: return root1
+    if not root1: return root2
+    if not root2: return root1
 
-	root1.val += root2.val
-	root1.left = merge_two_trees(root1.left, root2.left)
-	root1.right = merge_two_trees(root1.right, root2.right)
-	
-	return root1
+    root1.val += root2.val
+    root1.left = merge_two_trees(root1.left, root2.left)
+    root1.right = merge_two_trees(root1.right, root2.right)
+    
+    return root1

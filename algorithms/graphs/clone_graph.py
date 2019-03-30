@@ -29,26 +29,26 @@ You must return the copy of the given node as a reference to the cloned graph.
 '''
 
 class Node:
-	def __init__(self, val, neighbors):
-		self.val = val
-		self.neighbors = neighbors
+    def __init__(self, val, neighbors):
+        self.val = val
+        self.neighbors = neighbors
 
 def cloneGraph(node):
-	copies = {}
+    copies = {}
 
-	def createCopy(node, copies):
-		newcopy = Node(node.val, None)
-		copies[node] = newcopy
-		nbors = []
+    def createCopy(node, copies):
+        newcopy = Node(node.val, None)
+        copies[node] = newcopy
+        nbors = []
 
-		if node.neighbors:
-			for item in node.neighbors:
-				if item in copies: 
-					nbors.append(copies[item])
-				else: 
-					nbors.append(createCopy(item, copies) )
+        if node.neighbors:
+            for item in node.neighbors:
+                if item in copies: 
+                    nbors.append(copies[item])
+                else: 
+                    nbors.append(createCopy(item, copies) )
 
-		newcopy.neighbors = nbors
-		return newcopy
+        newcopy.neighbors = nbors
+        return newcopy
 
-	return createCopy(node, copies)
+    return createCopy(node, copies)

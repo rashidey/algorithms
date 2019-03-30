@@ -27,25 +27,25 @@ Output: 3
 
 def number_islands(grid) -> int:
 
-	def dfs(i, j):
-		if i < 0 or j < 0 or i >= len(grid) or j >= len(grid[0]):
-			return
+    def dfs(i, j):
+        if i < 0 or j < 0 or i >= len(grid) or j >= len(grid[0]):
+            return
 
-		if grid[i][j] != '1':
-			return
+        if grid[i][j] != '1':
+            return
 
-		grid[i][j] = '0'
+        grid[i][j] = '0'
 
-		rows = [i+1, i-1, i, i]
-		cols = [j, j, j-1, j+1]
-		for k in range(4):
-			dfs(rows[k], cols[k])
+        rows = [i+1, i-1, i, i]
+        cols = [j, j, j-1, j+1]
+        for k in range(4):
+            dfs(rows[k], cols[k])
 
-	count = 0
-	for i in range(len(grid)):
-		for j in range(len(grid[0])):
-			if grid[i][j] == '1':
-				dfs(i, j)
-				count += 1
+    count = 0
+    for i in range(len(grid)):
+        for j in range(len(grid[0])):
+            if grid[i][j] == '1':
+                dfs(i, j)
+                count += 1
 
-	return count
+    return count

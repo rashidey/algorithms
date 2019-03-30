@@ -27,11 +27,11 @@ Output: "ZY"
 '''
 
 def convert_to_title(n):
-	result = ''
-	while n >= 1:
-		n -= 1
-		result = chr(n%26 + ord('A')) + result
-		n //= 26
-		
-	return result
+    result = ''
+    while n >= 1:
+        n -= 1
+        result = chr(n%26 + ord('A')) + result
+        n //= 26
+        
+    return result
 

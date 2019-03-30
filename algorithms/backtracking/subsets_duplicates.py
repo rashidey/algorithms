@@ -19,18 +19,18 @@ Output:
 '''
 
 def subsets_duplicates(nums):
-	result = []
-	nums.sort()
+    result = []
+    nums.sort()
 
-	def backtrack(temp, start):
-		result.append(temp[:])
-		for i in range(start, len(nums)):
-			if i > start and nums[i] == nums[i-1]:
-				continue
-			temp.append(nums[i])
-			backtrack(temp, i+1)
-			temp.pop()
+    def backtrack(temp, start):
+        result.append(temp[:])
+        for i in range(start, len(nums)):
+            if i > start and nums[i] == nums[i-1]:
+                continue
+            temp.append(nums[i])
+            backtrack(temp, i+1)
+            temp.pop()
 
-	backtrack([], 0)
-	return result
+    backtrack([], 0)
+    return result
 

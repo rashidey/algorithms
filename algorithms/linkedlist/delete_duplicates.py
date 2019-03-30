@@ -12,11 +12,11 @@ Output: 1->2->3
 '''
 
 def delete_duplicates(head):
-	current = head    
-	while current:
-	    prev = current
-	    while prev.next and prev.val == prev.next.val:
-	        prev = prev.next
-	    current.next = prev.next
-	    current = current.next
-	return head
+    current = head    
+    while current:
+        prev = current
+        while prev.next and prev.val == prev.next.val:
+            prev = prev.next
+        current.next = prev.next
+        current = current.next
+    return head

@@ -18,16 +18,16 @@ Output: 49
 '''
 
 def max_area_water(heights) -> int:
-	left, right = 0, len(heights)-1
-	max_area = 0
+    left, right = 0, len(heights)-1
+    max_area = 0
 
-	while left < right:
-		area = (right-left) * min(heights[left], heights[right])
-		if area > max_area:
-			max_area = area
-		if heights[left] > heights[right]:
-			right -= 1
-		else:
-			left += 1
-	return max_area
+    while left < right:
+        area = (right-left) * min(heights[left], heights[right])
+        if area > max_area:
+            max_area = area
+        if heights[left] > heights[right]:
+            right -= 1
+        else:
+            left += 1
+    return max_area
 

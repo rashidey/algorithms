@@ -19,10 +19,10 @@ Output: true
 '''
 
 def contains_duplicates(nums):
-	seen = set()
-	for i in range(len(nums)):
-		if nums[i] in seen:
-			return True 
-		else:
-			seen.add(nums[i])
-	return False 
+    seen = set()
+    for i in range(len(nums)):
+        if nums[i] in seen:
+            return True 
+        else:
+            seen.add(nums[i])
+    return False 

@@ -35,24 +35,24 @@ Therefore, sum = 495 + 491 + 40 = 1026.
 '''
 
 def sum_paths(root):
-	sumx = 0
-	path = list()
+    sumx = 0
+    path = list()
 
-	def helper(root):
-		nonlocal sumx
-		if root is None:
-			return
+    def helper(root):
+        nonlocal sumx
+        if root is None:
+            return
 
-		path.append(str(root.val))
+        path.append(str(root.val))
 
-		if not root.left and not root.right:
-			sumx += int(''.join(path))
+        if not root.left and not root.right:
+            sumx += int(''.join(path))
 
-		if root.left: helper(root.left)
-		if root.right: helper(root.right)
+        if root.left: helper(root.left)
+        if root.right: helper(root.right)
 
-		path.pop()
+        path.pop()
 
-	helper(root)
-	return sumx
+    helper(root)
+    return sumx
 

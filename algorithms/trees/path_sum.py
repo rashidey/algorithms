@@ -18,20 +18,20 @@ Given the below binary tree and sum = 22,
 '''
 
 def path_sum(root, target):
-	if root is None:
-		return target == 0
-	else:
-		ans = 0
-		subSum = target - root.val
+    if root is None:
+        return target == 0
+    else:
+        ans = 0
+        subSum = target - root.val
 
-		if subSum == 0 and not root.left and not root.right:
-			return True
+        if subSum == 0 and not root.left and not root.right:
+            return True
 
-		if root.left:
-			ans = ans or path_sum(root.left, subSum)
-		if root.right:
-			ans = ans or path_sum(root.right, subSum)
+        if root.left:
+            ans = ans or path_sum(root.left, subSum)
+        if root.right:
+            ans = ans or path_sum(root.right, subSum)
 
-		return ans
+        return ans
 
 

@@ -35,28 +35,28 @@ def three_sum_closest(nums:list, target: int) -> int:
     return result
 
 def three_sum_closest_v2(nums, target):
-	closest = [float('inf')]
-	result = [0]
-	nums.sort()
+    closest = [float('inf')]
+    result = [0]
+    nums.sort()
 
-	def backtrack(temp, used):
-		if len(temp) == 3:
-			#print('helle')
-			triplet = sum(temp)
-			if abs(target - triplet) < closest[0]:
-				#print('bye')
-				closest[0] = target - triplet
-				result[0] = triplet
-		else:
-			for i in range(len(nums)):
-				if used[i] or i > 0 and nums[i] == nums[i-1] and not used[i-1]:
-					continue
-				used[i] = True
-				temp.append(nums[i])
-				backtrack(temp, used)
-				used[i] = False
-				temp.pop()
+    def backtrack(temp, used):
+        if len(temp) == 3:
+            #print('helle')
+            triplet = sum(temp)
+            if abs(target - triplet) < closest[0]:
+                #print('bye')
+                closest[0] = target - triplet
+                result[0] = triplet
+        else:
+            for i in range(len(nums)):
+                if used[i] or i > 0 and nums[i] == nums[i-1] and not used[i-1]:
+                    continue
+                used[i] = True
+                temp.append(nums[i])
+                backtrack(temp, used)
+                used[i] = False
+                temp.pop()
 
-	used = [False]*len(nums)		
-	backtrack([], used)
-	return result[0]
+    used = [False]*len(nums)        
+    backtrack([], used)
+    return result[0]

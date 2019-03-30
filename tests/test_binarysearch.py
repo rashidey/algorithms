@@ -9,30 +9,30 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(search_insert_position([1,3,5,6], 0), 0)
 
     def test_square(self):
-     	self.assertEqual(valid_square(16), True)
-     	self.assertEqual(valid_square(14), False)
+         self.assertEqual(valid_square(16), True)
+         self.assertEqual(valid_square(14), False)
 
     def test_binary_search(self):
-    	self.assertEqual(binary_search([1,2,3,4,5], 3), 2)
+        self.assertEqual(binary_search([1,2,3,4,5], 3), 2)
 
     def test_sqrt_number(self):
-    	self.assertEqual(sqrt_number(16), 4)
-    	self.assertEqual(sqrt_number(14), 3)
-    	self.assertEqual(sqrt_number(26), 5)
+        self.assertEqual(sqrt_number(16), 4)
+        self.assertEqual(sqrt_number(14), 3)
+        self.assertEqual(sqrt_number(26), 5)
 
     def test_game_guess(self):
-    	game = GuessGame(6, 10)
-    	result = game.guess_number()
-    	self.assertEqual(result, game.pick)
-    	game = GuessGame(11, 10)
-    	result = game.guess_number()
-    	self.assertEqual(result, -1)
-    	game = GuessGame(0, 10)
-    	result = game.guess_number()
-    	self.assertEqual(result, game.pick)
-    	game = GuessGame(2, 10)
-    	result = game.guess_number()
-    	self.assertEqual(result, game.pick)
+        game = GuessGame(6, 10)
+        result = game.guess_number()
+        self.assertEqual(result, game.pick)
+        game = GuessGame(11, 10)
+        result = game.guess_number()
+        self.assertEqual(result, -1)
+        game = GuessGame(0, 10)
+        result = game.guess_number()
+        self.assertEqual(result, game.pick)
+        game = GuessGame(2, 10)
+        result = game.guess_number()
+        self.assertEqual(result, game.pick)
 
     def test_search_rotated(self):
         self.assertEqual(search_rotated([4,5,6,0,1,2], 8), -1)

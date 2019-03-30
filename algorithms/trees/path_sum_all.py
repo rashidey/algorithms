@@ -23,22 +23,22 @@ Return:
 '''
 
 def path_sums_all(root, target):
-	result, path = list(), list()
+    result, path = list(), list()
 
-	def helper(root, sum_so_far):
-		if root is None:
-			return
+    def helper(root, sum_so_far):
+        if root is None:
+            return
 
-		path.append(root.val)
-		sum_so_far += root.val
-		
-		if not root.left and not root.right and sum_so_far == target:
-			result.append(path[:])
+        path.append(root.val)
+        sum_so_far += root.val
+        
+        if not root.left and not root.right and sum_so_far == target:
+            result.append(path[:])
 
-		if root.left: helper(root.left, sum_so_far)
-		if root.right: helper(root.right, sum_so_far)
+        if root.left: helper(root.left, sum_so_far)
+        if root.right: helper(root.right, sum_so_far)
 
-		path.pop()
+        path.pop()
 
-	helper(root, 0)
-	return result
+    helper(root, 0)
+    return result

@@ -32,20 +32,20 @@ Return false.
 
 def is_balanced(root): 
 
-	def height(root):
-		if root is None:
-			return 0
-		else:
-			return 1 + max(height(root.left), height(root.right))
+    def height(root):
+        if root is None:
+            return 0
+        else:
+            return 1 + max(height(root.left), height(root.right))
 
-	if root is None:
-		return True
-			
-	lheight = height(root.left)
-	rheight = height(root.right)
+    if root is None:
+        return True
+            
+    lheight = height(root.left)
+    rheight = height(root.right)
 
-	if abs(lheight-rheight) <= 1 and is_balanced(root.left) and is_balanced(root.right):
-		return True
-	
-	return False 
+    if abs(lheight-rheight) <= 1 and is_balanced(root.left) and is_balanced(root.right):
+        return True
+    
+    return False 
 

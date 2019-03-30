@@ -20,17 +20,17 @@ Explanation: The square root of 8 is 2.82842..., and since
 '''
 
 def sqrt_number(x):
-	left, right = 1, x
-	result = 0
-	while left <= right:
-		mid = (left + right) // 2
-		if mid*mid == x:
-			answer = mid
-			return mid
-		elif mid*mid < x:
-			left = mid + 1
-			answer = mid
-		else:
-			right = mid - 1
+    left, right = 1, x
+    result = 0
+    while left <= right:
+        mid = (left + right) // 2
+        if mid*mid == x:
+            answer = mid
+            return mid
+        elif mid*mid < x:
+            left = mid + 1
+            answer = mid
+        else:
+            right = mid - 1
 
-	return answer
+    return answer

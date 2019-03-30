@@ -18,15 +18,15 @@ Explanation:
 '''
 
 def happy_numbers(n):
-	mem = set()
+    mem = set()
 
-	while True:
-		n = sum([int(x)**2 for x in str(n)])
-		if n in mem:
-			return False
-		elif n == 1:
-			return True
-		mem.add(n)
+    while True:
+        n = sum([int(x)**2 for x in str(n)])
+        if n in mem:
+            return False
+        elif n == 1:
+            return True
+        mem.add(n)
 
 def happy_numbers_v2(n):
     orig = set()

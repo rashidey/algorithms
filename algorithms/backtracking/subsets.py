@@ -20,15 +20,15 @@ Output:
 '''
 
 def subsets(nums:list) -> list:
-	result = []
+    result = []
 
-	def backtrack(temp, start):
-		result.append(temp[:])
-		for i in range(start, len(nums)):
-			temp.append(nums[i])
-			backtrack(temp, i+1)
-			temp.pop()
+    def backtrack(temp, start):
+        result.append(temp[:])
+        for i in range(start, len(nums)):
+            temp.append(nums[i])
+            backtrack(temp, i+1)
+            temp.pop()
 
-	backtrack([], 0)
-	return result
+    backtrack([], 0)
+    return result
 

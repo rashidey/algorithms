@@ -31,29 +31,29 @@ You may assume that there are no duplicate edges in the input prerequisites.
 from collections import defaultdict
 
 def course_order(num_courses, prerequisites) -> bool:
-	graph = defaultdict(list)
-	for course in prerequisites:
-		graph[course[0]].append(course[1])
+    graph = defaultdict(list)
+    for course in prerequisites:
+        graph[course[0]].append(course[1])
 
-	visited = [0 for x in range(num_courses)]
+    visited = [0 for x in range(num_courses)]
 
-	def dfs(vertex):
-		if visited[vertex] == -1:
-			return False 
-		if visited[vertex] == 1:
-			return True 
+    def dfs(vertex):
+        if visited[vertex] == -1:
+            return False 
+        if visited[vertex] == 1:
+            return True 
 
-		visited[vertex] = -1
-		for node in graph[vertex]:
-			if not dfs(node):
-				return False
-		visited[vertex] = 1
-		return True
+        visited[vertex] = -1
+        for node in graph[vertex]:
+            if not dfs(node):
+                return False
+        visited[vertex] = 1
+        return True
 
-	for i in range(num_courses):
-		if not dfs(i):
-			return False 
-	return True
+    for i in range(num_courses):
+        if not dfs(i):
+            return False 
+    return True
 
 
 

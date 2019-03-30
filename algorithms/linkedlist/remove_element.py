@@ -8,19 +8,19 @@ Output: 1->2->3->4->5
 '''
 
 def remove_elements(head, val):
-	while head and head.val == val:
-	    head = head.next
+    while head and head.val == val:
+        head = head.next
 
-	if not head: return
-	prev, current = head, head.next
-	    
+    if not head: return
+    prev, current = head, head.next
+        
 
-	while current:
-	    if current.val == val:
-	        prev.next = current.next
-	        current = current.next
-	    else:
-	        prev = current
-	        current = current.next
+    while current:
+        if current.val == val:
+            prev.next = current.next
+            current = current.next
+        else:
+            prev = current
+            current = current.next
 
-	return head
+    return head
