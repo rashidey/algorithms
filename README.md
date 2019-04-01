@@ -67,7 +67,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Find Peak](/algorithms/binarysearch/find_peak.py)  
     - [First Bad](/algorithms/binarysearch/first_bad.py)  
     - [Guess Number](/algorithms/binarysearch/guess_number.py)  
-    - [Min In  Rotated Sorted Array](/algorithms/binarysearch/min_in _rotated_sorted_array.py)  
+    - [Min In Rotated Sorted Array](/algorithms/binarysearch/min_in_rotated_sorted_array.py)  
     - [Search Insert Position](/algorithms/binarysearch/search_insert_position.py)  
     - [Search Range](/algorithms/binarysearch/search_range.py)  
     - [Search Rotated Array](/algorithms/binarysearch/search_rotated_array.py)  
