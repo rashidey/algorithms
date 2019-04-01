@@ -31,15 +31,15 @@ Do not return anything from your function.
 '''
 
 def delete_node_value(node):
-	node.val = node.next.val
-	node.next = node.next.nex
+    node.val = node.next.val
+    node.next = node.next.nex
 
 def delete_node_value_v2(node):
-	prev, current = node, node.next
-	while current.next:
-		prev.val = current.val
-		prev = current
-		current = current.next
+    prev, current = node, node.next
+    while current.next:
+        prev.val = current.val
+        prev = current
+        current = current.next
 
-	prev.val = current.val
-	prev.next = None
+    prev.val = current.val
+    prev.next = None

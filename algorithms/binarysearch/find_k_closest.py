@@ -17,25 +17,25 @@ Absolute value of elements in the array and x will not exceed 104
 from bisect import bisect_left
 
 def find_k_closest(nums, k, x):
-	if x > nums[-1]: return nums[:k:-1]
-	if x < nums[0]: return nums[:k]
-	index = bisect_left(nums, x)
-	left, right = max(0, index-k-1), min(len(nums)-1, index+k-1)
-	while right - left > k - 1:
-		if left < 0 or x - nums[left] <= nums[right] - x:
-			right -= 1
-		elif right > len(nums)-1 or x - nums[left] > nums[right] - x:
-			left += 1
-	return nums[left:right+1]
+    if x > nums[-1]: return nums[:k:-1]
+    if x < nums[0]: return nums[:k]
+    index = bisect_left(nums, x)
+    left, right = max(0, index-k-1), min(len(nums)-1, index+k-1)
+    while right - left > k - 1:
+        if left < 0 or x - nums[left] <= nums[right] - x:
+            right -= 1
+        elif right > len(nums)-1 or x - nums[left] > nums[right] - x:
+            left += 1
+    return nums[left:right+1]
 
 
 def find_k_closest_v2(nums, k, x):
-	left, right = 0, len(nums)-k
-	while left < right:
-		mid = (left + right) // 2
-		if x - nums[mid] > nums[mid+k] - x:
-			left = mid + 1
-		else:
-			right = mid
-	return nums[left:left+k]
+    left, right = 0, len(nums)-k
+    while left < right:
+        mid = (left + right) // 2
+        if x - nums[mid] > nums[mid+k] - x:
+            left = mid + 1
+        else:
+            right = mid
+    return nums[left:left+k]
 

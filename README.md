@@ -7,7 +7,7 @@ This repository contains my implementations of data structures and algorithms us
 ## Install
 You can use this as an API in your code as follows:
 
-	$ pip3 install algorithms3
+    $ pip3 install algorithms3
 
 An example of running an algorithm:
 
@@ -17,8 +17,8 @@ An example of running an algorithm:
 from algorithms.stack import is_valid
 
 if __name__ == '__main__':
-	test = is_valid('()[]')
-	print(test)
+    test = is_valid('()[]')
+    print(test)
 ```
 
 If an algorithm is listed in this repository but is not in the pip package, it means that I have not uploaded the latest version. I will be doing that once a week. 
@@ -26,12 +26,12 @@ If an algorithm is listed in this repository but is not in the pip package, it m
 ## Uninstall
 If you want to uninstall, simply run:
 
-	$pip3 uninstall algorithms3
+    $pip3 uninstall algorithms3
 
 ## Tests
 I have written basic tests for most of the modules. To run all the tests at once run:
-	
-	$python3 -m unittest discover tests
+    
+    $python3 -m unittest discover tests
 
 ## Progress
 **Data Structures** : 8  

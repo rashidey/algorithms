@@ -16,10 +16,10 @@ using only constant extra space complexity?
 '''
 
 def missing_number(nums):
-	sumx = 0 
-	for number in nums:
-		sumx += number
+    sumx = 0 
+    for number in nums:
+        sumx += number
 
-	total = (len(nums)*(len(nums)+1)) // 2
-	return total-sumx
+    total = (len(nums)*(len(nums)+1)) // 2
+    return total-sumx
 

@@ -17,15 +17,15 @@ What if the inputs contain unicode characters? How would you adapt your solution
 '''
 
 def valid_anagram(s, t):
-	s_hash, t_hash = 0, 0
-	i, j = 0, 0
+    s_hash, t_hash = 0, 0
+    i, j = 0, 0
 
-	while i < len(s) or j < len(t):
-		if i < len(s):
-			s_hash += hash(s[i])
-			i += 1
-		if j < len(t):
-			t_hash += hash(t[j])
-			j += 1
+    while i < len(s) or j < len(t):
+        if i < len(s):
+            s_hash += hash(s[i])
+            i += 1
+        if j < len(t):
+            t_hash += hash(t[j])
+            j += 1
 
-	return s_hash == t_hash
+    return s_hash == t_hash

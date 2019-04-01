@@ -30,30 +30,30 @@ Of course, the context of these characters also matters in the input.
 
 
 def valid_number(number):
-	number = number.strip()
-	start, seen_e, seen_dot = 0, False, False
-	fraction = False  
-	if number[start] in ('+', '-'):
-		start += 1
+    number = number.strip()
+    start, seen_e, seen_dot = 0, False, False
+    fraction = False  
+    if number[start] in ('+', '-'):
+        start += 1
 
-	for i in range(start, len(number)):
-		if not number[i].isdigit() and number[i] not in ('e', '.', '+', '-'):
-			return False
-		else:
-			if number[i] in ('+', '-'):
-				if i == start or i == len(number)-1: return False 
-				if number[i-1] != 'e': return False 
-			if number[i] == 'e':
-				if i == start or i == len(number)-1: return False 
-				if seen_e or fraction: return False
-				seen_e = True 
-			if number[i] == '.':
-				if i == start: fraction = True
-				if seen_dot or seen_e: return False
-				if i == len(number)-1: return False
-				seen_dot = True 
+    for i in range(start, len(number)):
+        if not number[i].isdigit() and number[i] not in ('e', '.', '+', '-'):
+            return False
+        else:
+            if number[i] in ('+', '-'):
+                if i == start or i == len(number)-1: return False 
+                if number[i-1] != 'e': return False 
+            if number[i] == 'e':
+                if i == start or i == len(number)-1: return False 
+                if seen_e or fraction: return False
+                seen_e = True 
+            if number[i] == '.':
+                if i == start: fraction = True
+                if seen_dot or seen_e: return False
+                if i == len(number)-1: return False
+                seen_dot = True 
 
-	return True 
+    return True 
 
 
 

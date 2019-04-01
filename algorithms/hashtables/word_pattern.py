@@ -26,23 +26,23 @@ letters that may be separated by a single space.
 '''
 
 def word_pattern(pattern, words):
-	word_map = {}
-	seen = set()
+    word_map = {}
+    seen = set()
 
-	words = words.split()
-	if len(pattern) != len(words):
-		return False 
+    words = words.split()
+    if len(pattern) != len(words):
+        return False 
 
-	for i in range(len(pattern)):
-		if pattern[i] in word_map:
-			if words[i] != word_map[pattern[i]]:
-				return False  
-		else:
-			if words[i] in seen:
-				return False 
-			word_map[pattern[i]] = words[i]
-			seen.add(words[i])
-	return True 
+    for i in range(len(pattern)):
+        if pattern[i] in word_map:
+            if words[i] != word_map[pattern[i]]:
+                return False  
+        else:
+            if words[i] in seen:
+                return False 
+            word_map[pattern[i]] = words[i]
+            seen.add(words[i])
+    return True 
 
 
 

@@ -18,13 +18,13 @@ Output: false
 '''
 
 def power_of_two(n):
-	if n == 1: return True 
-	if n < 2: return False 
-	
-	multiple = 2
-	while multiple <= n:
-		if multiple == n:
-			return True
-		multiple *= 2
-	return False 
+    if n == 1: return True 
+    if n < 2: return False 
+    
+    multiple = 2
+    while multiple <= n:
+        if multiple == n:
+            return True
+        multiple *= 2
+    return False 
 

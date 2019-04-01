@@ -20,28 +20,28 @@ rotate 4 steps to the right: 2->0->1->NULL
 '''
 
 def rotate_list(head, k):
-	if not head or k == 0 or not head.next: 
-	        return head
-	count = 0
-	current = head
-	while current:
-	    current = current.next
-	    count += 1
-	k %= count
-	if k == 0: return head
+    if not head or k == 0 or not head.next: 
+            return head
+    count = 0
+    current = head
+    while current:
+        current = current.next
+        count += 1
+    k %= count
+    if k == 0: return head
 
-	prev, current = None, head
-	while count - k > 0:
-	    prev = current
-	    current = current.next
-	    count -= 1
+    prev, current = None, head
+    while count - k > 0:
+        prev = current
+        current = current.next
+        count -= 1
 
-	prev.next = None
-	new_head = current
+    prev.next = None
+    new_head = current
 
-	while current.next:
-	    current = current.next
+    while current.next:
+        current = current.next
 
-	current.next = head 
+    current.next = head 
 
-	return new_head
+    return new_head

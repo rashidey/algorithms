@@ -18,14 +18,14 @@ Output: false
 '''
 
 def contains_duplicate_range(nums, k):
-	window = set()
-	for index, number in enumerate(nums):
-		if len(window) >= k+1:
-			window.remove(nums[index-k-1])
-		if number in window:
-			return True 
-		window.add(number)
-	return False 
+    window = set()
+    for index, number in enumerate(nums):
+        if len(window) >= k+1:
+            window.remove(nums[index-k-1])
+        if number in window:
+            return True 
+        window.add(number)
+    return False 
 
 
 
