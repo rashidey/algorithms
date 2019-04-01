@@ -30,3 +30,9 @@ class TestSuite(unittest.TestCase):
     def test_merge_intervals(self):
         self.assertEqual(merge_intervals([[1,3],[2,6],[8,10],[15,18]]), [[1,6],[8,10],[15,18]])
         self.assertEqual(merge_intervals([[1,4],[4,5]]), [[1,5]])
+
+    def test_contains_duplicate_two(self):
+        self.assertEqual(contains_duplicate_range([1,2,3,1], 3), True)
+        self.assertEqual(contains_duplicate_range([1,0,1,1], 1), True)
+        self.assertEqual(contains_duplicate_range([1,2,3,1,2,3], 2), False)
+        self.assertEqual(contains_duplicate_range([99,99], 2), True)

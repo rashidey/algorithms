@@ -42,7 +42,6 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(first_bad(150), 100)
         self.assertEqual(first_bad(150), 100)
 
-
     def tes_peak_find(self):
         self.assertEqual(find_peak([1,2,3,1]), 2)
         self.assertEqual(find_peak([1,2,1,3,5,6,4]), 5)
@@ -51,4 +50,12 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(search_range([1,2,3,4,4,4], 4), [3,5])
         self.assertEqual(search_range([1,1], 0), [-1,-1])
 
-    
+    def test_find_k_closest(self):
+        self.assertEqual(find_k_closest([1,2,3,4,5], 4, 3), [1,2,3,4])
+        self.assertEqual(find_k_closest([1,2,3,4,5], 4, -1), [1,2,3,4])
+        self.assertEqual(find_k_closest([1],1,1), [1])
+        self.assertEqual(find_k_closest([0,0,1,2,3,3,4,7,7,8],3,5), [3,3,4])
+
+    def test_find_min_rotated(self):
+        self.assertEqual(find_min_rotated([3,4,5,1,2]), 1)
+        self.assertEqual(find_min_rotated([4,5,6,7,0,1,2]), 0)

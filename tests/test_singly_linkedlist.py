@@ -9,7 +9,6 @@ def convert_to_list(A):
         dummy = dummy.next
     return newList.next
 
-
 def print_list(A):
     result = ''
     while A:
@@ -248,7 +247,24 @@ class TestSLLFunctions(TestSetup):
         self.assertEqual(list_palindrome(list3), False)
         self.assertEqual(list_palindrome(list4), False)
 
+    def test_list_rotate(self):
+        list1 = convert_to_list([1,2,3,4,5])
+        self.assertEqual(print_list(rotate_list(list1, 2)), '45123')
+        list2 = convert_to_list([0,1,2])
+        self.assertEqual(print_list(rotate_list(list2, 4)), '201')
+        list3 = convert_to_list([1])
+        self.assertEqual(print_list(rotate_list(list3, 1)), '1')
 
+    def test_delete_all_duplicates(self):
+        list1 = convert_to_list([1,2,3,3,4,4,5])
+        self.assertEqual(print_list(delete_all_duplicates(list1)), '125')
+        list2 = convert_to_list([1,1,1,2,3])
+        self.assertEqual(print_list(delete_all_duplicates(list2)), '23')
+        list3 = convert_to_list([1,1,1,1,1,1])
+        self.assertEqual(print_list(delete_all_duplicates(list3)), '')
+
+
+        
 if __name__ == '__main__':
     unittest.main()
 

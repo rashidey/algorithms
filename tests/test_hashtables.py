@@ -24,7 +24,7 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(substring_concat('barfoothefoobarman', ['foo', 'bar']), [0, 9])
         self.assertEqual(substring_concat('wordgoodgoodgoodbestword', 
                                           ["word","good","best","word"]), [])
-    
+
     def test_valid_sudoku(self):
         self.assertEqual(valid_sudoku([["5","3",".",".","7",".",".",".","."],
                                        ["6",".",".","1","9","5",".",".","."],
@@ -68,6 +68,13 @@ class TestSuite(unittest.TestCase):
         words = ["eat", "tea", "tan", "ate", "nat", "bat"]
         result = group_anagrams(words)
         self.assertEqual(len(result), 3)
+
+    def test_word_pattern(self):
+        self.assertEqual(word_pattern('abba', 'dog cat cat dog'), True)
+        self.assertEqual(word_pattern('abba', 'dog cat cat fish'), False)
+        self.assertEqual(word_pattern('aaaa', 'dog cat cat dog'), False)
+        self.assertEqual(word_pattern('abba', 'dog dog dog dog'), False)
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -106,6 +106,12 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(is_isomorphic('paper', 'title'), True)
         self.assertEqual(is_isomorphic('ab', 'aa'), False)
 
+    def test_valid_anagram(self):
+        self.assertEqual(valid_anagram('anagram', 'nagaram'), True)
+        self.assertEqual(valid_anagram('rat', 'car'), False)
+        self.assertEqual(valid_anagram("fe", "ja"), False)
+
+
 if __name__ == '__main__':
     unittest.main()
 

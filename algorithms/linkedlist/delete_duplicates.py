@@ -20,3 +20,4 @@ def delete_duplicates(head):
         current.next = prev.next
         current = current.next
     return head
+

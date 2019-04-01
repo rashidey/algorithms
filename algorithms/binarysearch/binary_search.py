@@ -37,3 +37,5 @@ def binary_search(nums, target):
             left = mid + 1
     
     return -1
+
+    

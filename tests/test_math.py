@@ -46,3 +46,30 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(divide_two_numbers_v2(10, 3), 3)
         self.assertEqual(divide_two_numbers_v2(102, 2), 51)
         self.assertEqual(divide_two_numbers_v2(6, 2), 3)
+
+    def test_power_of_two(self):
+        self.assertEqual(power_of_two(1), True)
+        self.assertEqual(power_of_two(2), True)
+        self.assertEqual(power_of_two(16), True)
+        self.assertEqual(power_of_two(218), False)
+
+    def test_missing_number(self):
+        self.assertEqual(missing_number([3,0,1]), 2)
+        self.assertEqual(missing_number([9,6,4,2,3,5,7,0,1]), 8)
+
+    def test_valid_number(self):
+        self.assertEqual(valid_number('0'), True)
+        self.assertEqual(valid_number('0.1'), True)
+        self.assertEqual(valid_number('abc'), False)
+        self.assertEqual(valid_number('1 a'), False)
+        self.assertEqual(valid_number('2e10'), True)
+        self.assertEqual(valid_number(' -90e3    '), True)
+        self.assertEqual(valid_number('  1e'), False)
+        self.assertEqual(valid_number('e3'), False)
+        self.assertEqual(valid_number(' 6e-1'), True)
+        self.assertEqual(valid_number('  99e2.5'), False)
+        self.assertEqual(valid_number('53.5e93'), True)
+        self.assertEqual(valid_number(' --6 '), False)
+        self.assertEqual(valid_number('-+3'), False)
+        self.assertEqual(valid_number('95a54e53'), False)
+

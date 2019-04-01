@@ -35,7 +35,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 
 ## Progress
 **Data Structures** : 8  
-**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 120
+**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 131
 
 ## List of Implementations
 
@@ -44,6 +44,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 * [**Arrays**](/algorithms/arrays)  
     - [*Dynamic Array Implementation*](/algorithms/arrays/dynamic_array_implementation.py)  
     - [Contains Duplicate One](/algorithms/arrays/contains_duplicate_one.py)  
+    - [Contains Duplicate Range](/algorithms/arrays/contains_duplicate_range.py)  
     - [Merge Intervals](/algorithms/arrays/merge_intervals.py)  
     - [Merge Sorted Array](/algorithms/arrays/merge_sorted_array.py)  
     - [Number Plus One](/algorithms/arrays/number_plus_one.py)  
@@ -62,9 +63,11 @@ I have written basic tests for most of the modules. To run all the tests at once
   
 * [**Binarysearch**](/algorithms/binarysearch)  
     - [Binary Search](/algorithms/binarysearch/binary_search.py)  
+    - [Find K Closest](/algorithms/binarysearch/find_k_closest.py)  
     - [Find Peak](/algorithms/binarysearch/find_peak.py)  
     - [First Bad](/algorithms/binarysearch/first_bad.py)  
     - [Guess Number](/algorithms/binarysearch/guess_number.py)  
+    - [Min In  Rotated Sorted Array](/algorithms/binarysearch/min_in _rotated_sorted_array.py)  
     - [Search Insert Position](/algorithms/binarysearch/search_insert_position.py)  
     - [Search Range](/algorithms/binarysearch/search_range.py)  
     - [Search Rotated Array](/algorithms/binarysearch/search_rotated_array.py)  
@@ -107,6 +110,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Three Sum](/algorithms/hashtables/three_sum.py)  
     - [Two Sum](/algorithms/hashtables/two_sum.py)  
     - [Valid Sudoku](/algorithms/hashtables/valid_sudoku.py)  
+    - [Word Pattern](/algorithms/hashtables/word_pattern.py)  
   
 * [**Heaps**](/algorithms/heaps)  
     - [*Heap Implementation*](/algorithms/heaps/heap_implementation.py)  
@@ -116,7 +120,9 @@ I have written basic tests for most of the modules. To run all the tests at once
 * [**Linked List**](/algorithms/linkedlist)  
     - [*Singly Linked List Implementation*](/algorithms/linkedlist/singly_linked_list_implementation.py)  
     - [Add Two Numbers](/algorithms/linkedlist/add_two_numbers.py)  
+    - [Delete Duplicates All](/algorithms/linkedlist/delete_duplicates_all.py)  
     - [Delete Duplicates](/algorithms/linkedlist/delete_duplicates.py)  
+    - [Delete Node Without Head](/algorithms/linkedlist/delete_node_without_head.py)  
     - [Intersection](/algorithms/linkedlist/intersection.py)  
     - [Linked Cycle](/algorithms/linkedlist/linked_cycle.py)  
     - [List Palindrome](/algorithms/linkedlist/list_palindrome.py)  
@@ -127,6 +133,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Reverse K Groups](/algorithms/linkedlist/reverse_k_groups.py)  
     - [Reverse Linkedlist](/algorithms/linkedlist/reverse_linkedlist.py)  
     - [Reverse Mn](/algorithms/linkedlist/reverse_mn.py)  
+    - [Rotate List](/algorithms/linkedlist/rotate_list.py)  
     - [Swap Pairs](/algorithms/linkedlist/swap_pairs.py)  
   
 * [**Math**](/algorithms/math)  
@@ -136,8 +143,11 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Divide Two Numbers](/algorithms/math/divide_two_numbers.py)  
     - [Happy Numbers](/algorithms/math/happy_numbers.py)  
     - [Majority Element](/algorithms/math/majority_element.py)  
+    - [Missing Number](/algorithms/math/missing_number.py)  
     - [Next Permutation](/algorithms/math/next_permutation.py)  
     - [Num To Col](/algorithms/math/num_to_col.py)  
+    - [Power Of Two](/algorithms/math/power_of_two.py)  
+    - [Valid Number](/algorithms/math/valid_number.py)  
   
 * [**Matrix**](/algorithms/matrix)  
     - [Rotate Image](/algorithms/matrix/rotate_image.py)  
@@ -169,6 +179,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [String To Integer](/algorithms/strings/string_to_integer.py)  
     - [Strstr](/algorithms/strings/strstr.py)  
     - [To Lower](/algorithms/strings/to_lower.py)  
+    - [Valid Anagram](/algorithms/strings/valid_anagram.py)  
     - [Valid Palin](/algorithms/strings/valid_palin.py)  
     - [Zigzag Conversion](/algorithms/strings/zigzag_conversion.py)  
   
