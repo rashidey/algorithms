@@ -22,3 +22,7 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(test.top(), 2)
         self.assertEqual(test.pop(), 2)
         self.assertEqual(test.empty(), False)
+
+    def test_gas_station(self):
+        self.assertEqual(route_possible([1,2,3,4,5], [3,4,5,1,2]), 3)
+        self.assertEqual(route_possible([2,3,4], [3,4,3]), -1)

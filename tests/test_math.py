@@ -84,3 +84,14 @@ class TestSuite(unittest.TestCase):
 
     def test_add_digits(self):
         self.assertEqual(add_digits(38), 2)
+        self.assertEqual(add_digits(42), 6)
+
+    def test_nim_game(self):
+        self.assertEqual(nim_game(3), True)
+        self.assertEqual(nim_game(4), False)
+
+    def test_intersection(self):
+        self.assertEqual(len(intersection_arrays([1,2,2,1],[2,2])), 1)
+        self.assertEqual(len(intersection_arrays([4,9,5],[9,4,9,8,4])), 2)
+
+    

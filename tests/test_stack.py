@@ -25,5 +25,13 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(minx, 1)
         self.assertEqual(test.top(), 2)
 
+    def test_rpn(self):
+        self.assertEqual(eval_rpn(["2", "1", "+", "3", "*"]), 9)
+        self.assertEqual(eval_rpn(["4", "13", "5", "/", "+"]), 6)
+        self.assertEqual(eval_rpn(["10", "6", "9", "3", "+", "-11", 
+                                   "*", "/", "*", "17", "+", "5", "+"]), 22)
+
+
+
 if __name__ == '__main__':
     unittest.main()

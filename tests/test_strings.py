@@ -89,11 +89,13 @@ class TestSuite(unittest.TestCase):
 
     def test_permutations(self):
         self.assertEqual(permutations_string('bo', 'eidboaoo'), True)
+        self.assertEqual(permutations_string('bo', 'eidboaoo'), True)
 
     def test_jewels(self):
         self.assertEqual(num_jewels('aA', 'aAAbbbb'), 3)
 
     def test_to_lower(self):
+        self.assertEqual(to_lower_case('aBc'), 'abc')
         self.assertEqual(to_lower_case('aBc'), 'abc')
 
     def test_palin(self):
@@ -122,6 +124,16 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(compare_version('1.01', '1.001'), 0)
         self.assertEqual(compare_version('1.0', '1.0.0'), 0)
         self.assertEqual(compare_version("1", "1.0.1"), -1)
+
+    def test_reverse_vowels(self):
+        self.assertEqual(reverse_vowels('hello'), 'holle')
+        self.assertEqual(reverse_vowels('leetcode'), 'leotcede')
+        self.assertEqual(reverse_vowels('aA'), 'Aa')
+
+    def test_first_unique(self):
+        self.assertEqual(first_unique('leetcode'), 0)
+        self.assertEqual(first_unique('loveleetcode'), 2)
+
 
 if __name__ == '__main__':
     unittest.main()

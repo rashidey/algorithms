@@ -27,3 +27,7 @@ class TestSuite(unittest.TestCase):
 
     def test_generate_paran(self):
         self.assertEqual(generate_paran(3), ["((()))","(()())","(())()","()(())","()()()"])
+    
+    def test_combination_numbers(self):
+        self.assertEqual(combinations_numbers(4, 2), [[1,2],[1,3],[1,4], [2,3],[2,4],[3,4]])
+        self.assertEqual(combinations_numbers(4,4), [[1,2,3,4]])

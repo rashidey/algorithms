@@ -91,8 +91,6 @@ class TestGraphFunctions(unittest.TestCase):
     def test_word_ladder_two(self):
         self.assertEqual(len(word_ladder_two('hit', 'cog', ["hot","dot","dog","lot","log","cog"])), 2)
 
-    
-
     def test_is_bipartate(self):
         self.assertEqual(is_bipartate([[1,3], [0,2], [1,3], [0,2]]), True)
         self.assertEqual(is_bipartate([[1,2,3], [0,2], [0,1,3], [0,2]]), False)
@@ -128,3 +126,17 @@ class TestGraphFunctions(unittest.TestCase):
     def test_course_order(self):
         self.assertEqual(course_order(2, [[1, 0]]), True)
         self.assertEqual(course_order(2, [[1, 0], [0,1]]), False)
+
+    def test_word_search(self):
+        board = [
+                  ['A','B','C','E'],
+                  ['S','F','C','S'],
+                  ['A','D','E','E']
+                ]
+        self.assertEqual(word_search(board, 'ABCCED'), True)
+        self.assertEqual(word_search(board, 'SEE'), True)
+        self.assertEqual(word_search(board, 'ABCB'), False)
+
+
+if __name__ == '__main__':
+    unittest.main()
