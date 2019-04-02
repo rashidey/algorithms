@@ -111,6 +111,17 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(valid_anagram('rat', 'car'), False)
         self.assertEqual(valid_anagram("fe", "ja"), False)
 
+    def test_reverse_string_words(self):
+        self.assertEqual(reverse_string_words('the sky is blue'), 'blue is sky the')
+        self.assertEqual(reverse_string_words('a good   example'), 'example good a')
+    
+    def test_compare_version(self):
+        self.assertEqual(compare_version('0.1', '1.1'), -1)
+        self.assertEqual(compare_version('1.0.1', '1'), 1)
+        self.assertEqual(compare_version('7.5.2.4', '7.5.3'), -1)
+        self.assertEqual(compare_version('1.01', '1.001'), 0)
+        self.assertEqual(compare_version('1.0', '1.0.0'), 0)
+        self.assertEqual(compare_version("1", "1.0.1"), -1)
 
 if __name__ == '__main__':
     unittest.main()

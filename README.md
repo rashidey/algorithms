@@ -34,8 +34,8 @@ I have written basic tests for most of the modules. To run all the tests at once
     $python3 -m unittest discover tests
 
 ## Progress
-**Data Structures** : 8  
-**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 131
+**Data Structures** : 9  
+**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 145
 
 ## List of Implementations
 
@@ -43,13 +43,17 @@ I have written basic tests for most of the modules. To run all the tests at once
 
 * [**Arrays**](/algorithms/arrays)  
     - [*Dynamic Array Implementation*](/algorithms/arrays/dynamic_array_implementation.py)  
+    - [Best Time To Buy Stock Ii](/algorithms/arrays/best_time_to_buy_stock_II.py)  
+    - [Best Time To Buy Stock](/algorithms/arrays/best_time_to_buy_stock.py)  
     - [Contains Duplicate One](/algorithms/arrays/contains_duplicate_one.py)  
     - [Contains Duplicate Range](/algorithms/arrays/contains_duplicate_range.py)  
+    - [Maximum Subarray](/algorithms/arrays/maximum_subarray.py)  
     - [Merge Intervals](/algorithms/arrays/merge_intervals.py)  
     - [Merge Sorted Array](/algorithms/arrays/merge_sorted_array.py)  
     - [Number Plus One](/algorithms/arrays/number_plus_one.py)  
     - [Remove Duplicates Two](/algorithms/arrays/remove_duplicates_two.py)  
     - [Rotate Array](/algorithms/arrays/rotate_array.py)  
+    - [Two Sum Sorted Array](/algorithms/arrays/two_sum_sorted_array.py)  
   
 * [**Backtracking**](/algorithms/backtracking)  
     - [Combinations Sum Two](/algorithms/backtracking/combinations_sum_two.py)  
@@ -106,6 +110,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [*Hashmap Implementation*](/algorithms/hashtables/hashmap_implementation.py)  
     - [Four Sum](/algorithms/hashtables/four_sum.py)  
     - [Group Anagrams](/algorithms/hashtables/group_anagrams.py)  
+    - [Repeated Dna Sequences](/algorithms/hashtables/repeated_dna_sequences.py)  
     - [Substring Concat](/algorithms/hashtables/substring_concat.py)  
     - [Three Sum](/algorithms/hashtables/three_sum.py)  
     - [Two Sum](/algorithms/hashtables/two_sum.py)  
@@ -130,6 +135,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Merge Two Lists](/algorithms/linkedlist/merge_two_lists.py)  
     - [Remove Element](/algorithms/linkedlist/remove_element.py)  
     - [Remove Nth End](/algorithms/linkedlist/remove_nth_end.py)  
+    - [Reorder List](/algorithms/linkedlist/reorder_list.py)  
     - [Reverse K Groups](/algorithms/linkedlist/reverse_k_groups.py)  
     - [Reverse Linkedlist](/algorithms/linkedlist/reverse_linkedlist.py)  
     - [Reverse Mn](/algorithms/linkedlist/reverse_mn.py)  
@@ -138,8 +144,10 @@ I have written basic tests for most of the modules. To run all the tests at once
   
 * [**Math**](/algorithms/math)  
     - [Add Binary](/algorithms/math/add_binary.py)  
+    - [Add Digits](/algorithms/math/add_digits.py)  
     - [Convert To Number](/algorithms/math/convert_to_number.py)  
     - [Count Primes](/algorithms/math/count_primes.py)  
+    - [Count Zeroes Factorial](/algorithms/math/count_zeroes_factorial.py)  
     - [Divide Two Numbers](/algorithms/math/divide_two_numbers.py)  
     - [Happy Numbers](/algorithms/math/happy_numbers.py)  
     - [Majority Element](/algorithms/math/majority_element.py)  
@@ -147,6 +155,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Next Permutation](/algorithms/math/next_permutation.py)  
     - [Num To Col](/algorithms/math/num_to_col.py)  
     - [Power Of Two](/algorithms/math/power_of_two.py)  
+    - [Ugly Numbers](/algorithms/math/ugly_numbers.py)  
     - [Valid Number](/algorithms/math/valid_number.py)  
   
 * [**Matrix**](/algorithms/matrix)  
@@ -156,12 +165,16 @@ I have written basic tests for most of the modules. To run all the tests at once
   
 * [**Queues**](/algorithms/queues)  
     - [*Queue Implementation*](/algorithms/queues/queue_implementation.py)  
+    - [Stack Using Queues](/algorithms/queues/stack_using_queues.py)  
   
 * [**Stack**](/algorithms/stack)  
+    - [Min Stack](/algorithms/stack/min_stack.py)  
+    - [Simplify Path](/algorithms/stack/simplify_path.py)  
     - [Valid Paran](/algorithms/stack/valid_paran.py)  
   
 * [**Strings**](/algorithms/strings)  
     - [Add Binary](/algorithms/strings/add_binary.py)  
+    - [Compare Version Numbers](/algorithms/strings/compare_version_numbers.py)  
     - [Count Say](/algorithms/strings/count_say.py)  
     - [Int To Roman](/algorithms/strings/int_to_roman.py)  
     - [Isomorphic](/algorithms/strings/isomorphic.py)  
@@ -174,6 +187,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Palindrome](/algorithms/strings/palindrome.py)  
     - [Permutations In String](/algorithms/strings/permutations_in_string.py)  
     - [Reverse Int](/algorithms/strings/reverse_int.py)  
+    - [Reverse String Words](/algorithms/strings/reverse_string_words.py)  
     - [Reverse String](/algorithms/strings/reverse_string.py)  
     - [Roman To Int](/algorithms/strings/roman_to_int.py)  
     - [String To Integer](/algorithms/strings/string_to_integer.py)  
@@ -185,6 +199,7 @@ I have written basic tests for most of the modules. To run all the tests at once
   
 * [**Trees**](/algorithms/trees)  
     - [*Tree Implementation*](/algorithms/trees/tree_implementation.py)  
+    - [*Trie Implementation*](/algorithms/trees/trie_implementation.py)  
     - [Array Bst](/algorithms/trees/array_bst.py)  
     - [Average Levels](/algorithms/trees/average_levels.py)  
     - [Build Tree Postorder](/algorithms/trees/build_tree_postorder.py)  

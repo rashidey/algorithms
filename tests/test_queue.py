@@ -15,3 +15,10 @@ class TestSuite(unittest.TestCase):
         q1.enque(3)
         self.assertEqual(q1.front_que(), 3)
 
+    def test_my_stack(self):
+        test = MyStack()
+        test.push(1)
+        test.push(2)
+        self.assertEqual(test.top(), 2)
+        self.assertEqual(test.pop(), 2)
+        self.assertEqual(test.empty(), False)

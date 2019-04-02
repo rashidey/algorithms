@@ -263,8 +263,14 @@ class TestSLLFunctions(TestSetup):
         list3 = convert_to_list([1,1,1,1,1,1])
         self.assertEqual(print_list(delete_all_duplicates(list3)), '')
 
+    def test_reorder_list(self):
+        list1 = convert_to_list([1,2,3,4])
+        list2 = convert_to_list([1,2,3,4,5])
+        self.assertEqual(print_list(reorder_list(list1)), '1423')
+        self.assertEqual(print_list(reorder_list(list2)), '15243')
 
-        
+
+
 if __name__ == '__main__':
     unittest.main()
 

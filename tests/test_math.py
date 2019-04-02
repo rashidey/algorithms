@@ -73,3 +73,14 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(valid_number('-+3'), False)
         self.assertEqual(valid_number('95a54e53'), False)
 
+    def test_factorial_count(self):
+        self.assertEqual(count_zeroes_factorial(3), 0)
+        self.assertEqual(count_zeroes_factorial(5), 1)
+
+    def test_ugly_number(self):
+        self.assertEqual(is_ugly(6), True)
+        self.assertEqual(is_ugly(8), True)
+        self.assertEqual(is_ugly(14), False)
+
+    def test_add_digits(self):
+        self.assertEqual(add_digits(38), 2)

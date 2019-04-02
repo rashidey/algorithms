@@ -36,3 +36,21 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(contains_duplicate_range([1,0,1,1], 1), True)
         self.assertEqual(contains_duplicate_range([1,2,3,1,2,3], 2), False)
         self.assertEqual(contains_duplicate_range([99,99], 2), True)
+
+    def test_max_array(self):
+        self.assertEqual(maximum_subarray([-2,1,-3,4,-1,2,1,-5,4]), 6)
+        self.assertEqual(maximum_subarray([-1]), -1)
+
+    def test_two_sum_sorted(self):
+        self.assertEqual(two_sum_sorted([2,7,11,15], 9), [1,2])
+        self.assertEqual(two_sum_sorted([2,7,11,15], 26), [3,4])
+        self.assertEqual(two_sum_sorted([2,7,11,15], 264), [])
+
+    def test_stock_buy(self):
+        self.assertEqual(max_profit_stock([7,1,5,3,6,4]), 5)
+        self.assertEqual(max_profit_stock([7,6,4,3,1]), 0)
+
+    def test_stock_sell(self):
+        self.assertEqual(max_profit_all([7,1,5,3,6,4]), 7)
+        self.assertEqual(max_profit_all([1,2,3,4,5]), 4)
+        self.assertEqual(max_profit_all([7,6,4,3,1]), 0)
