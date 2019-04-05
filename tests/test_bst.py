@@ -2,6 +2,18 @@ from algorithms.bst import *
 
 import unittest
 
+class Node:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
+def convert_to_list(A):
+    dummy = newList = Node(0)
+    for number in A:
+        dummy.next = Node(number)
+        dummy = dummy.next
+    return newList.next
+
 class TestBST(unittest.TestCase):
     def testBST(self):
         #BST Node
@@ -100,6 +112,13 @@ class TestBSTFunctions(unittest.TestCase):
         self.assertEqual(is_valid_bst_v2(bst1.root), True)
         self.assertEqual(is_valid_bst_v2(bst2.root), False)
 
-        
+    def test_sorted_list_bst(self):
+        list1 = convert_to_list([-10,-3,0,5,9])
+        test = BST()
+        test.root = sorted_list_bst(list1)
+        self.assertEqual(str(test), '-10,-3,0,5,9')
+
+
+
 if __name__ == '__main__':
     unittest.main()

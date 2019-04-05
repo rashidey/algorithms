@@ -17,3 +17,6 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(generate_spiral_matrix(1), [[1]])
         self.assertEqual(generate_spiral_matrix(0), [])
         self.assertEqual(generate_spiral_matrix(2), [[1,2],[4,3]])
+
+    def test_matrix_reshape(self):
+        self.assertEqual(reshape_matrix([[1,2],[3,4]],1,4),[[1,2,3,4]])

@@ -269,8 +269,16 @@ class TestSLLFunctions(TestSetup):
         self.assertEqual(print_list(reorder_list(list1)), '1423')
         self.assertEqual(print_list(reorder_list(list2)), '15243')
 
+    def test_odd_even_list(self):
+        list1 = convert_to_list([1,2,3,4,5])
+        list2 = convert_to_list([2,1,3,5,6,4,7])
+        self.assertEqual(print_list(odd_even_list(list1)), '13524')
+        self.assertEqual(print_list(odd_even_list(list2)), '2367154')
 
 
 if __name__ == '__main__':
     unittest.main()
+
+
+
 

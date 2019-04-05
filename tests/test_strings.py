@@ -1,7 +1,7 @@
 from algorithms.strings import *
 import unittest
 
-class TestSuite(unittest.TestCase):
+class TestSuite1(unittest.TestCase):
     def test_palindrome(self):
         self.assertTrue(is_palindrome(121))  
         self.assertFalse(is_palindrome(-121))  
@@ -133,6 +133,66 @@ class TestSuite(unittest.TestCase):
     def test_first_unique(self):
         self.assertEqual(first_unique('leetcode'), 0)
         self.assertEqual(first_unique('loveleetcode'), 2)
+
+    def test_ransom(self):
+        self.assertEqual(ransom_note('a', 'b'), False)
+        self.assertEqual(ransom_note('aa', 'ab'), False)
+        self.assertEqual(ransom_note('aa', 'aab'), True)
+
+    def test_largest_number(self):
+        self.assertEqual(largest_number([10,2]), '210')
+        self.assertEqual(largest_number([3,30,34,5,9]), '9534330')
+
+    def test_valid_ip(self):
+        self.assertEqual(valid_ip('172.16.254.1'), 'IPv4')
+        self.assertEqual(valid_ip("2001:0db8:85a3:0:0:8A2E:0370:7334"), 'IPv6')
+        self.assertEqual(valid_ip("256.256.256.256"), 'Neither')
+        self.assertEqual(valid_ip('2001:0db8:85a3::8A2E:0370:7334'), 'Neither')
+        self.assertEqual(valid_ip('02001:0db8:85a3:0000:0000:8a2e:0370:7334'), 'Neither')
+
+    def test_decode_stirng(self):
+        self.assertEqual(decode_string('2[3[a]b]'), 'aaabaaab')
+        self.assertEqual(decode_string("3[a]2[bc]"), "aaabcbc")
+        self.assertEqual(decode_string("3[a2[c]]"), "accaccacc")
+        self.assertEqual(decode_string("2[abc]3[cd]ef"),"abcabccdcdcdef")
+        self.assertEqual(decode_string("4[2[jk]e1[f]]"), "jkjkefjkjkefjkjkefjkjkef")
+
+    def test_reverse_string_2(self):
+        self.assertEqual(reverse_string_k('abcdefg', 2), 'bacdfeg')
+
+    def test_reverse_words(self):
+        self.assertEqual(reverse_words("Let's take LeetCode contest"), 
+                                        "s'teL ekat edoCteeL tsetnoc")
+
+    def test_goat_latin(self):
+        self.assertEqual(goat_latin("I speak Goat Latin"), 
+                         "Imaa peaksmaaa oatGmaaaa atinLmaaaaa")
+
+    def test_reverse_only_words(self):
+        self.assertEqual(reverse_only_letters('ab-cd'), 'dc-ba')
+
+    def test_unique_morse_words(self):
+        self.assertEqual(unique_morse_code(["gin", "zen", "gig", "msg"]), 2)
+    
+    def test_unique_emails(self):
+        self.assertEqual(unique_emails(["test.email+alex@leetcode.com",
+            "test.e.mail+bob.cathy@leetcode.com","testemail+david@lee.tcode.com"]), 2)
+
+    def test_robot_origin(self):
+        self.assertEqual(robot_origin('UD'), True)
+        self.assertEqual(robot_origin('LL'), False)
+
+class TestSuite2(unittest.TestCase):
+    def test_compress_string(self):
+        self.assertEqual(compress_string(["a","a","b","b","c","c","c"]), 6)
+
+    def test_add_strings(self):
+        self.assertEqual(add_strings('123', '321'), '444')
+
+    def test_count_segments(self):
+        self.assertEqual(count_segments('Helllo, my name is Omar'), 5)
+
+
 
 
 if __name__ == '__main__':

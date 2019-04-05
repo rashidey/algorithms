@@ -59,4 +59,35 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(move_zeroes([0,1,0,3,12]), [1,3,12,0,0])
         self.assertEqual(move_zeroes([0,1,0,0,3,12]), [1,3,12,0,0,0])
 
-    
+    def test_summary_ranges(self):
+        self.assertEqual(summary_ranges([0,1,2,4,5,7]), ["0->2","4->5","7"])
+        self.assertEqual(summary_ranges([0,2,3,4,6,8,9]), ["0","2->4","6","8->9"])
+
+    def test_intersect_array(self):
+        self.assertEqual(intersect_array([1,2,2,1], [2,2]), [2,2])
+        self.assertEqual(intersect_array([4,9,5], [9,4,9,8,4]), [4,9])
+
+    def test_third_max(self):
+        self.assertEqual(third_max([3,2,1,4,6,6,4,7]), 4)
+
+    def test_find_dissapeared(self):
+        self.assertEqual(find_disappeared([4,3,2,7,8,2,3,1]), [5, 6])
+
+    def test_max_consec(self):
+        self.assertEqual(max_consecutive_ones([1,1,0,1,1,1]), 3)
+
+    def test_find_pairs(self):
+        self.assertEqual(find_pairs([3, 1, 4, 1, 5],2), 2)
+        self.assertEqual(find_pairs([1, 2, 3, 4, 5],1), 4)
+        self.assertEqual(find_pairs([1,3,1,5,4], 0), 1)
+
+    def test_max_product(self):
+        self.assertEqual(max_product([1,2,3]),6)
+        self.assertEqual(max_product([1,2,3,4]),24)
+
+    def test_max_average(self):
+        self.assertEqual(max_average([1,12,-5,-6,50,3], 4), 12.75)
+        self.assertEqual(max_average([0,4,0,3,2], 1), 4.0)
+
+    def test_flowers(self):
+        self.assertEqual(place_flowers([1,0,0,0,1],1), True)

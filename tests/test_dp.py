@@ -26,3 +26,13 @@ class TestSuite(unittest.TestCase):
     def test_power(self):
         self.assertEqual(pow_v3(2,3), 8)
         self.assertEqual(pow_v3(2,-3), 0.125)
+
+    def test_lcs(self):
+        self.assertEqual(lcs('bd', 'abcd'), 2)
+        self.assertEqual(lcs('aggtab', 'gxtxayb'), 4)
+        self.assertEqual(lcs_dp('bd', 'abcd'), 2)
+        self.assertEqual(lcs_dp('aggtab', 'gxtxayb'), 4)
+
+    def test_min_dist(self):
+        self.assertEqual(min_distance_strings('seab', 'eat'), 3)
+        self.assertEqual(min_distance_strings('sea', 'eat'), 2)
