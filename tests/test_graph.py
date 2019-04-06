@@ -137,6 +137,9 @@ class TestGraphFunctions(unittest.TestCase):
         self.assertEqual(word_search(board, 'SEE'), True)
         self.assertEqual(word_search(board, 'ABCB'), False)
 
+    def test_jump_game_two(self):
+        self.assertEqual(jump_game_two([2,3,1,1,4]), 2)
+
 
 if __name__ == '__main__':
     unittest.main()

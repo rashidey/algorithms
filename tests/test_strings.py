@@ -192,8 +192,12 @@ class TestSuite2(unittest.TestCase):
     def test_count_segments(self):
         self.assertEqual(count_segments('Helllo, my name is Omar'), 5)
 
+    def test_find_anagrams(self):
+        self.assertEqual(find_anagrams('cbaebabacd', 'abc'), [0,6])
 
-
+    def test_detect_capital(self):
+        self.assertEqual(detect_capital('USA'), True)
+        self.assertEqual(detect_capital('FlaG'), False)
 
 if __name__ == '__main__':
     unittest.main()

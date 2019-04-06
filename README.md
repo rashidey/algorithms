@@ -35,7 +35,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 
 ## Progress
 **Data Structures** : 10  
-**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 186
+**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 203
 
 ## List of Implementations
 
@@ -66,6 +66,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Two Sum Sorted Array](/algorithms/arrays/two_sum_sorted_array.py)  
   
 * [**Backtracking**](/algorithms/backtracking)  
+    - [Combinations Sum Three](/algorithms/backtracking/combinations_sum_three.py)  
     - [Combinations Sum Two](/algorithms/backtracking/combinations_sum_two.py)  
     - [Combinations Sum](/algorithms/backtracking/combinations_sum.py)  
     - [Combinations](/algorithms/backtracking/combinations.py)  
@@ -83,6 +84,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [First Bad](/algorithms/binarysearch/first_bad.py)  
     - [Guess Number](/algorithms/binarysearch/guess_number.py)  
     - [Min In Rotated Sorted Array](/algorithms/binarysearch/min_in_rotated_sorted_array.py)  
+    - [Search 2D Matrix](/algorithms/binarysearch/search_2d_matrix.py)  
     - [Search Insert Position](/algorithms/binarysearch/search_insert_position.py)  
     - [Search Range](/algorithms/binarysearch/search_range.py)  
     - [Search Rotated Array](/algorithms/binarysearch/search_rotated_array.py)  
@@ -105,9 +107,14 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Fibonacci](/algorithms/dp/fibonacci.py)  
     - [Kth Grammar](/algorithms/dp/kth_grammar.py)  
     - [Longest Common Subsequence](/algorithms/dp/longest_common_subsequence.py)  
+    - [Longest Increasing Subsequence](/algorithms/dp/longest_increasing_subsequence.py)  
+    - [Minimum Path Sum](/algorithms/dp/minimum_path_sum.py)  
     - [Pascal Row](/algorithms/dp/pascal_row.py)  
     - [Pascal](/algorithms/dp/pascal.py)  
     - [Pow](/algorithms/dp/pow.py)  
+    - [Triangle Min Path](/algorithms/dp/triangle_min_path.py)  
+    - [Unique Paths With Obstacle](/algorithms/dp/unique_paths_with_obstacle.py)  
+    - [Unique Paths](/algorithms/dp/unique_paths.py)  
   
 * [**Graphs**](/algorithms/graphs)  
     - [*Graph Implementation*](/algorithms/graphs/graph_implementation.py)  
@@ -115,6 +122,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Clone Graph](/algorithms/graphs/clone_graph.py)  
     - [Course Order](/algorithms/graphs/course_order.py)  
     - [Is Bipartate](/algorithms/graphs/is_bipartate.py)  
+    - [Jump Game Ii](/algorithms/graphs/jump_game_II.py)  
     - [Number Islands](/algorithms/graphs/number_islands.py)  
     - [Surround Region](/algorithms/graphs/surround_region.py)  
     - [Word Ladder Two](/algorithms/graphs/word_ladder_two.py)  
@@ -126,6 +134,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Bulls And Cows](/algorithms/hashtables/bulls_and_cows.py)  
     - [Four Sum](/algorithms/hashtables/four_sum.py)  
     - [Group Anagrams](/algorithms/hashtables/group_anagrams.py)  
+    - [Keyboard Row](/algorithms/hashtables/keyboard_row.py)  
     - [Repeated Dna Sequences](/algorithms/hashtables/repeated_dna_sequences.py)  
     - [Shuffle Array](/algorithms/hashtables/shuffle_array.py)  
     - [Substring Concat](/algorithms/hashtables/substring_concat.py)  
@@ -163,14 +172,18 @@ I have written basic tests for most of the modules. To run all the tests at once
 * [**Math**](/algorithms/math)  
     - [Add Binary](/algorithms/math/add_binary.py)  
     - [Add Digits](/algorithms/math/add_digits.py)  
+    - [Basic Calculator I](/algorithms/math/basic_calculator_I.py)  
+    - [Basic Calculator Ii](/algorithms/math/basic_calculator_II.py)  
     - [Convert To Number](/algorithms/math/convert_to_number.py)  
     - [Count Primes](/algorithms/math/count_primes.py)  
     - [Count Zeroes Factorial](/algorithms/math/count_zeroes_factorial.py)  
     - [Divide Two Numbers](/algorithms/math/divide_two_numbers.py)  
     - [Game Of Nim](/algorithms/math/game_of_nim.py)  
+    - [Hamming Distance](/algorithms/math/hamming_distance.py)  
     - [Happy Numbers](/algorithms/math/happy_numbers.py)  
     - [Intersection Two Arrays](/algorithms/math/intersection_two_arrays.py)  
     - [Majority Element](/algorithms/math/majority_element.py)  
+    - [Min Time Difference](/algorithms/math/min_time_difference.py)  
     - [Missing Number](/algorithms/math/missing_number.py)  
     - [Next Permutation](/algorithms/math/next_permutation.py)  
     - [Num To Col](/algorithms/math/num_to_col.py)  
@@ -179,8 +192,10 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Valid Number](/algorithms/math/valid_number.py)  
   
 * [**Matrix**](/algorithms/matrix)  
+    - [Island Perimeter](/algorithms/matrix/island_perimeter.py)  
     - [Reshape Matrix](/algorithms/matrix/reshape_matrix.py)  
     - [Rotate Image](/algorithms/matrix/rotate_image.py)  
+    - [Set Matrix Zeros](/algorithms/matrix/set_matrix_zeros.py)  
     - [Spiral Matrix Generate](/algorithms/matrix/spiral_matrix_generate.py)  
     - [Spiral Matrix](/algorithms/matrix/spiral_matrix.py)  
   
@@ -202,6 +217,8 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Compare Version Numbers](/algorithms/strings/compare_version_numbers.py)  
     - [Count Say](/algorithms/strings/count_say.py)  
     - [Decode String](/algorithms/strings/decode_string.py)  
+    - [Detect Capital](/algorithms/strings/detect_capital.py)  
+    - [Find All Anagrams](/algorithms/strings/find_all_anagrams.py)  
     - [First Unique Character](/algorithms/strings/first_unique_character.py)  
     - [Goat Latin](/algorithms/strings/goat_latin.py)  
     - [Int To Roman](/algorithms/strings/int_to_roman.py)  

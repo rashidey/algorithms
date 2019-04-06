@@ -36,3 +36,25 @@ class TestSuite(unittest.TestCase):
     def test_min_dist(self):
         self.assertEqual(min_distance_strings('seab', 'eat'), 3)
         self.assertEqual(min_distance_strings('sea', 'eat'), 2)
+
+    def test_lis(self):
+        self.assertEqual(longest_inc([10,9,2,5,3,7,101,18]), 4)
+
+    def test_triangle(self):
+        triangle = [[2],
+                    [3,4],
+                    [6,5,7],
+                    [4,1,8,3]]
+        self.assertEqual(triangle_min_path(triangle), 11)
+
+    def test_unique_paths(self):
+        self.assertEqual(unique_paths(3,2), 3)
+        self.assertEqual(unique_paths(7,3), 28)
+
+    def test_unique_obstacles(self):
+        grid = [[0,0,0],[0,1,0],[0,0,0]]
+        self.assertEqual(unique_paths_two(grid), 2)
+
+    def test_min_grid_sum(self):
+        grid = [[1,3,1],[1,5,1],[4,2,1]]
+        self.assertEqual(minimum_path_sum(grid), 7)

@@ -31,3 +31,7 @@ class TestSuite(unittest.TestCase):
     def test_combination_numbers(self):
         self.assertEqual(combinations_numbers(4, 2), [[1,2],[1,3],[1,4], [2,3],[2,4],[3,4]])
         self.assertEqual(combinations_numbers(4,4), [[1,2,3,4]])
+
+    def test_combinations_three(self):
+        self.assertEqual(combinations_three(3, 7), [[1,2,4]])
+        self.assertEqual(combinations_three(3, 9), [[1,2,6],[1,3,5],[2,3,4]])

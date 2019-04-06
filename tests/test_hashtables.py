@@ -83,6 +83,10 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(get_hint('1807', '7810'), '1A3B')
         self.assertEqual(get_hint('1123', '0111'), '1A1B')
 
+    def test_find_words(self):
+        self.assertEqual(find_word_rows(["Hello","Alaska","Dad","Peace", "QWERT"]),
+                                        ["Alaska","Dad","QWERT"])
+
 if __name__ == '__main__':
     unittest.main()
 

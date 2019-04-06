@@ -94,4 +94,21 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(len(intersection_arrays([1,2,2,1],[2,2])), 1)
         self.assertEqual(len(intersection_arrays([4,9,5],[9,4,9,8,4])), 2)
 
+    def test_basic_calculator(self):
+        self.assertEqual(basic_calculator('3+2* 2'), 7)
+        self.assertEqual(basic_calculator('  3/2  '), 1)
+        self.assertEqual(basic_calculator('3+5 / 2'), 5)
+        self.assertEqual(basic_calculator("14-3/2"), 13)
+
+    def test_basic_calculator_II(self):
+        self.assertEqual(basic_calculator_two('1+1'), 2)
+        self.assertEqual(basic_calculator_two(" 2-1 + 2 "), 3)
+        self.assertEqual(basic_calculator_two("(1+(4+5+2)-3)+(6+8)"), 23)
+        self.assertEqual(basic_calculator_two("2-(5-6)"), 3)
+
     
+    def test_min_time(self):
+        self.assertEqual(min_time(["23:59","00:00"]), 1)
+
+    def test_hamming_distance(self):
+        self.assertEqual(hamming_distance(1, 4), 2)

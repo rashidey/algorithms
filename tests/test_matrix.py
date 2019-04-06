@@ -20,3 +20,15 @@ class TestSuite(unittest.TestCase):
 
     def test_matrix_reshape(self):
         self.assertEqual(reshape_matrix([[1,2],[3,4]],1,4),[[1,2,3,4]])
+
+    def test_matrix_zeros(self):
+        matrix = [[1,1,1],[1,0,1],[1,1,1]]
+        self.assertEqual(set_matrix_zeros(matrix), [[1,0,1],[0,0,0],[1,0,1]])
+    
+    def test_island_perimeter(self):
+        matrix = [[0,1,0,0],
+                 [1,1,1,0],
+                 [0,1,0,0],
+                 [1,1,0,0]]
+
+        self.assertEqual(island_perimeter(matrix), 16)

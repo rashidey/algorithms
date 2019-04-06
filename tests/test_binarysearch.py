@@ -59,3 +59,10 @@ class TestSuite(unittest.TestCase):
     def test_find_min_rotated(self):
         self.assertEqual(find_min_rotated([3,4,5,1,2]), 1)
         self.assertEqual(find_min_rotated([4,5,6,7,0,1,2]), 0)
+
+    def test_search_2d(self):
+        matrix = [[1,   3,  5,  7],[10, 11, 16, 20],[23, 30, 34, 50]]
+        self.assertEqual(search_matrix(matrix, 3), True)
+        self.assertEqual(search_matrix(matrix, 5), True)
+        self.assertEqual(search_matrix(matrix, 20), True)
+        self.assertEqual(search_matrix(matrix, 31), False)
