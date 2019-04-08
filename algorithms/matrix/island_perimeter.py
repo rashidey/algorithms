@@ -23,7 +23,8 @@ def island_perimeter(grid) -> int:
     def calculate(i, j):
         nonlocal result 
         for row, col in [(i+1, j), (i-1, j), (i, j+1), (i, j-1)]:    
-            if row < 0 or row >= len(grid) or col < 0 or col >= len(grid[0]) or grid[row][col] == 0:
+            if (row < 0 or row >= len(grid) or col < 0 or 
+                    col >= len(grid[0]) or grid[row][col] == 0):
                 result += 1
             
     result = 0

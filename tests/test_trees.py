@@ -1,3 +1,4 @@
+import copy
 from algorithms.trees import *
 import unittest
 
@@ -186,7 +187,14 @@ class TestTree(TestSetup):
         root1.right = TreeNode(6)
         self.assertEqual(inorder_recursive(merge_two_trees(root, root1)), '7,5,9')
 
-    
+    def test_sum_leaf(self):
+        self.assertEqual(sum_left_leaves(self.tree4.root), 24)
+        self.assertEqual(sum_left_leaves_v2(self.tree4.root), 24)
+
+    def test_flatten(self):
+        root = copy.deepcopy(self.tree1.root)
+        flatten(root)
+        self.assertEqual(inorder_recursive(root), '50,10,5,20,100,60,110')
 
 if __name__ == '__main__':
     unittest.main()

@@ -35,3 +35,10 @@ class TestSuite(unittest.TestCase):
     def test_combinations_three(self):
         self.assertEqual(combinations_three(3, 7), [[1,2,4]])
         self.assertEqual(combinations_three(3, 9), [[1,2,6],[1,3,5],[2,3,4]])
+
+    def test_binary_watch(self):
+        self.assertEqual(binary_watch(1), ['0:1', '0:2', '0:4', '0:8', '0:16', 
+                                           '0:32', '1:0', '2:0', '4:0', '8:0'])
+
+    def test_match(self):
+        self.assertEqual(make_square([1,1,2,2,2]), True)

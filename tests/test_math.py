@@ -112,3 +112,13 @@ class TestSuite(unittest.TestCase):
 
     def test_hamming_distance(self):
         self.assertEqual(hamming_distance(1, 4), 2)
+
+    def test_perfect_numbers(self):
+        self.assertEqual(perfect_number(1), False)
+        self.assertEqual(perfect_number(2), False)
+        self.assertEqual(perfect_number(3), False)
+        self.assertEqual(perfect_number(6), True)
+        self.assertEqual(perfect_number(28), True)
+
+    def test_rectangle_area(self):
+        self.assertEqual(build_rectangle(4), [2,2])

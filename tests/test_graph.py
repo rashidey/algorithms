@@ -1,6 +1,13 @@
 from algorithms.graphs import *
 import unittest
 
+class TreeNode:
+    def __init__(self, x):
+        self.val = x 
+        self.left = None
+        self.right = None 
+
+
 class TestGraph(unittest.TestCase):
     def test_graph_list(self):
         graph = GraphList()
@@ -140,6 +147,19 @@ class TestGraphFunctions(unittest.TestCase):
     def test_jump_game_two(self):
         self.assertEqual(jump_game_two([2,3,1,1,4]), 2)
 
+    def test_house_robber(self):
+        root = TreeNode(3)
+        root.left = TreeNode(2)
+        root.right = TreeNode(3)
+        root.right.left = TreeNode(3)
+        root.right.right = TreeNode(1)
+        self.assertEqual(rob(root), 7)
 
+    def test_pacific(self):
+        matrix = [[1,2,2,3,5],[3,2,3,4,4],[2,4,5,3,1],[6,7,1,4,5],[5,1,1,2,4]]
+        self.assertEqual(len(pacific_atlantic(matrix)), 7)
+
+    
+        
 if __name__ == '__main__':
     unittest.main()
