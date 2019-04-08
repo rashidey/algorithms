@@ -58,3 +58,8 @@ class TestSuite(unittest.TestCase):
     def test_min_grid_sum(self):
         grid = [[1,3,1],[1,5,1],[4,2,1]]
         self.assertEqual(minimum_path_sum(grid), 7)
+
+    def test_zero_matrix(self):
+        matrix = [[0,0,0],[0,1,0],[0,0,0]]
+        result = [[0,0,0],[0,1,0],[0,0,0]]
+        self.assertEqual(zero_matrix(matrix), result)

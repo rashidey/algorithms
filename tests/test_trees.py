@@ -196,5 +196,8 @@ class TestTree(TestSetup):
         flatten(root)
         self.assertEqual(inorder_recursive(root), '50,10,5,20,100,60,110')
 
+    def test_max_path(self):
+        self.assertEqual(max_path_sum(self.tree1.root), 290)
+
 if __name__ == '__main__':
     unittest.main()

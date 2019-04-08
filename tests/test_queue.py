@@ -26,3 +26,6 @@ class TestSuite(unittest.TestCase):
     def test_gas_station(self):
         self.assertEqual(route_possible([1,2,3,4,5], [3,4,5,1,2]), 3)
         self.assertEqual(route_possible([2,3,4], [3,4,3]), -1)
+
+    def test_max_sliding_window(self):
+        self.assertEqual(max_sliding_window([1,3,-1,-3,5,3,6,7], 3), [3,3,5,5,6,7])

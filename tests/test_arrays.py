@@ -91,3 +91,9 @@ class TestSuite(unittest.TestCase):
 
     def test_flowers(self):
         self.assertEqual(place_flowers([1,0,0,0,1],1), True)
+
+    def test_first_missing(self):
+        self.assertEqual(first_missing_positive([1,2,0]), 3)
+        self.assertEqual(first_missing_positive([3,4,-1,1]), 2)
+        self.assertEqual(first_missing_positive([7,8,0,0,9,11,12]), 1)
+        self.assertEqual(first_missing_positive([2,4,2,1,32,0,0,-1,3,-2,22,0,3]), 5)

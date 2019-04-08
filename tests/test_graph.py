@@ -159,7 +159,26 @@ class TestGraphFunctions(unittest.TestCase):
         matrix = [[1,2,2,3,5],[3,2,3,4,4],[2,4,5,3,1],[6,7,1,4,5],[5,1,1,2,4]]
         self.assertEqual(len(pacific_atlantic(matrix)), 7)
 
+    def test_concatenated_words(self):
+        self.assertEqual(concatenated_words(["cat","cats","catsdogcats","dog","dogcatsdog",
+                                             "hippopotamuses","rat","ratcatdogcat"]), 
+                                             ["catsdogcats","dogcatsdog","ratcatdogcat"])
     
+    def test_mine(self):
+        board =  [['E', 'E', 'E', 'E', 'E'],
+                 ['E', 'E', 'M', 'E', 'E'],
+                 ['E', 'E', 'E', 'E', 'E'],
+                 ['E', 'E', 'E', 'E', 'E']]
+
+        result = [['B', '1', 'E', '1', 'B'],
+                 ['B', '1', 'M', '1', 'B'],
+                 ['B', '1', '1', '1', 'B'],
+                 ['B', 'B', 'B', 'B', 'B']]
+
+        self.assertEqual(minesweeper(board, [3,0]), result)
+
+
+
         
 if __name__ == '__main__':
     unittest.main()
