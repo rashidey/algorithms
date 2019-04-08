@@ -35,7 +35,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 
 ## Progress
 **Data Structures** : 10  
-**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 203
+**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 211
 
 ## List of Implementations
 
@@ -66,12 +66,14 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Two Sum Sorted Array](/algorithms/arrays/two_sum_sorted_array.py)  
   
 * [**Backtracking**](/algorithms/backtracking)  
+    - [Binary Watch](/algorithms/backtracking/binary_watch.py)  
     - [Combinations Sum Three](/algorithms/backtracking/combinations_sum_three.py)  
     - [Combinations Sum Two](/algorithms/backtracking/combinations_sum_two.py)  
     - [Combinations Sum](/algorithms/backtracking/combinations_sum.py)  
     - [Combinations](/algorithms/backtracking/combinations.py)  
     - [Generate Paranthesis](/algorithms/backtracking/generate_paranthesis.py)  
     - [Letter Combinations](/algorithms/backtracking/letter_combinations.py)  
+    - [Matchsticks To Square](/algorithms/backtracking/matchsticks_to_square.py)  
     - [Permutations One](/algorithms/backtracking/permutations_one.py)  
     - [Permutations Two](/algorithms/backtracking/permutations_two.py)  
     - [Subsets Duplicates](/algorithms/backtracking/subsets_duplicates.py)  
@@ -121,9 +123,11 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Bt Right View](/algorithms/graphs/bt_right_view.py)  
     - [Clone Graph](/algorithms/graphs/clone_graph.py)  
     - [Course Order](/algorithms/graphs/course_order.py)  
+    - [House Robber Three](/algorithms/graphs/house_robber_three.py)  
     - [Is Bipartate](/algorithms/graphs/is_bipartate.py)  
     - [Jump Game Ii](/algorithms/graphs/jump_game_II.py)  
     - [Number Islands](/algorithms/graphs/number_islands.py)  
+    - [Pacific Atlantic Water Flow](/algorithms/graphs/pacific_atlantic_water_flow.py)  
     - [Surround Region](/algorithms/graphs/surround_region.py)  
     - [Word Ladder Two](/algorithms/graphs/word_ladder_two.py)  
     - [Word Ladder](/algorithms/graphs/word_ladder.py)  
@@ -174,6 +178,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Add Digits](/algorithms/math/add_digits.py)  
     - [Basic Calculator I](/algorithms/math/basic_calculator_I.py)  
     - [Basic Calculator Ii](/algorithms/math/basic_calculator_II.py)  
+    - [Construct Rectangle](/algorithms/math/construct_rectangle.py)  
     - [Convert To Number](/algorithms/math/convert_to_number.py)  
     - [Count Primes](/algorithms/math/count_primes.py)  
     - [Count Zeroes Factorial](/algorithms/math/count_zeroes_factorial.py)  
@@ -187,6 +192,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Missing Number](/algorithms/math/missing_number.py)  
     - [Next Permutation](/algorithms/math/next_permutation.py)  
     - [Num To Col](/algorithms/math/num_to_col.py)  
+    - [Perfect Number](/algorithms/math/perfect_number.py)  
     - [Power Of Two](/algorithms/math/power_of_two.py)  
     - [Ugly Numbers](/algorithms/math/ugly_numbers.py)  
     - [Valid Number](/algorithms/math/valid_number.py)  
@@ -261,6 +267,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Average Levels](/algorithms/trees/average_levels.py)  
     - [Build Tree Postorder](/algorithms/trees/build_tree_postorder.py)  
     - [Construct Pre In](/algorithms/trees/construct_pre_in.py)  
+    - [Flatten Binary Tree To Linked List](/algorithms/trees/flatten_binary_tree_to_linked_list.py)  
     - [Inorder](/algorithms/trees/inorder.py)  
     - [Invert Tree](/algorithms/trees/invert_tree.py)  
     - [Is Balanced](/algorithms/trees/is_balanced.py)  
@@ -276,6 +283,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Postorder](/algorithms/trees/postorder.py)  
     - [Preorder](/algorithms/trees/preorder.py)  
     - [Same Tree](/algorithms/trees/same_tree.py)  
+    - [Sum Of Left Leaves](/algorithms/trees/sum_of_left_leaves.py)  
     - [Sum Root To Leaf Paths](/algorithms/trees/sum_root_to_leaf_paths.py)  
     - [Symmetric](/algorithms/trees/symmetric.py)  
     - [Tree Paths](/algorithms/trees/tree_paths.py)  
