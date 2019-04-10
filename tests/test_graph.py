@@ -177,8 +177,33 @@ class TestGraphFunctions(unittest.TestCase):
 
         self.assertEqual(minesweeper(board, [3,0]), result)
 
+    def test_max_area_islands(self):
+        grid = [[0,0,1,0,0,0,0,1,0,0,0,0,0],
+                [0,0,0,0,0,0,0,1,1,1,0,0,0],
+                [0,1,1,0,1,0,0,0,0,0,0,0,0],
+                [0,1,0,0,1,1,0,0,1,0,1,0,0],
+                [0,1,0,0,1,1,0,0,1,1,1,0,0],
+                [0,0,0,0,0,0,0,0,0,0,1,0,0],
+                [0,0,0,0,0,0,0,1,1,1,0,0,0],
+                [0,0,0,0,0,0,0,1,1,0,0,0,0]]
 
+        grid2 = [[0,0,0,0,0,0,0,0]]
+        self.assertEqual(max_area_island(grid), 6)
+        self.assertEqual(max_area_island(grid2), 0)
 
-        
+    def test_friends(self):
+        grid =  [[1,1,0],
+                 [1,1,0],
+                 [0,0,1]]
+        self.assertEqual(friend_circle(grid), 2)
+
+    def test_get_imp(self):
+        employees = list()
+        e1 = Employee(1,2,[2])
+        e2 = Employee(2,3,[])
+        employees.append(e1)
+        employees.append(e2)
+        self.assertEqual(get_importance(employees, 2), 3)
+
 if __name__ == '__main__':
     unittest.main()

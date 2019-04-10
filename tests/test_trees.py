@@ -199,5 +199,14 @@ class TestTree(TestSetup):
     def test_max_path(self):
         self.assertEqual(max_path_sum(self.tree1.root), 290)
 
+    def test_find_bottom_left(self):
+        root = TreeNode(1)
+        root.left = TreeNode(2)
+        root.right = TreeNode(3)
+        self.assertEqual(find_bottom_left(root), 2)
+        self.assertEqual(find_bottom_left_v2(root), 2)
+
+    
+
 if __name__ == '__main__':
     unittest.main()
