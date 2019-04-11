@@ -275,6 +275,13 @@ class TestSLLFunctions(TestSetup):
         self.assertEqual(print_list(odd_even_list(list1)), '13524')
         self.assertEqual(print_list(odd_even_list(list2)), '2367154')
 
+    def test_cycle_two(self):
+        head = Node(3)
+        head.next = Node(2)
+        head.next.next = Node(0)
+        head.next.next.next = Node(-4)
+        head.next.next.next.next = head.next
+        self.assertEqual(cycle_two(head), 2)
 
 if __name__ == '__main__':
     unittest.main()

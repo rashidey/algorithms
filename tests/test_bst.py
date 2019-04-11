@@ -118,7 +118,19 @@ class TestBSTFunctions(unittest.TestCase):
         test.root = sorted_list_bst(list1)
         self.assertEqual(str(test), '-10,-3,0,5,9')
 
-
+    def test_increasing_bst(self):
+        list1 = BST()
+        list1.insert_bst(5)
+        list1.insert_bst(3)
+        list1.insert_bst(6)
+        list1.insert_bst(2)
+        list1.insert_bst(4)
+        list1.insert_bst(8)
+        list1.insert_bst(1)
+        list1.insert_bst(7)
+        list1.insert_bst(9)
+        list1.root = increasing_bst(list1.root)
+        self.assertEqual(str(list1), '1,2,3,4,5,6,7,8,9')
 
 if __name__ == '__main__':
     unittest.main()

@@ -199,6 +199,13 @@ class TestSuite2(unittest.TestCase):
         self.assertEqual(detect_capital('USA'), True)
         self.assertEqual(detect_capital('FlaG'), False)
 
+    def test_valid_palindrome(self):
+        self.assertEqual(valid_palindrome('aba'), True)
+        self.assertEqual(valid_palindrome('abca'), True)
+
+    def test_rotated_digits(self):
+        self.assertEqual(rotated_digits(10), 4)
+
 if __name__ == '__main__':
     unittest.main()
 

@@ -205,5 +205,14 @@ class TestGraphFunctions(unittest.TestCase):
         employees.append(e2)
         self.assertEqual(get_importance(employees, 2), 3)
 
+    def test_flood_fill(self):
+        image = [[1,1,1],[1,1,0],[1,0,1]]
+        result = [[2,2,2],[2,2,0],[2,0,1]]
+
+        self.assertEqual(flood_fill(image, 1, 1, 2), result)
+
+    def test_oranges(self):
+        self.assertEqual(orange([[2,1,1],[1,1,0],[0,1,1]]), 4)
+
 if __name__ == '__main__':
     unittest.main()

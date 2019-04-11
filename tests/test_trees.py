@@ -206,7 +206,24 @@ class TestTree(TestSetup):
         self.assertEqual(find_bottom_left(root), 2)
         self.assertEqual(find_bottom_left_v2(root), 2)
 
-    
+    def test_leaf_similar_tree(self):
+        root = TreeNode(1)
+        root.left = TreeNode(2)
+        root.right = TreeNode(3)
+
+        root2 = TreeNode(2)
+        root2.left = TreeNode(2)
+        root2.right = TreeNode(3)
+
+        self.assertEqual(leaf_similar_tree(root, root2), True)
+
+    def test_are_cousins(self):
+        root = TreeNode(1)
+        root.left = TreeNode(2)
+        root.right = TreeNode(3)
+        root.left.right = TreeNode(4)
+        root.right.right = TreeNode(5)
+        self.assertEqual(are_cousins(root, 4, 5), True)
 
 if __name__ == '__main__':
     unittest.main()
