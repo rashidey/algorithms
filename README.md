@@ -35,7 +35,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 
 ## Progress
 **Data Structures** : 10  
-**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 221
+**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 229
 
 ## List of Implementations
 
@@ -100,6 +100,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 * [**Binary Search Tree**](/algorithms/bst)  
     - [*Bst Implementation*](/algorithms/bst/bst_implementation.py)  
     - [Delete Node](/algorithms/bst/delete_node.py)  
+    - [Increasing Order Search Tree](/algorithms/bst/increasing_order_search_tree.py)  
     - [List To Bst](/algorithms/bst/list_to_bst.py)  
     - [Recover Bst](/algorithms/bst/recover_bst.py)  
     - [Validate Bst](/algorithms/bst/validate_bst.py)  
@@ -127,6 +128,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Concatenated Words](/algorithms/graphs/concatenated_words.py)  
     - [Course Order](/algorithms/graphs/course_order.py)  
     - [Employee Importance](/algorithms/graphs/employee_importance.py)  
+    - [Flood Fill](/algorithms/graphs/flood_fill.py)  
     - [Friend Circle](/algorithms/graphs/friend_circle.py)  
     - [House Robber Three](/algorithms/graphs/house_robber_three.py)  
     - [Is Bipartate](/algorithms/graphs/is_bipartate.py)  
@@ -135,6 +137,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Minesweeper](/algorithms/graphs/minesweeper.py)  
     - [Number Islands](/algorithms/graphs/number_islands.py)  
     - [Pacific Atlantic Water Flow](/algorithms/graphs/pacific_atlantic_water_flow.py)  
+    - [Rotton Oranges](/algorithms/graphs/rotton_oranges.py)  
     - [Surround Region](/algorithms/graphs/surround_region.py)  
     - [Word Ladder Two](/algorithms/graphs/word_ladder_two.py)  
     - [Word Ladder](/algorithms/graphs/word_ladder.py)  
@@ -167,6 +170,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Delete Node Without Head](/algorithms/linkedlist/delete_node_without_head.py)  
     - [Intersection](/algorithms/linkedlist/intersection.py)  
     - [Linked Cycle](/algorithms/linkedlist/linked_cycle.py)  
+    - [Linked List Cycle Ii](/algorithms/linkedlist/linked_list_cycle_II.py)  
     - [List Palindrome](/algorithms/linkedlist/list_palindrome.py)  
     - [Merge K Lists](/algorithms/linkedlist/merge_k_lists.py)  
     - [Merge Two Lists](/algorithms/linkedlist/merge_two_lists.py)  
@@ -257,6 +261,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Reverse Words Iii](/algorithms/strings/reverse_words_III.py)  
     - [Robot Origin](/algorithms/strings/robot_origin.py)  
     - [Roman To Int](/algorithms/strings/roman_to_int.py)  
+    - [Rotated Digits](/algorithms/strings/rotated_digits.py)  
     - [String Compression](/algorithms/strings/string_compression.py)  
     - [String To Integer](/algorithms/strings/string_to_integer.py)  
     - [Strstr](/algorithms/strings/strstr.py)  
@@ -266,6 +271,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Valid Anagram](/algorithms/strings/valid_anagram.py)  
     - [Valid Ip](/algorithms/strings/valid_ip.py)  
     - [Valid Palin](/algorithms/strings/valid_palin.py)  
+    - [Valid Palindrome Ii](/algorithms/strings/valid_palindrome_II.py)  
     - [Zigzag Conversion](/algorithms/strings/zigzag_conversion.py)  
   
 * [**Trees**](/algorithms/trees)  
@@ -275,12 +281,14 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Average Levels](/algorithms/trees/average_levels.py)  
     - [Build Tree Postorder](/algorithms/trees/build_tree_postorder.py)  
     - [Construct Pre In](/algorithms/trees/construct_pre_in.py)  
+    - [Cousins In Binary Trees](/algorithms/trees/cousins_in_binary_trees.py)  
     - [Find Bottom Left](/algorithms/trees/find_bottom_left.py)  
     - [Flatten Binary Tree To Linked List](/algorithms/trees/flatten_binary_tree_to_linked_list.py)  
     - [Inorder](/algorithms/trees/inorder.py)  
     - [Invert Tree](/algorithms/trees/invert_tree.py)  
     - [Is Balanced](/algorithms/trees/is_balanced.py)  
     - [Largest Value Level](/algorithms/trees/largest_value_level.py)  
+    - [Left Similar Trees](/algorithms/trees/left_similar_trees.py)  
     - [Level Order One](/algorithms/trees/level_order_one.py)  
     - [Level Order Two](/algorithms/trees/level_order_two.py)  
     - [Max Depth](/algorithms/trees/max_depth.py)  
