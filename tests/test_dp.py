@@ -63,3 +63,25 @@ class TestSuite(unittest.TestCase):
         matrix = [[0,0,0],[0,1,0],[0,0,0]]
         result = [[0,0,0],[0,1,0],[0,0,0]]
         self.assertEqual(zero_matrix(matrix), result)
+
+    def test_house_robber(self):
+        self.assertEqual(house_robber_v1([1,2,3,1]), 4)
+        self.assertEqual(house_robber_v1([2,7,9,3,1]), 12)
+        self.assertEqual(house_robber_v2([1,2,3,1]), 4)
+        self.assertEqual(house_robber_v2([2,7,9,3,1]), 12)
+        self.assertEqual(house_robber_v3([1,2,3,1]), 4)
+        self.assertEqual(house_robber_v3([2,7,9,3,1]), 12)
+        self.assertEqual(house_robber_v4([1,2,3,1]), 4)
+        self.assertEqual(house_robber_v4([2,7,9,3,1]), 12)
+
+    def test_range_sum(self):
+        nums = [-2,0,3,-5,2,-1]
+        num_array = NumArray(nums)
+        self.assertEqual(num_array.sum_range(0,2), 1)
+        self.assertEqual(num_array.sum_range(2,5), -1)
+        self.assertEqual(num_array.sum_range(0,5), -3)
+
+    def test_cost(self):
+        self.assertEqual(min_cost_stairs([1, 100, 1, 1, 1, 100, 1, 1, 100, 1]), 6)
+
+    

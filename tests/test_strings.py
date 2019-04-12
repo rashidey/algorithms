@@ -206,6 +206,9 @@ class TestSuite2(unittest.TestCase):
     def test_rotated_digits(self):
         self.assertEqual(rotated_digits(10), 4)
 
+    def test_longest_palindrome(self):
+        self.assertEqual(longest_palindrome('abccccdd'), 7)
+        
 if __name__ == '__main__':
     unittest.main()
 

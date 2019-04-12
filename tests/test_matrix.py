@@ -32,3 +32,9 @@ class TestSuite(unittest.TestCase):
                  [1,1,0,0]]
 
         self.assertEqual(island_perimeter(matrix), 16)
+
+    def test_image_smoother(self):
+        matrix = [[1,1,1],[1,0,1],[1,1,1]]
+        output = [[0,0,0],[0,0,0],[0,0,0]]
+
+        self.assertEqual(image_smoother(matrix), output)

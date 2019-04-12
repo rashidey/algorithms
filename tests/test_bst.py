@@ -132,5 +132,18 @@ class TestBSTFunctions(unittest.TestCase):
         list1.root = increasing_bst(list1.root)
         self.assertEqual(str(list1), '1,2,3,4,5,6,7,8,9')
 
+    def test_lowest_common_ancestor(self):
+        tree = BST()
+        tree.insert_bst(6)
+        tree.insert_bst(2)
+        tree.insert_bst(8)
+        tree.insert_bst(0)
+        tree.insert_bst(4)
+        tree.insert_bst(7)
+        tree.insert_bst(9)
+        tree.insert_bst(3)
+        tree.insert_bst(5)
+        self.assertEqual(lowest_common_bst(tree.root, 2, 8), 6)
+
 if __name__ == '__main__':
     unittest.main()

@@ -66,3 +66,13 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(search_matrix(matrix, 5), True)
         self.assertEqual(search_matrix(matrix, 20), True)
         self.assertEqual(search_matrix(matrix, 31), False)
+
+    def test_arraning_coins(self):
+        self.assertEqual(arranging_coins(5), 2)
+        self.assertEqual(arranging_coins(8), 3)
+        self.assertEqual(arranging_coins(1804289383), 60070)
+
+    def test_mountain(self):
+        self.assertEqual(mountain_array([0,1,0]), 1)
+        self.assertEqual(mountain_array([0,2,1,0]), 1)
+        self.assertEqual(mountain_array([1,2,3,4,5]), -1)
