@@ -87,6 +87,14 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(find_word_rows(["Hello","Alaska","Dad","Peace", "QWERT"]),
                                         ["Alaska","Dad","QWERT"])
 
+    def test_min_lists(self):
+        list1 = ["Shogun", "Tapioca Express", "Burger King", "KFC"]
+        list2 = ["Piatti", "The Grill at Torrey Pines", "Hungry Hunter Steakhouse", "Shogun"] 
+        self.assertEqual(minimum_lists(list1, list2), ['Shogun'])
+
+    def test_banned_words(self):
+        self.assertEqual(banned_words(['hit'], "Bob hit a ball, the hit BALL flew far after it was hit."), 'ball')
+
 if __name__ == '__main__':
     unittest.main()
 

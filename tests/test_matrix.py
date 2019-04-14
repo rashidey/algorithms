@@ -38,3 +38,16 @@ class TestSuite(unittest.TestCase):
         output = [[0,0,0],[0,0,0],[0,0,0]]
 
         self.assertEqual(image_smoother(matrix), output)
+
+    def test_range_addition(self):
+        self.assertEqual(range_addition(3,3,[[2,2],[3,3]]), 4)
+
+    def test_magic_matrix(self):
+        grid = [[4,3,8,4],[9,5,1,9],[2,7,6,2]]
+        grid2 = [[5,5,5],[5,5,5],[5,5,5]]
+        self.assertEqual(magic_squares(grid), 1)
+        self.assertEqual(magic_squares(grid2), 0)
+
+    def test_toeplitz(self):
+        matrix =  [[1,2,3,4],[5,1,2,3],[9,5,1,2]]
+        self.assertEqual(toeplitz(matrix), True)

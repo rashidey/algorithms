@@ -97,3 +97,27 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(first_missing_positive([3,4,-1,1]), 2)
         self.assertEqual(first_missing_positive([7,8,0,0,9,11,12]), 1)
         self.assertEqual(first_missing_positive([2,4,2,1,32,0,0,-1,3,-2,22,0,3]), 5)
+
+    def test_non_decreasing(self):
+        self.assertEqual(non_decreasing_array([4,2,3]), True)
+
+    def test_assign_cookies(self):
+        self.assertEqual(assign_cookies([1,2],[1,1]), 1)
+
+    def test_min_moves(self):
+        self.assertEqual(minimum_moves([1,2,3]), 3)
+
+    def test_next_greater(self):
+        self.assertEqual(next_greater_element([4,1,2],[1,3,4,2]), [-1,3,-1])
+
+    def test_count_candies(self):
+        self.assertEqual(distribute_candies([1,1,2,2,3,3]), 3)
+
+    def test_shortest_unsorted_subarray(self):
+        self.assertEqual(shortest_unsorted([2,6,4,8,10,9,15]), 5)
+
+    def test_set_mismatch(self):
+        self.assertEqual(find_set_mismatch([1,2,2,4]), [2,3])
+
+    def test_max_dist(self):
+        self.assertEqual(max_dist([1,0,0,0,1,0,1]), 2)

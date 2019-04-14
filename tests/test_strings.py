@@ -208,7 +208,11 @@ class TestSuite2(unittest.TestCase):
 
     def test_longest_palindrome(self):
         self.assertEqual(longest_palindrome('abccccdd'), 7)
+    
+    def test_backspace_compare(self):
+        self.assertEqual(backspace_compare('ab#c', 'ad#c'), True)
         
+
 if __name__ == '__main__':
     unittest.main()
 

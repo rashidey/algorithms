@@ -122,3 +122,7 @@ class TestSuite(unittest.TestCase):
 
     def test_rectangle_area(self):
         self.assertEqual(build_rectangle(4), [2,2])
+
+    def test_nth_digit(self):
+        self.assertEqual(nth_digit(1), 1)
+        self.assertEqual(nth_digit(11), 0)
