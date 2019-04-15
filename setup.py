@@ -11,7 +11,7 @@ def long_description():
 
 
 setup(name='algorithms3',
-      version='0.1.7',
+      version='0.1.8',
       description='Data Structures and Algorithms using Python',
       long_description=long_description(),
       long_description_content_type="text/markdown",

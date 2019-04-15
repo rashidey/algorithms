@@ -84,4 +84,5 @@ class TestSuite(unittest.TestCase):
     def test_cost(self):
         self.assertEqual(min_cost_stairs([1, 100, 1, 1, 1, 100, 1, 1, 100, 1]), 6)
 
-    
+    def test_subarray_sum(self):
+        self.assertEqual(subarray_sum([1,5], -6), True)

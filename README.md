@@ -35,7 +35,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 
 ## Progress
 **Data Structures** : 10  
-**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 255
+**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 256
 
 ## List of Implementations
 
@@ -118,6 +118,7 @@ I have written basic tests for most of the modules. To run all the tests at once
   
 * [**Dynamic Programming**](/algorithms/dp)  
     - [Climbing Stairs](/algorithms/dp/climbing_stairs.py)  
+    - [Continuous Subarray Sum](/algorithms/dp/continuous_subarray_sum.py)  
     - [Delete Operations For Two Strings](/algorithms/dp/delete_operations_for_two_strings.py)  
     - [Fibonacci](/algorithms/dp/fibonacci.py)  
     - [House Robber](/algorithms/dp/house_robber.py)  
