@@ -95,6 +95,19 @@ class TestSuite(unittest.TestCase):
     def test_banned_words(self):
         self.assertEqual(banned_words(['hit'], "Bob hit a ball, the hit BALL flew far after it was hit."), 'ball')
 
+    def test_subdomain(self):
+        self.assertEqual(len(subdomain_visit(["9001 discuss.leetcode.com"])), 3)
+    
+
+    def test_uncommon_words(self):
+        self.assertEqual(uncommon_words('apple apple', 'banana'), ['banana'])
+
+
+
+
+
+
+
 if __name__ == '__main__':
     unittest.main()
 

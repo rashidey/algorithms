@@ -121,3 +121,25 @@ class TestSuite(unittest.TestCase):
 
     def test_max_dist(self):
         self.assertEqual(max_dist([1,0,0,0,1,0,1]), 2)
+
+    def test_degree_array(self):
+        self.assertEqual(degree_array([1, 2, 2, 3, 1]), 2)
+        self.assertEqual(degree_array([1,2,2,3,1,4,2]), 6)
+
+    def test_pivot_index(self):
+        self.assertEqual(pivot_index([1,7,3,6,5,6]), 3)
+        self.assertEqual(pivot_index([1,2,3]), -1)
+
+    def test_array_partition(self):
+        self.assertEqual(array_partition([1,4,3,2]), 4)
+
+    def test_lis_con(self):
+        self.assertEqual(lis_continuous([1,3,5,4,7]), 3)
+        self.assertEqual(lis_continuous([2,2,2,2,2,2]), 1)
+        self.assertEqual(lis_continuous([1,2]), 2)
+
+    def test_largest_twice(self):
+        self.assertEqual(largest_twice([3,6,1,0]), 1)
+
+    def test_position_largest_groups(self):
+        self.assertEqual(position_large_groups('abbxxxxzzy'), [[3,6]])

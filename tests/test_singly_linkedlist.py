@@ -283,6 +283,12 @@ class TestSLLFunctions(TestSetup):
         head.next.next.next.next = head.next
         self.assertEqual(cycle_two(head), 2)
 
+    def test_middle_node(self):
+        head = Node(1)
+        head.next = Node(2)
+        head.next.next = Node(3)
+        self.assertEqual(middle_node(head).val, 2)
+
 if __name__ == '__main__':
     unittest.main()
 

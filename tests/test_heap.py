@@ -8,3 +8,13 @@ class TestSuite(unittest.TestCase):
 
     def test_k_most(self):
         self.assertEqual(k_most_frequent([1,1,1,2,2,3], 2), [1,2])
+
+    def test_kth_largest(self):
+        k = 3
+        nums = [4,5,8,2]
+        kth_largest = KthLargest(k, nums)
+        self.assertEqual(kth_largest.add(3), 4)
+        self.assertEqual(kth_largest.add(5), 5)
+        self.assertEqual(kth_largest.add(10), 5)
+        self.assertEqual(kth_largest.add(9), 8)
+        self.assertEqual(kth_largest.add(4), 8)

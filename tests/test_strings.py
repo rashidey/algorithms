@@ -211,8 +211,13 @@ class TestSuite2(unittest.TestCase):
     
     def test_backspace_compare(self):
         self.assertEqual(backspace_compare('ab#c', 'ad#c'), True)
-        
+    
+    def test_repeated_substring(self):
+        self.assertEqual(repeated_substring('abab'), True)
 
+    def test_repeated_string_match(self):
+        self.assertEqual(repeated_string_match('abcd', 'cdabcdab'), 3)
+        
 if __name__ == '__main__':
     unittest.main()
 

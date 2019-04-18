@@ -31,7 +31,8 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(eval_rpn(["10", "6", "9", "3", "+", "-11", 
                                    "*", "/", "*", "17", "+", "5", "+"]), 22)
 
-
+    def test_baseball(self):
+        self.assertEqual(baseball(["5","-2","4","C","D","9","+","+"]), 27)
 
 if __name__ == '__main__':
     unittest.main()

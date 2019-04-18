@@ -86,3 +86,7 @@ class TestSuite(unittest.TestCase):
 
     def test_subarray_sum(self):
         self.assertEqual(subarray_sum([1,5], -6), True)
+
+    def test_integer_replacement(self):
+        self.assertEqual(integer_replacement(8), 3)
+        self.assertEqual(integer_replacement(7), 4)

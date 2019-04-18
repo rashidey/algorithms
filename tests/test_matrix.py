@@ -51,3 +51,13 @@ class TestSuite(unittest.TestCase):
     def test_toeplitz(self):
         matrix =  [[1,2,3,4],[5,1,2,3],[9,5,1,2]]
         self.assertEqual(toeplitz(matrix), True)
+
+    def test_flip_image(self):
+        matrix = [[1,1,0], [1,0,1],[0,0,0]]
+        output = [[1,0,0], [0,1,0],[1,1,1]]
+        self.assertEqual(flip_image(matrix), output)
+
+    def test_transpose(self):
+        matrix = [[1,2,3],[4,5,6],[7,8,9]]
+        output = [[1,4,7],[2,5,8],[3,6,9]]
+        self.assertEqual(transpose(matrix), output)
