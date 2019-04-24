@@ -61,3 +61,8 @@ class TestSuite(unittest.TestCase):
         matrix = [[1,2,3],[4,5,6],[7,8,9]]
         output = [[1,4,7],[2,5,8],[3,6,9]]
         self.assertEqual(transpose(matrix), output)
+
+    def test_game_of_life(self):
+        matrix = [[0,1,0],[0,0,1],[1,1,1],[0,0,0]]
+        output = [[0,0,0],[1,0,1],[0,1,1],[0,1,0]]
+        self.assertEqual(game_of_life(matrix), output)

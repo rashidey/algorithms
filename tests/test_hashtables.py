@@ -102,9 +102,15 @@ class TestSuite(unittest.TestCase):
     def test_uncommon_words(self):
         self.assertEqual(uncommon_words('apple apple', 'banana'), ['banana'])
 
+    def test_shortest_completing_word(self):
+        self.assertEqual(shortest_completing_word('1s3 PSt', ['step', 'steps', 'stripe', 'stepple']), 'steps')
 
+    def test_is_alien(self):
+        self.assertEqual(is_alien(['hello', 'leetcode'], 'hlabcdefgijkmnopqrstuvwxyz'), True)
 
-
+    def test_common_chars(self):
+        self.assertEqual(common_chars(["bella","label","roller"]), ['e', 'l', 'l'])
+        self.assertEqual(common_chars(['cool', 'lokc', 'cook']), ['c', 'o'])
 
 
 

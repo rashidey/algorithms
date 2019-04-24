@@ -143,3 +143,8 @@ class TestSuite(unittest.TestCase):
 
     def test_position_largest_groups(self):
         self.assertEqual(position_large_groups('abbxxxxzzy'), [[3,6]])
+
+    def test_find_all_duplicates(self):
+        self.assertEqual(find_all_duplicates([4,3,2,7,8,2,3,1]), [2, 3])
+
+    

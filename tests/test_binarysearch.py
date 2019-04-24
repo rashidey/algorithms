@@ -76,3 +76,6 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(mountain_array([0,1,0]), 1)
         self.assertEqual(mountain_array([0,2,1,0]), 1)
         self.assertEqual(mountain_array([1,2,3,4,5]), -1)
+
+    def test_sorted_rotated(self):
+        self.assertEqual(sorted_array_rotated_duplicates([2,5,6,0,0,1,2], 0), True)

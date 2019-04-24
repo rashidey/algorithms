@@ -35,7 +35,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 
 ## Progress
 **Data Structures** : 10  
-**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 279
+**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 290
 
 ## List of Implementations
 
@@ -52,6 +52,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Degree Array](/algorithms/arrays/degree_array.py)  
     - [Distribute Candies](/algorithms/arrays/distribute_candies.py)  
     - [Find All Dissapeared Numbers](/algorithms/arrays/find_all_dissapeared_numbers.py)  
+    - [Find All Duplicates](/algorithms/arrays/find_all_duplicates.py)  
     - [Find Pivot Index](/algorithms/arrays/find_pivot_index.py)  
     - [First Missing Positive](/algorithms/arrays/first_missing_positive.py)  
     - [Intersection Two Arrays Ii](/algorithms/arrays/intersection_two_arrays_II.py)  
@@ -107,6 +108,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Search 2D Matrix](/algorithms/binarysearch/search_2d_matrix.py)  
     - [Search Insert Position](/algorithms/binarysearch/search_insert_position.py)  
     - [Search Range](/algorithms/binarysearch/search_range.py)  
+    - [Search Rotated Array Ii](/algorithms/binarysearch/search_rotated_array_II.py)  
     - [Search Rotated Array](/algorithms/binarysearch/search_rotated_array.py)  
     - [Sqrt Number](/algorithms/binarysearch/sqrt_number.py)  
     - [Valid Perfect Square](/algorithms/binarysearch/valid_perfect_square.py)  
@@ -156,6 +158,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [House Robber Three](/algorithms/graphs/house_robber_three.py)  
     - [Is Bipartate](/algorithms/graphs/is_bipartate.py)  
     - [Jump Game Ii](/algorithms/graphs/jump_game_II.py)  
+    - [Make Larger Island](/algorithms/graphs/make_larger_island.py)  
     - [Max Area Island](/algorithms/graphs/max_area_island.py)  
     - [Minesweeper](/algorithms/graphs/minesweeper.py)  
     - [Number Islands](/algorithms/graphs/number_islands.py)  
@@ -170,6 +173,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [*Hashmap Implementation*](/algorithms/hashtables/hashmap_implementation.py)  
     - [Banned Words](/algorithms/hashtables/banned_words.py)  
     - [Bulls And Cows](/algorithms/hashtables/bulls_and_cows.py)  
+    - [Find Common Characters](/algorithms/hashtables/find_common_characters.py)  
     - [Four Sum](/algorithms/hashtables/four_sum.py)  
     - [Group Anagrams](/algorithms/hashtables/group_anagrams.py)  
     - [Hashmap](/algorithms/hashtables/hashmap.py)  
@@ -177,6 +181,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Keyboard Row](/algorithms/hashtables/keyboard_row.py)  
     - [Minimum Index Sum Of Two Lists](/algorithms/hashtables/minimum_index_sum_of_two_lists.py)  
     - [Repeated Dna Sequences](/algorithms/hashtables/repeated_dna_sequences.py)  
+    - [Shortest Completing Word](/algorithms/hashtables/shortest_completing_word.py)  
     - [Shuffle Array](/algorithms/hashtables/shuffle_array.py)  
     - [Subdomain Visit Count](/algorithms/hashtables/subdomain_visit_count.py)  
     - [Substring Concat](/algorithms/hashtables/substring_concat.py)  
@@ -184,6 +189,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Two Sum](/algorithms/hashtables/two_sum.py)  
     - [Uncommon Words](/algorithms/hashtables/uncommon_words.py)  
     - [Valid Sudoku](/algorithms/hashtables/valid_sudoku.py)  
+    - [Verifying Alien Dictionary](/algorithms/hashtables/verifying_alien_dictionary.py)  
     - [Word Pattern](/algorithms/hashtables/word_pattern.py)  
   
 * [**Heaps**](/algorithms/heaps)  
@@ -244,6 +250,7 @@ I have written basic tests for most of the modules. To run all the tests at once
   
 * [**Matrix**](/algorithms/matrix)  
     - [Flip Image](/algorithms/matrix/flip_image.py)  
+    - [Game Of Life](/algorithms/matrix/game_of_life.py)  
     - [Image Smoother](/algorithms/matrix/image_smoother.py)  
     - [Island Perimeter](/algorithms/matrix/island_perimeter.py)  
     - [Magic Squares In Grid](/algorithms/matrix/magic_squares_in_grid.py)  
@@ -267,8 +274,10 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Bubble Sort](/algorithms/sort/bubble_sort.py)  
     - [Insertion Sort](/algorithms/sort/insertion_sort.py)  
     - [Merge Sort](/algorithms/sort/merge_sort.py)  
+    - [Most Profit Workers](/algorithms/sort/most_profit_workers.py)  
     - [Quick Sort](/algorithms/sort/quick_sort.py)  
     - [Selection Sort](/algorithms/sort/selection_sort.py)  
+    - [Sort Three Colors](/algorithms/sort/sort_three_colors.py)  
   
 * [**Stack**](/algorithms/stack)  
     - [Baseball Game](/algorithms/stack/baseball_game.py)  
@@ -281,6 +290,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Add Binary](/algorithms/strings/add_binary.py)  
     - [Add Strings](/algorithms/strings/add_strings.py)  
     - [Backspace Compare](/algorithms/strings/backspace_compare.py)  
+    - [Buddy Strings](/algorithms/strings/buddy_strings.py)  
     - [Compare Version Numbers](/algorithms/strings/compare_version_numbers.py)  
     - [Count Say](/algorithms/strings/count_say.py)  
     - [Decode String](/algorithms/strings/decode_string.py)  
@@ -297,6 +307,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Longest Palin Substring](/algorithms/strings/longest_palin_substring.py)  
     - [Longest Palindrome](/algorithms/strings/longest_palindrome.py)  
     - [Longest Substring Without Repeating](/algorithms/strings/longest_substring_without_repeating.py)  
+    - [Longest Uncommon Seq](/algorithms/strings/longest_uncommon_seq.py)  
     - [Multiply Strings](/algorithms/strings/multiply_strings.py)  
     - [Number Of Segments String](/algorithms/strings/number_of_segments_string.py)  
     - [Palindrome](/algorithms/strings/palindrome.py)  

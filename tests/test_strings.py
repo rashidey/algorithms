@@ -217,7 +217,13 @@ class TestSuite2(unittest.TestCase):
 
     def test_repeated_string_match(self):
         self.assertEqual(repeated_string_match('abcd', 'cdabcdab'), 3)
-        
+    
+    def test_buddy(self):
+        self.assertEqual(buddy_strings('ab', 'ba'), True)
+
+    def test_longest_uncommon(self):
+        self.assertEqual(longest_uncommon('aba', 'cdc'), 3)
+
 if __name__ == '__main__':
     unittest.main()
 

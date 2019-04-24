@@ -38,3 +38,10 @@ class TestSuite(TestSetup):
             nums_copy = nums 
             quick_sort(nums_copy, 0, len(nums) - 1)
             self.assertEqual(nums_copy, sorted(nums))
+
+    def test_sort_colors(self):
+        nums = [2,0,2,1,1,0]
+        self.assertEqual(sort_colors(nums), sorted(nums))
+
+    def test_max_profit(self):
+        self.assertEqual(max_profit_worker([2,4,6,8,10], [10,20,30,40,50],[4,5,6,7]), 100)

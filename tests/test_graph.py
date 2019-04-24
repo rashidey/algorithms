@@ -214,5 +214,10 @@ class TestGraphFunctions(unittest.TestCase):
     def test_oranges(self):
         self.assertEqual(orange([[2,1,1],[1,1,0],[0,1,1]]), 4)
 
+    def test_make_larger_island(self):
+        grid = [[1, 0], [0, 1]]
+        self.assertEqual(largest_island(grid), 3)
+        #self.assertEqual(largest_island([[1, 1], [1, 1]]), 4)
+
 if __name__ == '__main__':
     unittest.main()
