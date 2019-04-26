@@ -16,3 +16,13 @@ class TestSuite(unittest.TestCase):
 
     def test_max_water(self):
         self.assertEqual(max_area_water([1,8,6,2,5,4,8,3,7]), 49)
+
+    def test_find_duplicates(self):
+        self.assertEqual(find_duplicate([1,3,4,2,2]), 2)
+
+    def test_longest_word_in_dict(self):
+        self.assertEqual(longest_word_dict('abpcplea', ["ale","apple","monkey","plea"]), 'apple')
+
+    def test_character_replacement(self):
+        self.assertEqual(character_replacement('ABAB', 2), 4)
+

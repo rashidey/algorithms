@@ -289,6 +289,19 @@ class TestSLLFunctions(TestSetup):
         head.next.next = Node(3)
         self.assertEqual(middle_node(head).val, 2)
 
+    def test_partition_list(self):
+        head = convert_to_list([1,4,3,2,5,2])
+        self.assertEqual(print_list(partition_list(head, 3)), '122435')
+
+    def test_add_two_lists(self):
+        head1 = convert_to_list([7,2,4,3])
+        head2 = convert_to_list([5,6,4])
+        self.assertEqual(print_list(add_two_numbers_list(head1, head2)), '7807')
+
+    def test_sort_list(self):
+        head = convert_to_list([4,2,1,3])
+        self.assertEqual(print_list(sort_list(head)), '1234')
+
 if __name__ == '__main__':
     unittest.main()
 

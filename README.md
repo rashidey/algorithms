@@ -35,7 +35,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 
 ## Progress
 **Data Structures** : 10  
-**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 290
+**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 302
 
 ## List of Implementations
 
@@ -55,6 +55,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Find All Duplicates](/algorithms/arrays/find_all_duplicates.py)  
     - [Find Pivot Index](/algorithms/arrays/find_pivot_index.py)  
     - [First Missing Positive](/algorithms/arrays/first_missing_positive.py)  
+    - [Friends Of Ages](/algorithms/arrays/friends_of_ages.py)  
     - [Intersection Two Arrays Ii](/algorithms/arrays/intersection_two_arrays_II.py)  
     - [K Diff Pairs](/algorithms/arrays/k_diff_pairs.py)  
     - [Largest Number Twice Of Others](/algorithms/arrays/largest_number_twice_of_others.py)  
@@ -173,16 +174,20 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [*Hashmap Implementation*](/algorithms/hashtables/hashmap_implementation.py)  
     - [Banned Words](/algorithms/hashtables/banned_words.py)  
     - [Bulls And Cows](/algorithms/hashtables/bulls_and_cows.py)  
+    - [Encode Decode](/algorithms/hashtables/encode_decode.py)  
     - [Find Common Characters](/algorithms/hashtables/find_common_characters.py)  
     - [Four Sum](/algorithms/hashtables/four_sum.py)  
+    - [Fraction To Decimal](/algorithms/hashtables/fraction_to_decimal.py)  
     - [Group Anagrams](/algorithms/hashtables/group_anagrams.py)  
     - [Hashmap](/algorithms/hashtables/hashmap.py)  
     - [Hashset](/algorithms/hashtables/hashset.py)  
     - [Keyboard Row](/algorithms/hashtables/keyboard_row.py)  
+    - [Magic Dictionary](/algorithms/hashtables/magic_dictionary.py)  
     - [Minimum Index Sum Of Two Lists](/algorithms/hashtables/minimum_index_sum_of_two_lists.py)  
     - [Repeated Dna Sequences](/algorithms/hashtables/repeated_dna_sequences.py)  
     - [Shortest Completing Word](/algorithms/hashtables/shortest_completing_word.py)  
     - [Shuffle Array](/algorithms/hashtables/shuffle_array.py)  
+    - [Sort By Count](/algorithms/hashtables/sort_by_count.py)  
     - [Subdomain Visit Count](/algorithms/hashtables/subdomain_visit_count.py)  
     - [Substring Concat](/algorithms/hashtables/substring_concat.py)  
     - [Three Sum](/algorithms/hashtables/three_sum.py)  
@@ -200,6 +205,7 @@ I have written basic tests for most of the modules. To run all the tests at once
   
 * [**Linked List**](/algorithms/linkedlist)  
     - [*Singly Linked List Implementation*](/algorithms/linkedlist/singly_linked_list_implementation.py)  
+    - [Add Two Numbers Ii](/algorithms/linkedlist/add_two_numbers_II.py)  
     - [Add Two Numbers](/algorithms/linkedlist/add_two_numbers.py)  
     - [Delete Duplicates All](/algorithms/linkedlist/delete_duplicates_all.py)  
     - [Delete Duplicates](/algorithms/linkedlist/delete_duplicates.py)  
@@ -213,6 +219,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Merge Two Lists](/algorithms/linkedlist/merge_two_lists.py)  
     - [Middle Linked List](/algorithms/linkedlist/middle_linked_list.py)  
     - [Odd Even Linked List](/algorithms/linkedlist/odd_even_linked_list.py)  
+    - [Partition List](/algorithms/linkedlist/partition_list.py)  
     - [Remove Element](/algorithms/linkedlist/remove_element.py)  
     - [Remove Nth End](/algorithms/linkedlist/remove_nth_end.py)  
     - [Reorder List](/algorithms/linkedlist/reorder_list.py)  
@@ -220,6 +227,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Reverse Linkedlist](/algorithms/linkedlist/reverse_linkedlist.py)  
     - [Reverse Mn](/algorithms/linkedlist/reverse_mn.py)  
     - [Rotate List](/algorithms/linkedlist/rotate_list.py)  
+    - [Sort List](/algorithms/linkedlist/sort_list.py)  
     - [Swap Pairs](/algorithms/linkedlist/swap_pairs.py)  
   
 * [**Math**](/algorithms/math)  
@@ -372,9 +380,13 @@ I have written basic tests for most of the modules. To run all the tests at once
   
 * [**Trie**](/algorithms/trie)  
     - [*Trie Implementation*](/algorithms/trie/trie_implementation.py)  
+    - [Replace Words](/algorithms/trie/replace_words.py)  
   
 * [**Two Pointers**](/algorithms/twopointers)  
     - [Container With Most Water](/algorithms/twopointers/container_with_most_water.py)  
+    - [Find Duplicate Number](/algorithms/twopointers/find_duplicate_number.py)  
+    - [Longest Repeating Character Replacement](/algorithms/twopointers/longest_repeating_character_replacement.py)  
+    - [Longest Word In Dictionary](/algorithms/twopointers/longest_word_in_dictionary.py)  
     - [Remove Duplicates](/algorithms/twopointers/remove_duplicates.py)  
     - [Remove Element](/algorithms/twopointers/remove_element.py)  
     - [Three Sum Closest](/algorithms/twopointers/three_sum_closest.py)  

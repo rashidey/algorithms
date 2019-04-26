@@ -147,4 +147,6 @@ class TestSuite(unittest.TestCase):
     def test_find_all_duplicates(self):
         self.assertEqual(find_all_duplicates([4,3,2,7,8,2,3,1]), [2, 3])
 
-    
+    def test_friend_requests(self):
+        self.assertEqual(friend_requests([16,16]), 2)
+

@@ -98,7 +98,6 @@ class TestSuite(unittest.TestCase):
     def test_subdomain(self):
         self.assertEqual(len(subdomain_visit(["9001 discuss.leetcode.com"])), 3)
     
-
     def test_uncommon_words(self):
         self.assertEqual(uncommon_words('apple apple', 'banana'), ['banana'])
 
@@ -112,7 +111,18 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(common_chars(["bella","label","roller"]), ['e', 'l', 'l'])
         self.assertEqual(common_chars(['cool', 'lokc', 'cook']), ['c', 'o'])
 
+    def test_fraction_to_decimal(self):
+        self.assertEqual(fraction_to_decimal(2, 3), '0.(6)')
 
+    def test_frequency_sort(self):
+        self.assertEqual(frequency_sort('bbaaaa'), 'aaaabb')
+
+    def test_magic_dictionary(self):
+        obj = MagicDictionary()
+        obj.buildDict(['hello', 'leetcode'])
+        self.assertEqual(obj.search('hello'), False)
+        self.assertEqual(obj.search('hhllo'), True)
+        self.assertEqual(obj.search('hell'), False)
 
 if __name__ == '__main__':
     unittest.main()
