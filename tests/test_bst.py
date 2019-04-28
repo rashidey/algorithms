@@ -2,6 +2,56 @@ from algorithms.bst import *
 
 import unittest
 
+def serialize(root):
+        """Encodes a tree to a single string.
+        
+        :type root: TreeNode
+        :rtype: str
+        """
+        result = []
+        if not root: return result
+        
+        que = deque([root])
+        while que:
+            current = que.popleft()
+            result.append(current.val if current else None)
+            if current:
+                que.append(current.left)
+                que.append(current.right)
+        
+        while result and result[-1] is None: result.pop()
+
+        return result 
+            
+def deserialize(data):
+    """Decodes your encoded data to tree.
+    
+    :type data: str
+    :rtype: TreeNode
+    """
+    if not data: return None
+    root = TreeNode(data[0])
+    nodeQueue = [root]
+    front, start = 0, 1
+    while start < len(data):
+        node = nodeQueue[front]
+        front = front + 1
+
+        if data[start] is not None:
+            node.left = TreeNode(data[start])
+            nodeQueue.append(node.left)
+        
+        start += 1
+        if start >= len(data): break
+
+        if data[start] is not None:
+            node.right = TreeNode(data[start])
+            nodeQueue.append(node.right)
+    
+        start += 1
+    
+    return root
+
 class Node:
     def __init__(self, x):
         self.val = x
@@ -144,6 +194,39 @@ class TestBSTFunctions(unittest.TestCase):
         tree.insert_bst(3)
         tree.insert_bst(5)
         self.assertEqual(lowest_common_bst(tree.root, 2, 8), 6)
+
+    def test_bst_iterator(self):
+        root = BST()
+        root.insert_bst(7)
+        root.insert_bst(3)
+        root.insert_bst(15)
+        root.insert_bst(9)
+        root.insert_bst(20)
+        iterator = BSTIterator(root.root)
+        self.assertEqual(iterator.next(), 3)
+        self.assertEqual(iterator.next(), 7)
+        self.assertEqual(iterator.has_next(), True)
+        self.assertEqual(iterator.next(), 9)
+
+    def test_kth_smallest_bst(self):
+        root = BST()
+        root.insert_bst(3)
+        root.insert_bst(1)
+        root.insert_bst(4)
+        root.insert_bst(2)
+        self.assertEqual(kth_smallest_bst(root.root, 1), 1)
+
+    def test_find_mode(self):
+        root = deserialize([1, None, 2, 2])
+        self.assertEqual(find_mode(root), [2])
+        root = deserialize([1])
+        self.assertEqual(find_mode(root), [1])
+        root = deserialize([1, None, 2])
+        self.assertEqual(find_mode(root), [1, 2])
+
+    def test_min_diff(self):
+        root = deserialize([1,None,3,2])
+        self.assertEqual(min_diff_bst(root), 1)
 
 if __name__ == '__main__':
     unittest.main()

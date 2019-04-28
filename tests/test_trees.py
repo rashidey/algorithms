@@ -2,6 +2,56 @@ import copy
 from algorithms.trees import *
 import unittest
 
+def serialize(root):
+        """Encodes a tree to a single string.
+        
+        :type root: TreeNode
+        :rtype: str
+        """
+        result = []
+        if not root: return result
+        
+        que = deque([root])
+        while que:
+            current = que.popleft()
+            result.append(current.val if current else None)
+            if current:
+                que.append(current.left)
+                que.append(current.right)
+        
+        while result and result[-1] is None: result.pop()
+
+        return result 
+            
+def deserialize(data):
+    """Decodes your encoded data to tree.
+    
+    :type data: str
+    :rtype: TreeNode
+    """
+    if not data: return None
+    root = TreeNode(data[0])
+    nodeQueue = [root]
+    front, start = 0, 1
+    while start < len(data):
+        node = nodeQueue[front]
+        front = front + 1
+
+        if data[start] is not None:
+            node.left = TreeNode(data[start])
+            nodeQueue.append(node.left)
+        
+        start += 1
+        if start >= len(data): break
+
+        if data[start] is not None:
+            node.right = TreeNode(data[start])
+            nodeQueue.append(node.right)
+    
+        start += 1
+    
+    return root
+
 class TestSetup(unittest.TestCase):
     
     def setUp(self):
@@ -81,7 +131,6 @@ class TestTree(TestSetup):
         self.assertEqual(level_order_two(self.tree4.root), [[15,7],[9,20],[3]])
         self.assertEqual(zigzag_level_order(self.tree4.root), [[3],[20,9],[15,7]])
 
-
     def test_symmetric(self):
         self.assertEqual(is_symmetric(self.tree2.root), False)
         self.assertEqual(is_symmetric(self.tree5.root), True)
@@ -124,7 +173,6 @@ class TestTree(TestSetup):
     def test_min_depth(self):
         self.assertEqual(min_depth(self.tree1.root), 3)
         self.assertEqual(min_depth(self.tree4.root), 2)
-
 
     def test_build_inpre(self):
         self.assertEqual(inorder_recursive(build_tree_inpre([3,9,20,15,7],[9,3,15,20,7])), 
@@ -224,6 +272,44 @@ class TestTree(TestSetup):
         root.left.right = TreeNode(4)
         root.right.right = TreeNode(5)
         self.assertEqual(are_cousins(root, 4, 5), True)
+
+    def test_lowest_common_ancestor(self):
+        tree2 = Tree()
+        tree2.insert(1)
+        tree2.insert(2)
+        tree2.insert(3)
+        tree2.insert(4)
+        tree2.insert(5)
+        tree2.insert(6)
+        tree2.insert(7)
+
+        self.assertEqual(lowest_common_ancestor(tree2.root, 4, 6), 1)
+
+    def test_serialize(self):
+        root = TreeNode(1)
+        root.left = TreeNode(2)
+        root.right = TreeNode(3)
+        root.right.left = TreeNode(4)
+        root.right.right = TreeNode(5)
+
+        codec = Codec()
+        self.assertEqual(codec.serialize(root), [1,2,3,None,None,4,5])
+
+    def test_sum_root_leafs(self):
+        root = TreeNode(1)
+        root.left = TreeNode(0)
+        root.right = TreeNode(1)
+        root.left.left = TreeNode(0)
+        root.left.right = TreeNode(1)
+        root.right.left = TreeNode(0)
+        root.right.right = TreeNode(1)
+        self.assertEqual(sum_root_to_leafs(root), 22)
+
+    def test_greater_tree(self):
+        root = deserialize([5,2,13])
+        self.assertEqual(serialize(greater_tree(root)), [18,20,13])
+
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -35,7 +35,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 
 ## Progress
 **Data Structures** : 10  
-**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 302
+**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 317
 
 ## List of Implementations
 
@@ -119,11 +119,16 @@ I have written basic tests for most of the modules. To run all the tests at once
   
 * [**Binary Search Tree**](/algorithms/bst)  
     - [*Bst Implementation*](/algorithms/bst/bst_implementation.py)  
+    - [Bst Iterator](/algorithms/bst/bst_iterator.py)  
     - [Delete Node](/algorithms/bst/delete_node.py)  
+    - [Find Mode Bst](/algorithms/bst/find_mode_bst.py)  
     - [Increasing Order Search Tree](/algorithms/bst/increasing_order_search_tree.py)  
+    - [Kth Smallest Element](/algorithms/bst/kth_smallest_element.py)  
     - [List To Bst](/algorithms/bst/list_to_bst.py)  
     - [Lowest Common Ancestor Bst](/algorithms/bst/lowest_common_ancestor_bst.py)  
+    - [Minimum Diff Bst](/algorithms/bst/minimum_diff_bst.py)  
     - [Recover Bst](/algorithms/bst/recover_bst.py)  
+    - [Search Bst](/algorithms/bst/search_bst.py)  
     - [Validate Bst](/algorithms/bst/validate_bst.py)  
   
 * [**Dynamic Programming**](/algorithms/dp)  
@@ -182,6 +187,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Hashmap](/algorithms/hashtables/hashmap.py)  
     - [Hashset](/algorithms/hashtables/hashset.py)  
     - [Keyboard Row](/algorithms/hashtables/keyboard_row.py)  
+    - [Lru Cache](/algorithms/hashtables/lru_cache.py)  
     - [Magic Dictionary](/algorithms/hashtables/magic_dictionary.py)  
     - [Minimum Index Sum Of Two Lists](/algorithms/hashtables/minimum_index_sum_of_two_lists.py)  
     - [Repeated Dna Sequences](/algorithms/hashtables/repeated_dna_sequences.py)  
@@ -300,10 +306,12 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Backspace Compare](/algorithms/strings/backspace_compare.py)  
     - [Buddy Strings](/algorithms/strings/buddy_strings.py)  
     - [Compare Version Numbers](/algorithms/strings/compare_version_numbers.py)  
+    - [Complex Number Multiplication](/algorithms/strings/complex_number_multiplication.py)  
     - [Count Say](/algorithms/strings/count_say.py)  
     - [Decode String](/algorithms/strings/decode_string.py)  
     - [Detect Capital](/algorithms/strings/detect_capital.py)  
     - [Find All Anagrams](/algorithms/strings/find_all_anagrams.py)  
+    - [Find Duplicate Files](/algorithms/strings/find_duplicate_files.py)  
     - [First Unique Character](/algorithms/strings/first_unique_character.py)  
     - [Goat Latin](/algorithms/strings/goat_latin.py)  
     - [Int To Roman](/algorithms/strings/int_to_roman.py)  
@@ -318,9 +326,11 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Longest Uncommon Seq](/algorithms/strings/longest_uncommon_seq.py)  
     - [Multiply Strings](/algorithms/strings/multiply_strings.py)  
     - [Number Of Segments String](/algorithms/strings/number_of_segments_string.py)  
+    - [Optimal Division](/algorithms/strings/optimal_division.py)  
     - [Palindrome](/algorithms/strings/palindrome.py)  
     - [Permutations In String](/algorithms/strings/permutations_in_string.py)  
     - [Ransom Note](/algorithms/strings/ransom_note.py)  
+    - [Remove Comments](/algorithms/strings/remove_comments.py)  
     - [Repeated String Match](/algorithms/strings/repeated_string_match.py)  
     - [Repeated Substring Pattern](/algorithms/strings/repeated_substring_pattern.py)  
     - [Reverse Int](/algorithms/strings/reverse_int.py)  
@@ -350,6 +360,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [*Trie Implementation*](/algorithms/trees/trie_implementation.py)  
     - [Array Bst](/algorithms/trees/array_bst.py)  
     - [Average Levels](/algorithms/trees/average_levels.py)  
+    - [Bst To Greater Tree](/algorithms/trees/bst_to_greater_tree.py)  
     - [Build Tree Postorder](/algorithms/trees/build_tree_postorder.py)  
     - [Construct Pre In](/algorithms/trees/construct_pre_in.py)  
     - [Cousins In Binary Trees](/algorithms/trees/cousins_in_binary_trees.py)  
@@ -362,6 +373,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Left Similar Trees](/algorithms/trees/left_similar_trees.py)  
     - [Level Order One](/algorithms/trees/level_order_one.py)  
     - [Level Order Two](/algorithms/trees/level_order_two.py)  
+    - [Lowest Common Ancestor](/algorithms/trees/lowest_common_ancestor.py)  
     - [Max Depth](/algorithms/trees/max_depth.py)  
     - [Maximum Path Sum](/algorithms/trees/maximum_path_sum.py)  
     - [Merge Two Trees](/algorithms/trees/merge_two_trees.py)  
@@ -372,9 +384,12 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Postorder](/algorithms/trees/postorder.py)  
     - [Preorder](/algorithms/trees/preorder.py)  
     - [Same Tree](/algorithms/trees/same_tree.py)  
+    - [Serialize Tree](/algorithms/trees/serialize_tree.py)  
     - [Sum Of Left Leaves](/algorithms/trees/sum_of_left_leaves.py)  
     - [Sum Root To Leaf Paths](/algorithms/trees/sum_root_to_leaf_paths.py)  
+    - [Sum Root To Leafs](/algorithms/trees/sum_root_to_leafs.py)  
     - [Symmetric](/algorithms/trees/symmetric.py)  
+    - [Tilt Tree](/algorithms/trees/tilt_tree.py)  
     - [Tree Paths](/algorithms/trees/tree_paths.py)  
     - [Zigzag Level Order](/algorithms/trees/zigzag_level_order.py)  
   

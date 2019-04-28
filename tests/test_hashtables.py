@@ -124,6 +124,13 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(obj.search('hhllo'), True)
         self.assertEqual(obj.search('hell'), False)
 
+    def test_lru_cache(self):
+        cache = LRUCache(2)
+        cache.put(1,1)
+        cache.put(2,2)
+        self.assertEqual(cache.get(1), 1)
+        self.assertEqual(cache.get(2), 2)
+
 if __name__ == '__main__':
     unittest.main()
 

@@ -224,6 +224,24 @@ class TestSuite2(unittest.TestCase):
     def test_longest_uncommon(self):
         self.assertEqual(longest_uncommon('aba', 'cdc'), 3)
 
+    def test_optimal_division(self):
+        self.assertEqual(optimal_division([100, 10]), '100/10')
+
+    def test_duplicate_files(self):
+        paths = ["root/a 1.txt(abcd) 2.txt(efgh)", "root/c 3.txt(abcd)", "root/c/d 4.txt(efgh)", "root 4.txt(efgh)"]
+        self.assertEqual(len(duplicate_files(paths)), 2)
+
+    def test_complex_number_multiply(self):
+        self.assertEqual(complex_numbers_multiply('1+1i', '1+1i'), '0+2i')
+
+    def test_remove_comments(self):
+        source = ["/*Test program */", "int main()", "{ ", "  // variable declaration ", "int a, b, c;", "/* This",  
+                  "is a test", "   multiline  ", "   comment for ", "   testing */", "a = b + c;", "}"]
+        result = ["int main()","{ ","  ","int a, b, c;","a = b + c;","}"]
+
+        self.assertEqual(remove_comments(source), result)
+
+
 if __name__ == '__main__':
     unittest.main()
 
