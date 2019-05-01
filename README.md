@@ -34,8 +34,8 @@ I have written basic tests for most of the modules. To run all the tests at once
     $python3 -m unittest discover tests
 
 ## Progress
-**Data Structures** : 10  
-**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 317
+**Data Structures** : 12  
+**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 336
 
 ## List of Implementations
 
@@ -143,10 +143,12 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Longest Increasing Subsequence](/algorithms/dp/longest_increasing_subsequence.py)  
     - [Min Cost Climbing Stairs](/algorithms/dp/min_cost_climbing_stairs.py)  
     - [Minimum Path Sum](/algorithms/dp/minimum_path_sum.py)  
+    - [Nth Ugly Number](/algorithms/dp/nth_ugly_number.py)  
     - [Pascal Row](/algorithms/dp/pascal_row.py)  
     - [Pascal](/algorithms/dp/pascal.py)  
     - [Pow](/algorithms/dp/pow.py)  
     - [Range Sum Query](/algorithms/dp/range_sum_query.py)  
+    - [Super Ugly Number](/algorithms/dp/super_ugly_number.py)  
     - [Triangle Min Path](/algorithms/dp/triangle_min_path.py)  
     - [Unique Paths With Obstacle](/algorithms/dp/unique_paths_with_obstacle.py)  
     - [Unique Paths](/algorithms/dp/unique_paths.py)  
@@ -174,6 +176,16 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Word Ladder Two](/algorithms/graphs/word_ladder_two.py)  
     - [Word Ladder](/algorithms/graphs/word_ladder.py)  
     - [Word Search](/algorithms/graphs/word_search.py)  
+  
+* [**Greedy**](/algorithms/greedy)  
+    - [Burst Balloons](/algorithms/greedy/burst_balloons.py)  
+    - [Dota2 Senate](/algorithms/greedy/dota2_senate.py)  
+    - [Is Subsequence](/algorithms/greedy/is_subsequence.py)  
+    - [Make Paran Valid](/algorithms/greedy/make_paran_valid.py)  
+    - [Moving Stones](/algorithms/greedy/moving_stones.py)  
+    - [Non Overlapping Intervals](/algorithms/greedy/non_overlapping_intervals.py)  
+    - [Queue Reconstruction By Height](/algorithms/greedy/queue_reconstruction_by_height.py)  
+    - [Reorganize String](/algorithms/greedy/reorganize_string.py)  
   
 * [**Hash Tables**](/algorithms/hashtables)  
     - [*Hashmap Implementation*](/algorithms/hashtables/hashmap_implementation.py)  
@@ -205,9 +217,13 @@ I have written basic tests for most of the modules. To run all the tests at once
   
 * [**Heaps**](/algorithms/heaps)  
     - [*Heap Implementation*](/algorithms/heaps/heap_implementation.py)  
+    - [Design Twitter](/algorithms/heaps/design_twitter.py)  
     - [K Most Frequent](/algorithms/heaps/k_most_frequent.py)  
+    - [K Pairs With Smallest Sums](/algorithms/heaps/k_pairs_with_smallest_sums.py)  
     - [Kth Largest In Stream](/algorithms/heaps/kth_largest_in_stream.py)  
     - [Kth Largest](/algorithms/heaps/kth_largest.py)  
+    - [Kth Smallest In Sorted Matrix](/algorithms/heaps/kth_smallest_in_sorted_matrix.py)  
+    - [Top K Frequent Words](/algorithms/heaps/top_k_frequent_words.py)  
   
 * [**Linked List**](/algorithms/linkedlist)  
     - [*Singly Linked List Implementation*](/algorithms/linkedlist/singly_linked_list_implementation.py)  
@@ -259,6 +275,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Perfect Number](/algorithms/math/perfect_number.py)  
     - [Power Of Two](/algorithms/math/power_of_two.py)  
     - [Self Dividing Numbers](/algorithms/math/self_dividing_numbers.py)  
+    - [Total Time](/algorithms/math/total_time.py)  
     - [Ugly Numbers](/algorithms/math/ugly_numbers.py)  
     - [Valid Number](/algorithms/math/valid_number.py)  
   
@@ -278,6 +295,8 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Transpose Matrix](/algorithms/matrix/transpose_matrix.py)  
   
 * [**Queues**](/algorithms/queues)  
+    - [*Circular Deque Implementation*](/algorithms/queues/circular_deque_implementation.py)  
+    - [*Circular Queue Implementation*](/algorithms/queues/circular_queue_implementation.py)  
     - [*Queue Implementation*](/algorithms/queues/queue_implementation.py)  
     - [Gas Station](/algorithms/queues/gas_station.py)  
     - [Max Sliding Window](/algorithms/queues/max_sliding_window.py)  
@@ -296,7 +315,10 @@ I have written basic tests for most of the modules. To run all the tests at once
 * [**Stack**](/algorithms/stack)  
     - [Baseball Game](/algorithms/stack/baseball_game.py)  
     - [Evaluate Reverse Polish Notation](/algorithms/stack/evaluate_reverse_polish_notation.py)  
+    - [Exclusive Fuction Time](/algorithms/stack/exclusive_fuction_time.py)  
     - [Min Stack](/algorithms/stack/min_stack.py)  
+    - [Next Greater Element Ii](/algorithms/stack/next_greater_element_II.py)  
+    - [One Three Two Pattern](/algorithms/stack/one_three_two_pattern.py)  
     - [Simplify Path](/algorithms/stack/simplify_path.py)  
     - [Valid Paran](/algorithms/stack/valid_paran.py)  
   
@@ -391,6 +413,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Symmetric](/algorithms/trees/symmetric.py)  
     - [Tilt Tree](/algorithms/trees/tilt_tree.py)  
     - [Tree Paths](/algorithms/trees/tree_paths.py)  
+    - [Verify Tree Serialization](/algorithms/trees/verify_tree_serialization.py)  
     - [Zigzag Level Order](/algorithms/trees/zigzag_level_order.py)  
   
 * [**Trie**](/algorithms/trie)  

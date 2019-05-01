@@ -34,5 +34,14 @@ class TestSuite(unittest.TestCase):
     def test_baseball(self):
         self.assertEqual(baseball(["5","-2","4","C","D","9","+","+"]), 27)
 
+    def test_next_greater(self):
+        self.assertEqual(next_greater_circular([1,2,1]), [2,-1,2])
+
+    def test_duration(self):
+        self.assertEqual(exclusive_time(2, ["0:start:0","1:start:2","1:end:5","0:end:6"]), [3, 4])
+
+    def test_132_pattern(self):
+        self.assertEqual(find_pattern([1,2,3,4]), False)
+
 if __name__ == '__main__':
     unittest.main()

@@ -309,7 +309,10 @@ class TestTree(TestSetup):
         root = deserialize([5,2,13])
         self.assertEqual(serialize(greater_tree(root)), [18,20,13])
 
+    def test_valid_serial(self):
+        self.assertEqual(valid_serialization("9,3,4,#,#,1,#,#,2,#,6,#,#"), True)
 
 
+        
 if __name__ == '__main__':
     unittest.main()

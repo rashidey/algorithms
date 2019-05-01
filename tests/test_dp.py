@@ -90,3 +90,9 @@ class TestSuite(unittest.TestCase):
     def test_integer_replacement(self):
         self.assertEqual(integer_replacement(8), 3)
         self.assertEqual(integer_replacement(7), 4)
+
+    def test_ugly_number(self):
+        self.assertEqual(nth_ugly_number(10), 12)
+
+    def test_super_ugly(self):
+        self.assertEqual(super_ugly_number(12, [2,7,13,19]), 32)
