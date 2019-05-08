@@ -34,8 +34,8 @@ I have written basic tests for most of the modules. To run all the tests at once
     $python3 -m unittest discover tests
 
 ## Progress
-**Data Structures** : 12  
-**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 336
+**Data Structures** : 13  
+**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 348
 
 ## List of Implementations
 
@@ -98,14 +98,20 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Subsets](/algorithms/backtracking/subsets.py)  
   
 * [**Binarysearch**](/algorithms/binarysearch)  
+    - [4Sum Ii](/algorithms/binarysearch/4sum_II.py)  
     - [Arranging Coins](/algorithms/binarysearch/arranging_coins.py)  
     - [Binary Search](/algorithms/binarysearch/binary_search.py)  
     - [Find K Closest](/algorithms/binarysearch/find_k_closest.py)  
     - [Find Peak](/algorithms/binarysearch/find_peak.py)  
+    - [Find Right Interval](/algorithms/binarysearch/find_right_interval.py)  
     - [First Bad](/algorithms/binarysearch/first_bad.py)  
     - [Guess Number](/algorithms/binarysearch/guess_number.py)  
+    - [H Index](/algorithms/binarysearch/h_index.py)  
     - [Min In Rotated Sorted Array](/algorithms/binarysearch/min_in_rotated_sorted_array.py)  
+    - [Minimum Size Subarray](/algorithms/binarysearch/minimum_size_subarray.py)  
+    - [Next Greater Letter](/algorithms/binarysearch/next_greater_letter.py)  
     - [Peak Index Mountain Array](/algorithms/binarysearch/peak_index_mountain_array.py)  
+    - [Search 2D Matrix Ii](/algorithms/binarysearch/search_2d_matrix_II.py)  
     - [Search 2D Matrix](/algorithms/binarysearch/search_2d_matrix.py)  
     - [Search Insert Position](/algorithms/binarysearch/search_insert_position.py)  
     - [Search Range](/algorithms/binarysearch/search_range.py)  
@@ -166,13 +172,18 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [House Robber Three](/algorithms/graphs/house_robber_three.py)  
     - [Is Bipartate](/algorithms/graphs/is_bipartate.py)  
     - [Jump Game Ii](/algorithms/graphs/jump_game_II.py)  
+    - [Keys And Rooms](/algorithms/graphs/keys_and_rooms.py)  
     - [Make Larger Island](/algorithms/graphs/make_larger_island.py)  
     - [Max Area Island](/algorithms/graphs/max_area_island.py)  
     - [Minesweeper](/algorithms/graphs/minesweeper.py)  
+    - [Minimum Height Trees](/algorithms/graphs/minimum_height_trees.py)  
+    - [Network Delay Time](/algorithms/graphs/network_delay_time.py)  
     - [Number Islands](/algorithms/graphs/number_islands.py)  
     - [Pacific Atlantic Water Flow](/algorithms/graphs/pacific_atlantic_water_flow.py)  
+    - [Redundant Connection](/algorithms/graphs/redundant_connection.py)  
     - [Rotton Oranges](/algorithms/graphs/rotton_oranges.py)  
     - [Surround Region](/algorithms/graphs/surround_region.py)  
+    - [Town Judge](/algorithms/graphs/town_judge.py)  
     - [Word Ladder Two](/algorithms/graphs/word_ladder_two.py)  
     - [Word Ladder](/algorithms/graphs/word_ladder.py)  
     - [Word Search](/algorithms/graphs/word_search.py)  
@@ -217,6 +228,7 @@ I have written basic tests for most of the modules. To run all the tests at once
   
 * [**Heaps**](/algorithms/heaps)  
     - [*Heap Implementation*](/algorithms/heaps/heap_implementation.py)  
+    - [*Priority Queue Implementation*](/algorithms/heaps/priority_queue_implementation.py)  
     - [Design Twitter](/algorithms/heaps/design_twitter.py)  
     - [K Most Frequent](/algorithms/heaps/k_most_frequent.py)  
     - [K Pairs With Smallest Sums](/algorithms/heaps/k_pairs_with_smallest_sums.py)  
@@ -397,6 +409,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Level Order Two](/algorithms/trees/level_order_two.py)  
     - [Lowest Common Ancestor](/algorithms/trees/lowest_common_ancestor.py)  
     - [Max Depth](/algorithms/trees/max_depth.py)  
+    - [Max Subtree](/algorithms/trees/max_subtree.py)  
     - [Maximum Path Sum](/algorithms/trees/maximum_path_sum.py)  
     - [Merge Two Trees](/algorithms/trees/merge_two_trees.py)  
     - [Min Depth](/algorithms/trees/min_depth.py)  
