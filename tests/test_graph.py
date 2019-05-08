@@ -217,7 +217,20 @@ class TestGraphFunctions(unittest.TestCase):
     def test_make_larger_island(self):
         grid = [[1, 0], [0, 1]]
         self.assertEqual(largest_island(grid), 3)
-        #self.assertEqual(largest_island([[1, 1], [1, 1]]), 4)
+        self.assertEqual(largest_island([[1, 1], [1, 1]]), 4)
+
+    def test_min_height_trees(self):
+        self.assertEqual(find_min_height_trees(4, [[1,0],[1,2],[1,3]]), [1])
+
+    def test_network_delay_time(self):
+        self.assertEqual(network_delay_time([[2,1,1],[2,3,1],[3,4,1]], 4, 2), 2)
+
+
+    def test_town_judge(self):
+        self.assertEqual(find_judge(2, [[1,2]]), 2)
+
+    def test_keys_rooms(self):
+        self.assertEqual(keys_and_rooms([[1],[2],[3],[]]), True)
 
 if __name__ == '__main__':
     unittest.main()

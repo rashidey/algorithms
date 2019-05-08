@@ -79,3 +79,22 @@ class TestSuite(unittest.TestCase):
 
     def test_sorted_rotated(self):
         self.assertEqual(sorted_array_rotated_duplicates([2,5,6,0,0,1,2], 0), True)
+
+    def test_min_subarray_sum(self):
+        self.assertEqual(min_subarray_sum(7, [2,3,1,2,4,3]), 2)
+
+    def test_search_matrix_sorted(self):
+        matrix = [[1,   4,  7, 11, 15],
+                  [2,   5,  8, 12, 19],
+                  [3,   6,  9, 16, 22],
+                  [10, 13, 14, 17, 24],
+                  [18, 21, 23, 26, 30]]
+        self.assertEqual(search_matrix_sorted(matrix, 26), True)
+
+    def test_find_right_interval(self):
+        intervals = [[3,4], [2,3], [1,2]]
+        self.assertEqual(find_right_interval(intervals), [-1,0,1])
+
+    def test_h_index_II(self):
+        citations = [0,1,3,5,6]
+        self.assertEqual(h_index_II(citations), 3)

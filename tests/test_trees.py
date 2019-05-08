@@ -312,6 +312,12 @@ class TestTree(TestSetup):
     def test_valid_serial(self):
         self.assertEqual(valid_serialization("9,3,4,#,#,1,#,#,2,#,6,#,#"), True)
 
+    def test_max_subtree_count(self):
+        A = 5
+        B = [1,3,3,5]
+        C = [3,2,4,1]
+        D = [1,3]
+        self.assertEqual(max_subtree(A, B, C, D), [3,2])
 
         
 if __name__ == '__main__':
