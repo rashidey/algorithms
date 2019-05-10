@@ -35,6 +35,21 @@ The number of keys in all rooms combined is at most 3000.
 from collections import defaultdict, deque
 
 def keys_and_rooms(rooms):
+    seen = [False] * len(rooms)
+    seen[0] = True
+    stack = [0]
+
+    while stack:  
+        node = stack.pop() 
+        for nei in rooms[node]: 
+            if not seen[nei]: 
+                seen[nei] = True 
+                stack.append(nei) 
+    
+    return all(seen)
+
+
+def keys_and_rooms_v2(rooms):
     graph = defaultdict(set)
 
     for i in range(len(rooms)):

@@ -241,6 +241,9 @@ class TestSuite2(unittest.TestCase):
 
         self.assertEqual(remove_comments(source), result)
 
+    def test_shortest_character_distance(self):
+        self.assertEqual(shortest_distance_character('loveleetcode', 'e'), [3,2,1,0,1,0,0,1,2,2,1,0])
+
 
 if __name__ == '__main__':
     unittest.main()

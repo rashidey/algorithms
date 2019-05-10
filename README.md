@@ -35,7 +35,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 
 ## Progress
 **Data Structures** : 13  
-**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 348
+**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 369
 
 ## List of Implementations
 
@@ -121,6 +121,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Valid Perfect Square](/algorithms/binarysearch/valid_perfect_square.py)  
   
 * [**Bits**](/algorithms/bits)  
+    - [Reverse Bits](/algorithms/bits/reverse_bits.py)  
     - [Single Number](/algorithms/bits/single_number.py)  
   
 * [**Binary Search Tree**](/algorithms/bst)  
@@ -201,6 +202,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 * [**Hash Tables**](/algorithms/hashtables)  
     - [*Hashmap Implementation*](/algorithms/hashtables/hashmap_implementation.py)  
     - [Banned Words](/algorithms/hashtables/banned_words.py)  
+    - [Boomerang Points](/algorithms/hashtables/boomerang_points.py)  
     - [Bulls And Cows](/algorithms/hashtables/bulls_and_cows.py)  
     - [Encode Decode](/algorithms/hashtables/encode_decode.py)  
     - [Find Common Characters](/algorithms/hashtables/find_common_characters.py)  
@@ -210,9 +212,14 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Hashmap](/algorithms/hashtables/hashmap.py)  
     - [Hashset](/algorithms/hashtables/hashset.py)  
     - [Keyboard Row](/algorithms/hashtables/keyboard_row.py)  
+    - [Largest Triangle Area](/algorithms/hashtables/largest_triangle_area.py)  
+    - [Lemonade Change](/algorithms/hashtables/lemonade_change.py)  
+    - [Longest Word Dictionary](/algorithms/hashtables/longest_word_dictionary.py)  
     - [Lru Cache](/algorithms/hashtables/lru_cache.py)  
     - [Magic Dictionary](/algorithms/hashtables/magic_dictionary.py)  
     - [Minimum Index Sum Of Two Lists](/algorithms/hashtables/minimum_index_sum_of_two_lists.py)  
+    - [N Repeated Elements](/algorithms/hashtables/n_repeated_elements.py)  
+    - [Powerful Integers](/algorithms/hashtables/powerful_integers.py)  
     - [Repeated Dna Sequences](/algorithms/hashtables/repeated_dna_sequences.py)  
     - [Shortest Completing Word](/algorithms/hashtables/shortest_completing_word.py)  
     - [Shuffle Array](/algorithms/hashtables/shuffle_array.py)  
@@ -229,6 +236,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 * [**Heaps**](/algorithms/heaps)  
     - [*Heap Implementation*](/algorithms/heaps/heap_implementation.py)  
     - [*Priority Queue Implementation*](/algorithms/heaps/priority_queue_implementation.py)  
+    - [Check Valid Triangle](/algorithms/heaps/check_valid_triangle.py)  
     - [Design Twitter](/algorithms/heaps/design_twitter.py)  
     - [K Most Frequent](/algorithms/heaps/k_most_frequent.py)  
     - [K Pairs With Smallest Sums](/algorithms/heaps/k_pairs_with_smallest_sums.py)  
@@ -278,6 +286,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Hamming Distance](/algorithms/math/hamming_distance.py)  
     - [Happy Numbers](/algorithms/math/happy_numbers.py)  
     - [Intersection Two Arrays](/algorithms/math/intersection_two_arrays.py)  
+    - [Largest Triangle Area](/algorithms/math/largest_triangle_area.py)  
     - [Majority Element](/algorithms/math/majority_element.py)  
     - [Min Time Difference](/algorithms/math/min_time_difference.py)  
     - [Missing Number](/algorithms/math/missing_number.py)  
@@ -289,6 +298,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Self Dividing Numbers](/algorithms/math/self_dividing_numbers.py)  
     - [Total Time](/algorithms/math/total_time.py)  
     - [Ugly Numbers](/algorithms/math/ugly_numbers.py)  
+    - [Valid Boomerang](/algorithms/math/valid_boomerang.py)  
     - [Valid Number](/algorithms/math/valid_number.py)  
   
 * [**Matrix**](/algorithms/matrix)  
@@ -297,6 +307,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Image Smoother](/algorithms/matrix/image_smoother.py)  
     - [Island Perimeter](/algorithms/matrix/island_perimeter.py)  
     - [Magic Squares In Grid](/algorithms/matrix/magic_squares_in_grid.py)  
+    - [Matrix Cells Distance](/algorithms/matrix/matrix_cells_distance.py)  
     - [Range Addition](/algorithms/matrix/range_addition.py)  
     - [Reshape Matrix](/algorithms/matrix/reshape_matrix.py)  
     - [Rotate Image](/algorithms/matrix/rotate_image.py)  
@@ -313,6 +324,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Gas Station](/algorithms/queues/gas_station.py)  
     - [Max Sliding Window](/algorithms/queues/max_sliding_window.py)  
     - [Queue Using Stacks](/algorithms/queues/queue_using_stacks.py)  
+    - [Rotate String](/algorithms/queues/rotate_string.py)  
     - [Stack Using Queues](/algorithms/queues/stack_using_queues.py)  
   
 * [**Sort**](/algorithms/sort)  
@@ -322,6 +334,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Most Profit Workers](/algorithms/sort/most_profit_workers.py)  
     - [Quick Sort](/algorithms/sort/quick_sort.py)  
     - [Selection Sort](/algorithms/sort/selection_sort.py)  
+    - [Sort By Parity](/algorithms/sort/sort_by_parity.py)  
     - [Sort Three Colors](/algorithms/sort/sort_three_colors.py)  
   
 * [**Stack**](/algorithms/stack)  
@@ -377,6 +390,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Robot Origin](/algorithms/strings/robot_origin.py)  
     - [Roman To Int](/algorithms/strings/roman_to_int.py)  
     - [Rotated Digits](/algorithms/strings/rotated_digits.py)  
+    - [Shortest Distance To Character](/algorithms/strings/shortest_distance_to_character.py)  
     - [String Compression](/algorithms/strings/string_compression.py)  
     - [String To Integer](/algorithms/strings/string_to_integer.py)  
     - [Strstr](/algorithms/strings/strstr.py)  
@@ -408,12 +422,17 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Level Order One](/algorithms/trees/level_order_one.py)  
     - [Level Order Two](/algorithms/trees/level_order_two.py)  
     - [Lowest Common Ancestor](/algorithms/trees/lowest_common_ancestor.py)  
+    - [Max Depth N Ary](/algorithms/trees/max_depth_n_ary.py)  
     - [Max Depth](/algorithms/trees/max_depth.py)  
     - [Max Subtree](/algorithms/trees/max_subtree.py)  
     - [Maximum Path Sum](/algorithms/trees/maximum_path_sum.py)  
     - [Merge Two Trees](/algorithms/trees/merge_two_trees.py)  
     - [Min Depth](/algorithms/trees/min_depth.py)  
+    - [N Ary Postorder](/algorithms/trees/n_ary_postorder.py)  
+    - [N Ary Preorder](/algorithms/trees/n_ary_preorder.py)  
+    - [Nary Level Order](/algorithms/trees/nary_level_order.py)  
     - [Path Sum All](/algorithms/trees/path_sum_all.py)  
+    - [Path Sum Iii](/algorithms/trees/path_sum_III.py)  
     - [Path Sum](/algorithms/trees/path_sum.py)  
     - [Populate Next Right Pointer](/algorithms/trees/populate_next_right_pointer.py)  
     - [Postorder](/algorithms/trees/postorder.py)  
@@ -431,6 +450,7 @@ I have written basic tests for most of the modules. To run all the tests at once
   
 * [**Trie**](/algorithms/trie)  
     - [*Trie Implementation*](/algorithms/trie/trie_implementation.py)  
+    - [Longest Word Dictionary](/algorithms/trie/longest_word_dictionary.py)  
     - [Replace Words](/algorithms/trie/replace_words.py)  
   
 * [**Two Pointers**](/algorithms/twopointers)  
@@ -440,5 +460,6 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Longest Word In Dictionary](/algorithms/twopointers/longest_word_in_dictionary.py)  
     - [Remove Duplicates](/algorithms/twopointers/remove_duplicates.py)  
     - [Remove Element](/algorithms/twopointers/remove_element.py)  
+    - [Squares Of Sorted Array](/algorithms/twopointers/squares_of_sorted_array.py)  
     - [Three Sum Closest](/algorithms/twopointers/three_sum_closest.py)  
   

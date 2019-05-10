@@ -30,3 +30,5 @@ class TestSuite(unittest.TestCase):
     def test_max_sliding_window(self):
         self.assertEqual(max_sliding_window([1,3,-1,-3,5,3,6,7], 3), [3,3,5,5,6,7])
 
+    def test_rotate_string(self):
+        self.assertEqual(rotate_string('abcde', 'cdeab'), True)

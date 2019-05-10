@@ -18,3 +18,7 @@ class TestTrie(unittest.TestCase):
         sentence = "a aa a aaaa aaa aaa aaa aaaaaa bbb baba ababa"
         output = "a a a a a a a a bbb baba a"
         self.assertEqual(replace_words(words, sentence), output)
+
+    def test_longest_word_dictionary(self):
+        words = ["w","wo","wor","worl", "world"]
+        self.assertEqual(longest_word(words), 'world')

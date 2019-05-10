@@ -319,6 +319,16 @@ class TestTree(TestSetup):
         D = [1,3]
         self.assertEqual(max_subtree(A, B, C, D), [3,2])
 
+    def test_nary_level_order(self):
+        class Nary:
+            def __init__(self, val, children = []):
+                self.val = val
+                self.children = children
+
+        root = Nary(1, [Nary(3),Nary(2),Nary(4)])
+        root.children[0].children = [Nary(5),Nary(6)]
+        self.assertEqual(n_ary_level_order(root), [[1],[3,2,4],[5,6]])
+
         
 if __name__ == '__main__':
     unittest.main()

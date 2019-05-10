@@ -45,3 +45,6 @@ class TestSuite(TestSetup):
 
     def test_max_profit(self):
         self.assertEqual(max_profit_worker([2,4,6,8,10], [10,20,30,40,50],[4,5,6,7]), 100)
+
+    def test_sort_parity(self):
+        self.assertEqual(sort_array_parity([3,1,2,4]), [4,2,1,3])

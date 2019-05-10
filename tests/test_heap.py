@@ -28,4 +28,6 @@ class TestSuite(unittest.TestCase):
 
     def test_top_words(self):
         self.assertEqual(top_k_frequent(["i", "love", "leetcode", "i", "love", "coding"], 2), ['i', 'love'])
-        
+    
+    def test_largest_perimeter_triangle(self):
+        self.assertEqual(largest_perimeter_triangle([3,6,2,3]), 8)

@@ -26,3 +26,7 @@ class TestSuite(unittest.TestCase):
     def test_character_replacement(self):
         self.assertEqual(character_replacement('ABAB', 2), 4)
 
+    def test_sorted_array(self):
+        self.assertEqual(sorted_squares([-4,-1,0,3,10]), [0,1,9,16,100])
+
+    

@@ -131,6 +131,15 @@ class TestSuite(unittest.TestCase):
         self.assertEqual(cache.get(1), 1)
         self.assertEqual(cache.get(2), 2)
 
+    def test_lemonade(self):
+        self.assertEqual(lemonade_change([5,5,5,10,20]), True)
+
+    def test_powerful_integers(self):
+        self.assertEqual(powerful_integers(2,3,10), [2,3,4,5,7,9,10])
+
+    def test_boomerang(self):
+        self.assertEqual(boomerang([[0,0],[1,0],[2,0]]), 2)
+
 if __name__ == '__main__':
     unittest.main()
 
