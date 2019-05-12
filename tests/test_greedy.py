@@ -27,3 +27,6 @@ class TestSuite(unittest.TestCase):
 
     def test_reorganize(self):
         self.assertEqual(reorganize_string('aab'), 'aba')
+
+    def test_maximize_array_sum(self):
+        self.assertEqual(maximize_sum_array([4,2,3], 1), 5)

@@ -98,3 +98,7 @@ class TestSuite(unittest.TestCase):
     def test_h_index_II(self):
         citations = [0,1,3,5,6]
         self.assertEqual(h_index_II(citations), 3)
+
+    def test_heaters(self):
+        self.assertEqual(heaters([1,2,3],[2]), 1)
+        self.assertEqual(heaters([1,2,3,4],[1,4]), 1)

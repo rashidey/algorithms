@@ -42,3 +42,6 @@ class TestSuite(unittest.TestCase):
 
     def test_match(self):
         self.assertEqual(make_square([1,1,2,2,2]), True)
+
+    def test_valid_time(self):
+        self.assertEqual(valid_time([1,2,3,4]), '23:41')

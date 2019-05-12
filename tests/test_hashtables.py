@@ -140,6 +140,9 @@ class TestSuite(unittest.TestCase):
     def test_boomerang(self):
         self.assertEqual(boomerang([[0,0],[1,0],[2,0]]), 2)
 
+    def test_pair_songs(self):
+        self.assertEqual(pairs_divisible_60([60,60,60]), 3)
+
 if __name__ == '__main__':
     unittest.main()
 

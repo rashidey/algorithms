@@ -244,6 +244,10 @@ class TestSuite2(unittest.TestCase):
     def test_shortest_character_distance(self):
         self.assertEqual(shortest_distance_character('loveleetcode', 'e'), [3,2,1,0,1,0,0,1,2,2,1,0])
 
+    def test_long_pressed_name(self):
+        self.assertEqual(long_pressed_name('alex', 'aaleex'), True)
+        self.assertEqual(long_pressed_name('vtkgn', 'vttkgnn'), True)
+
 
 if __name__ == '__main__':
     unittest.main()

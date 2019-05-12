@@ -232,5 +232,8 @@ class TestGraphFunctions(unittest.TestCase):
     def test_keys_rooms(self):
         self.assertEqual(keys_and_rooms([[1],[2],[3],[]]), True)
 
+    def test_flowers_plant(self):
+        self.assertEqual(flower_planting(4, [[1,2],[3,4]]), [1,2,1,2])
+        
 if __name__ == '__main__':
     unittest.main()

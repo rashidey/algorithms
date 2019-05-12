@@ -35,7 +35,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 
 ## Progress
 **Data Structures** : 13  
-**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 369
+**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 407
 
 ## List of Implementations
 
@@ -43,6 +43,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 
 * [**Arrays**](/algorithms/arrays)  
     - [*Dynamic Array Implementation*](/algorithms/arrays/dynamic_array_implementation.py)  
+    - [Add To Array Form](/algorithms/arrays/add_to_array_form.py)  
     - [Array Partition](/algorithms/arrays/array_partition.py)  
     - [Assign Cookies](/algorithms/arrays/assign_cookies.py)  
     - [Best Time To Buy Stock Ii](/algorithms/arrays/best_time_to_buy_stock_II.py)  
@@ -57,6 +58,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [First Missing Positive](/algorithms/arrays/first_missing_positive.py)  
     - [Friends Of Ages](/algorithms/arrays/friends_of_ages.py)  
     - [Intersection Two Arrays Ii](/algorithms/arrays/intersection_two_arrays_II.py)  
+    - [Is Monotonic](/algorithms/arrays/is_monotonic.py)  
     - [K Diff Pairs](/algorithms/arrays/k_diff_pairs.py)  
     - [Largest Number Twice Of Others](/algorithms/arrays/largest_number_twice_of_others.py)  
     - [Longest Continuous Increasing Subsequence](/algorithms/arrays/longest_continuous_increasing_subsequence.py)  
@@ -79,6 +81,8 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Rotate Array](/algorithms/arrays/rotate_array.py)  
     - [Set Mismatch](/algorithms/arrays/set_mismatch.py)  
     - [Shortest Unsorted Subarray](/algorithms/arrays/shortest_unsorted_subarray.py)  
+    - [Smallest Range I](/algorithms/arrays/smallest_range_I.py)  
+    - [Sum After Queries](/algorithms/arrays/sum_after_queries.py)  
     - [Summary Ranges](/algorithms/arrays/summary_ranges.py)  
     - [Third Max Number](/algorithms/arrays/third_max_number.py)  
     - [Two Sum Sorted Array](/algorithms/arrays/two_sum_sorted_array.py)  
@@ -96,6 +100,11 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Permutations Two](/algorithms/backtracking/permutations_two.py)  
     - [Subsets Duplicates](/algorithms/backtracking/subsets_duplicates.py)  
     - [Subsets](/algorithms/backtracking/subsets.py)  
+    - [Valid Time](/algorithms/backtracking/valid_time.py)  
+  
+* [**Bash**](/algorithms/bash)  
+    - [Tenth Line](/algorithms/bash/tenth_line.sh)  
+    - [Valid Phone Number](/algorithms/bash/valid_phone_number.sh)  
   
 * [**Binarysearch**](/algorithms/binarysearch)  
     - [4Sum Ii](/algorithms/binarysearch/4sum_II.py)  
@@ -107,6 +116,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [First Bad](/algorithms/binarysearch/first_bad.py)  
     - [Guess Number](/algorithms/binarysearch/guess_number.py)  
     - [H Index](/algorithms/binarysearch/h_index.py)  
+    - [Heaters](/algorithms/binarysearch/heaters.py)  
     - [Min In Rotated Sorted Array](/algorithms/binarysearch/min_in_rotated_sorted_array.py)  
     - [Minimum Size Subarray](/algorithms/binarysearch/minimum_size_subarray.py)  
     - [Next Greater Letter](/algorithms/binarysearch/next_greater_letter.py)  
@@ -121,6 +131,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Valid Perfect Square](/algorithms/binarysearch/valid_perfect_square.py)  
   
 * [**Bits**](/algorithms/bits)  
+    - [Count 1 Bits](/algorithms/bits/count_1_bits.py)  
     - [Reverse Bits](/algorithms/bits/reverse_bits.py)  
     - [Single Number](/algorithms/bits/single_number.py)  
   
@@ -134,6 +145,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [List To Bst](/algorithms/bst/list_to_bst.py)  
     - [Lowest Common Ancestor Bst](/algorithms/bst/lowest_common_ancestor_bst.py)  
     - [Minimum Diff Bst](/algorithms/bst/minimum_diff_bst.py)  
+    - [Range Sum Bst](/algorithms/bst/range_sum_bst.py)  
     - [Recover Bst](/algorithms/bst/recover_bst.py)  
     - [Search Bst](/algorithms/bst/search_bst.py)  
     - [Validate Bst](/algorithms/bst/validate_bst.py)  
@@ -169,6 +181,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Course Order](/algorithms/graphs/course_order.py)  
     - [Employee Importance](/algorithms/graphs/employee_importance.py)  
     - [Flood Fill](/algorithms/graphs/flood_fill.py)  
+    - [Flower Planting With No Adjacent](/algorithms/graphs/flower_planting_with_no_adjacent.py)  
     - [Friend Circle](/algorithms/graphs/friend_circle.py)  
     - [House Robber Three](/algorithms/graphs/house_robber_three.py)  
     - [Is Bipartate](/algorithms/graphs/is_bipartate.py)  
@@ -191,19 +204,25 @@ I have written basic tests for most of the modules. To run all the tests at once
   
 * [**Greedy**](/algorithms/greedy)  
     - [Burst Balloons](/algorithms/greedy/burst_balloons.py)  
+    - [Di String Match](/algorithms/greedy/di_string_match.py)  
     - [Dota2 Senate](/algorithms/greedy/dota2_senate.py)  
     - [Is Subsequence](/algorithms/greedy/is_subsequence.py)  
     - [Make Paran Valid](/algorithms/greedy/make_paran_valid.py)  
+    - [Maximize Sum Array](/algorithms/greedy/maximize_sum_array.py)  
     - [Moving Stones](/algorithms/greedy/moving_stones.py)  
     - [Non Overlapping Intervals](/algorithms/greedy/non_overlapping_intervals.py)  
     - [Queue Reconstruction By Height](/algorithms/greedy/queue_reconstruction_by_height.py)  
+    - [Relative Ranks](/algorithms/greedy/relative_ranks.py)  
+    - [Remove Outermost Parantheses](/algorithms/greedy/remove_outermost_parantheses.py)  
     - [Reorganize String](/algorithms/greedy/reorganize_string.py)  
+    - [Two City Scheduling](/algorithms/greedy/two_city_scheduling.py)  
   
 * [**Hash Tables**](/algorithms/hashtables)  
     - [*Hashmap Implementation*](/algorithms/hashtables/hashmap_implementation.py)  
     - [Banned Words](/algorithms/hashtables/banned_words.py)  
     - [Boomerang Points](/algorithms/hashtables/boomerang_points.py)  
     - [Bulls And Cows](/algorithms/hashtables/bulls_and_cows.py)  
+    - [Deck Of Cards](/algorithms/hashtables/deck_of_cards.py)  
     - [Encode Decode](/algorithms/hashtables/encode_decode.py)  
     - [Find Common Characters](/algorithms/hashtables/find_common_characters.py)  
     - [Four Sum](/algorithms/hashtables/four_sum.py)  
@@ -219,6 +238,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Magic Dictionary](/algorithms/hashtables/magic_dictionary.py)  
     - [Minimum Index Sum Of Two Lists](/algorithms/hashtables/minimum_index_sum_of_two_lists.py)  
     - [N Repeated Elements](/algorithms/hashtables/n_repeated_elements.py)  
+    - [Pairs With Sum](/algorithms/hashtables/pairs_with_sum.py)  
     - [Powerful Integers](/algorithms/hashtables/powerful_integers.py)  
     - [Repeated Dna Sequences](/algorithms/hashtables/repeated_dna_sequences.py)  
     - [Shortest Completing Word](/algorithms/hashtables/shortest_completing_word.py)  
@@ -310,12 +330,28 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Matrix Cells Distance](/algorithms/matrix/matrix_cells_distance.py)  
     - [Range Addition](/algorithms/matrix/range_addition.py)  
     - [Reshape Matrix](/algorithms/matrix/reshape_matrix.py)  
+    - [Robot Bounded Circle](/algorithms/matrix/robot_bounded_circle.py)  
+    - [Rook Captures](/algorithms/matrix/rook_captures.py)  
     - [Rotate Image](/algorithms/matrix/rotate_image.py)  
     - [Set Matrix Zeros](/algorithms/matrix/set_matrix_zeros.py)  
     - [Spiral Matrix Generate](/algorithms/matrix/spiral_matrix_generate.py)  
     - [Spiral Matrix](/algorithms/matrix/spiral_matrix.py)  
     - [Toeplitz Matrix](/algorithms/matrix/toeplitz_matrix.py)  
     - [Transpose Matrix](/algorithms/matrix/transpose_matrix.py)  
+    - [Walking Robot Simulation](/algorithms/matrix/walking_robot_simulation.py)  
+  
+* [**Mysql**](/algorithms/mysql)  
+    - [Big Countries.](/algorithms/mysql/big_countries.sql)  
+    - [Classes More Than 5.](/algorithms/mysql/classes_more_than_5.sql)  
+    - [Combine Two Tables.](/algorithms/mysql/combine_two_tables.sql)  
+    - [Customers Who Never Order.](/algorithms/mysql/customers_who_never_order.sql)  
+    - [Delete Duplicate Emails.](/algorithms/mysql/delete_duplicate_emails.sql)  
+    - [Duplicate Emails.](/algorithms/mysql/duplicate_emails.sql)  
+    - [Employee Earning More Than Managers.](/algorithms/mysql/employee_earning_more_than_managers.sql)  
+    - [Not Boring Movies.](/algorithms/mysql/not_boring_movies.sql)  
+    - [Rising Temperature.](/algorithms/mysql/rising_temperature.sql)  
+    - [Second Highest Salary.](/algorithms/mysql/second_highest_salary.sql)  
+    - [Swap Salary.](/algorithms/mysql/swap_salary.sql)  
   
 * [**Queues**](/algorithms/queues)  
     - [*Circular Deque Implementation*](/algorithms/queues/circular_deque_implementation.py)  
@@ -329,11 +365,13 @@ I have written basic tests for most of the modules. To run all the tests at once
   
 * [**Sort**](/algorithms/sort)  
     - [Bubble Sort](/algorithms/sort/bubble_sort.py)  
+    - [Delete Columns To Make Sorted](/algorithms/sort/delete_columns_to_make_sorted.py)  
     - [Insertion Sort](/algorithms/sort/insertion_sort.py)  
     - [Merge Sort](/algorithms/sort/merge_sort.py)  
     - [Most Profit Workers](/algorithms/sort/most_profit_workers.py)  
     - [Quick Sort](/algorithms/sort/quick_sort.py)  
     - [Selection Sort](/algorithms/sort/selection_sort.py)  
+    - [Sort Array Parity Ii](/algorithms/sort/sort_array_parity_II.py)  
     - [Sort By Parity](/algorithms/sort/sort_by_parity.py)  
     - [Sort Three Colors](/algorithms/sort/sort_three_colors.py)  
   
@@ -366,6 +404,8 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Jewels](/algorithms/strings/jewels.py)  
     - [Largest Number](/algorithms/strings/largest_number.py)  
     - [Length Of Last Word](/algorithms/strings/length_of_last_word.py)  
+    - [Licence Key Reformatting](/algorithms/strings/licence_key_reformatting.py)  
+    - [Long Pressed Name](/algorithms/strings/long_pressed_name.py)  
     - [Longest Common Prefix](/algorithms/strings/longest_common_prefix.py)  
     - [Longest Palin Substring](/algorithms/strings/longest_palin_substring.py)  
     - [Longest Palindrome](/algorithms/strings/longest_palindrome.py)  
@@ -412,6 +452,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Build Tree Postorder](/algorithms/trees/build_tree_postorder.py)  
     - [Construct Pre In](/algorithms/trees/construct_pre_in.py)  
     - [Cousins In Binary Trees](/algorithms/trees/cousins_in_binary_trees.py)  
+    - [Diameter Binary Tree](/algorithms/trees/diameter_binary_tree.py)  
     - [Find Bottom Left](/algorithms/trees/find_bottom_left.py)  
     - [Flatten Binary Tree To Linked List](/algorithms/trees/flatten_binary_tree_to_linked_list.py)  
     - [Inorder](/algorithms/trees/inorder.py)  
@@ -445,6 +486,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Symmetric](/algorithms/trees/symmetric.py)  
     - [Tilt Tree](/algorithms/trees/tilt_tree.py)  
     - [Tree Paths](/algorithms/trees/tree_paths.py)  
+    - [Univalue Tree](/algorithms/trees/univalue_tree.py)  
     - [Verify Tree Serialization](/algorithms/trees/verify_tree_serialization.py)  
     - [Zigzag Level Order](/algorithms/trees/zigzag_level_order.py)  
   

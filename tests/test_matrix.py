@@ -66,3 +66,7 @@ class TestSuite(unittest.TestCase):
         matrix = [[0,1,0],[0,0,1],[1,1,1],[0,0,0]]
         output = [[0,0,0],[1,0,1],[0,1,1],[0,1,0]]
         self.assertEqual(game_of_life(matrix), output)
+
+    def test_robot_simulation(self):
+        commands = [4,-1,4,-2,4]
+        self.assertEqual(walking_robot_simulation(commands, [[2,4]]), 65)
