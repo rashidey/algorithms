@@ -248,6 +248,17 @@ class TestSuite2(unittest.TestCase):
         self.assertEqual(long_pressed_name('alex', 'aaleex'), True)
         self.assertEqual(long_pressed_name('vtkgn', 'vttkgnn'), True)
 
+    def test_shifting_letters(self):
+        self.assertEqual(shifting_letters('abc', [3,5,9]), 'rpl')
+
+    def test_longest_repeating_string(self):
+        self.assertEqual(longest_repeating_substring('aaaabb', 3), 4)
+        self.assertEqual(longest_repeating_substring('ababbc', 2), 5)
+        self.assertEqual(longest_repeating_substring('ababbc', 5), 0)
+        self.assertEqual(longest_repeating_substring('aaabbb', 3), 6)
+        self.assertEqual(longest_repeating_substring("caaaacac", 4), 4)
+        self.assertEqual(longest_repeating_substring("ababacb", 3), 0)
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -43,6 +43,7 @@ class MaxQue:
     def get_max(self):
         return self.que[0][0]
 
+
 def max_sliding_window(nums, k: int):
     que = MaxQue()
     result = []
@@ -57,4 +58,3 @@ def max_sliding_window(nums, k: int):
         result.append(que.get_max())
     
     return result
-

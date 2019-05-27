@@ -18,7 +18,14 @@ Input:
 Output: []
 '''
 
-def substring_concat(s:str, words:list) -> list:
+def substring_concat(s, words):
+    if not s or not words: return []
+    wLen, wtLen, wSet, sLen = len(words[0]), len(words[0]) * len(words), set(words), len(s)
+    sortHash = sum([hash(w) for w in words])
+    h = [hash(s[i:i + wLen]) if s[i:i + wLen] in wSet else 0 for i in range(sLen - wLen + 1)]
+    return [i for i in range(sLen - wtLen + 1) if h[i] and sum(h[i:i + wtLen:wLen]) == sortHash]
+    
+def substring_concat_v2(s:str, words:list) -> list:
     if not s or not words:
         return []
     words_len = len(words) * len(words[0])
@@ -37,5 +44,7 @@ def substring_concat(s:str, words:list) -> list:
             result.append(i)
     
     return result
+
+
 
 

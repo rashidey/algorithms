@@ -329,6 +329,10 @@ class TestTree(TestSetup):
         root.children[0].children = [Nary(5),Nary(6)]
         self.assertEqual(n_ary_level_order(root), [[1],[3,2,4],[5,6]])
 
+    def test_distance_k(self):
+        root = deserialize([3,5,1,6,2,0,8,None,None,7,4])
+        self.assertEqual(distance_k(root, root.left, 2), [1, 4, 7])
+
         
 if __name__ == '__main__':
     unittest.main()

@@ -28,12 +28,14 @@ Note:
 '''
 
 from collections import deque
+from functools import lru_cache
+
+@lru_cache()
 def fibonacci_recursive(n):
     if n < 2:
         return n
     else:
         return fibonacci_recursive(n-1) + fibonacci_recursive(n-2)
-
 def fibonacci_dynamic(n):
     if n == 0: return 0
     cache = deque([0, 1, 1])

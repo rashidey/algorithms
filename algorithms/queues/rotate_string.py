@@ -27,4 +27,3 @@ def rotate_string(A, B):
         if que == que2: return True
     
     return False 
-        

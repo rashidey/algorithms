@@ -96,3 +96,11 @@ class TestSuite(unittest.TestCase):
 
     def test_super_ugly(self):
         self.assertEqual(super_ugly_number(12, [2,7,13,19]), 32)
+
+    def test_can_partitio(self):
+        nums = [1, 5, 11, 5]        
+        self.assertEqual(can_partition(nums), True)
+
+    def test_max_sum_two_subarrays(self):
+        A = [0, 6, 5, 2,2, 5, 1, 9,4]
+        self.assertEqual(max_sum_two_subarrays(A, 1, 2), 20)

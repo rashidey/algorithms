@@ -21,6 +21,6 @@ def merge_intervals(intervals):
         if not result or result[-1][1] < interval[0]:
             result.append(interval)
         else:
-            result[-1] = [result[-1][0], interval[1]]
+            result[-1][1] = max(result[-1][1], interval[1])
 
     return result

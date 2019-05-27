@@ -43,5 +43,8 @@ class TestSuite(unittest.TestCase):
     def test_132_pattern(self):
         self.assertEqual(find_pattern([1,2,3,4]), False)
 
+    def test_remove_duplicates(self):
+        self.assertEqual(remove_duplicates('abbaca'), 'ca')
+        
 if __name__ == '__main__':
     unittest.main()
