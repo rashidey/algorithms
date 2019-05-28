@@ -2,12 +2,12 @@ from algorithms.stack import *
 import unittest
 
 class TestSuite(unittest.TestCase):
-    def test_is_valid(self):
-        self.assertEqual(True, is_valid('()'))
-        self.assertEqual(True, is_valid('()[]{}'))
-        self.assertEqual(False, is_valid('(]'))
-        self.assertEqual(False, is_valid('([)]'))
-        self.assertEqual(True, is_valid('{[]}'))
+    def test_validate_paranthesis(self):
+        self.assertEqual(True, validate_parantheses('()'))
+        self.assertEqual(True, validate_parantheses('()[]{}'))
+        self.assertEqual(False, validate_parantheses('(]'))
+        self.assertEqual(False, validate_parantheses('([)]'))
+        self.assertEqual(True, validate_parantheses('{[]}'))
 
     def test_simplify_path(self):
         self.assertEqual(simplify_path('/home/'), '/home')

@@ -14,10 +14,10 @@ An example of running an algorithm:
 ```python3
 #Check if a string containing brackets is valid or not
 
-from algorithms.stack import is_valid
+from algorithms.stack import validate_parantheses
 
 if __name__ == '__main__':
-    test = is_valid('()[]')
+    test = validate_parantheses('()[]')
     print(test)
 ```
 
@@ -29,13 +29,13 @@ If you want to uninstall, simply run:
     $pip3 uninstall algorithms3
 
 ## Tests
-I have written basic tests for most of the modules. To run all the tests at once run:
+I have written basic tests for most of the modules. To run all the tests at once run the following from the base directory of the project:
     
     $python3 -m unittest discover tests
 
 ## Progress
 **Data Structures** : 13  
-**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 479
+**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 482
 
 ## List of Implementations
 
@@ -57,6 +57,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Find Pivot Index](/algorithms/arrays/find_pivot_index.py)  
     - [First Missing Positive](/algorithms/arrays/first_missing_positive.py)  
     - [Friends Of Ages](/algorithms/arrays/friends_of_ages.py)  
+    - [Increasing Triplets](/algorithms/arrays/increasing_triplets.py)  
     - [Intersection Two Arrays Ii](/algorithms/arrays/intersection_two_arrays_II.py)  
     - [Is Monotonic](/algorithms/arrays/is_monotonic.py)  
     - [K Diff Pairs](/algorithms/arrays/k_diff_pairs.py)  
@@ -256,6 +257,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Boomerang Points](/algorithms/hashtables/boomerang_points.py)  
     - [Bulls And Cows](/algorithms/hashtables/bulls_and_cows.py)  
     - [Deck Of Cards](/algorithms/hashtables/deck_of_cards.py)  
+    - [Distant Barcodes](/algorithms/hashtables/distant_barcodes.py)  
     - [Encode Decode](/algorithms/hashtables/encode_decode.py)  
     - [Expressive Words](/algorithms/hashtables/expressive_words.py)  
     - [Find And Replace Pattern](/algorithms/hashtables/find_and_replace_pattern.py)  
@@ -474,6 +476,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Longest Substring With K Chars](/algorithms/strings/longest_substring_with_k_chars.py)  
     - [Longest Substring Without Repeating](/algorithms/strings/longest_substring_without_repeating.py)  
     - [Longest Uncommon Seq](/algorithms/strings/longest_uncommon_seq.py)  
+    - [Minimum Window String](/algorithms/strings/minimum_window_string.py)  
     - [Multiply Strings](/algorithms/strings/multiply_strings.py)  
     - [Number Of Segments String](/algorithms/strings/number_of_segments_string.py)  
     - [Optimal Division](/algorithms/strings/optimal_division.py)  

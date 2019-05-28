@@ -31,5 +31,3 @@ def majority_element(nums):
             count = 1
 
     return candidate
-
-

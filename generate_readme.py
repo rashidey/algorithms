@@ -97,10 +97,10 @@ An example of running an algorithm:
 ```python3
 #Check if a string containing brackets is valid or not
 
-from algorithms.stack import is_valid
+from algorithms.stack import validate_parantheses
 
 if __name__ == '__main__':
-    test = is_valid('()[]')
+    test = validate_parantheses('()[]')
     print(test)
 ```
 
@@ -112,7 +112,7 @@ If you want to uninstall, simply run:
     $pip3 uninstall algorithms3
 
 ## Tests
-I have written basic tests for most of the modules. To run all the tests at once run:
+I have written basic tests for most of the modules. To run all the tests at once run the following from the base directory of the project:
     
     $python3 -m unittest discover tests
 

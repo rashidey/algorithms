@@ -143,6 +143,9 @@ class TestSuite(unittest.TestCase):
     def test_pair_songs(self):
         self.assertEqual(pairs_divisible_60([60,60,60]), 3)
 
+    def test_rearrange_bar(self):
+        self.assertEqual(rearrange_barcodes([1,1,1,2,2,2]), [1,2,1,2,1,2])
+
 if __name__ == '__main__':
     unittest.main()
 
