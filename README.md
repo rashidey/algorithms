@@ -35,7 +35,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 
 ## Progress
 **Data Structures** : 13  
-**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 482
+**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 501
 
 ## List of Implementations
 
@@ -63,6 +63,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [K Diff Pairs](/algorithms/arrays/k_diff_pairs.py)  
     - [Largest Number Twice Of Others](/algorithms/arrays/largest_number_twice_of_others.py)  
     - [Longest Continuous Increasing Subsequence](/algorithms/arrays/longest_continuous_increasing_subsequence.py)  
+    - [Majority Element Ii](/algorithms/arrays/majority_element_ii.py)  
     - [Max Average Subarray](/algorithms/arrays/max_average_subarray.py)  
     - [Max Consecutive Ones](/algorithms/arrays/max_consecutive_ones.py)  
     - [Max Product Three Numbers](/algorithms/arrays/max_product_three_numbers.py)  
@@ -88,6 +89,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Summary Ranges](/algorithms/arrays/summary_ranges.py)  
     - [Third Max Number](/algorithms/arrays/third_max_number.py)  
     - [Two Sum Sorted Array](/algorithms/arrays/two_sum_sorted_array.py)  
+    - [Wiggle Sort Ii](/algorithms/arrays/wiggle_sort_II.py)  
   
 * [**Backtracking**](/algorithms/backtracking)  
     - [Binary Watch](/algorithms/backtracking/binary_watch.py)  
@@ -106,6 +108,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Permutations Two](/algorithms/backtracking/permutations_two.py)  
     - [Subsets Duplicates](/algorithms/backtracking/subsets_duplicates.py)  
     - [Subsets](/algorithms/backtracking/subsets.py)  
+    - [Sudoku Solver](/algorithms/backtracking/sudoku_solver.py)  
     - [Valid Time](/algorithms/backtracking/valid_time.py)  
   
 * [**Bash**](/algorithms/bash)  
@@ -116,6 +119,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [4Sum Ii](/algorithms/binarysearch/4sum_II.py)  
     - [Arranging Coins](/algorithms/binarysearch/arranging_coins.py)  
     - [Binary Search](/algorithms/binarysearch/binary_search.py)  
+    - [Count Of Smaller To Right](/algorithms/binarysearch/count_of_smaller_to_right.py)  
     - [Find K Closest](/algorithms/binarysearch/find_k_closest.py)  
     - [Find Peak](/algorithms/binarysearch/find_peak.py)  
     - [Find Right Interval](/algorithms/binarysearch/find_right_interval.py)  
@@ -123,10 +127,12 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Guess Number](/algorithms/binarysearch/guess_number.py)  
     - [H Index](/algorithms/binarysearch/h_index.py)  
     - [Heaters](/algorithms/binarysearch/heaters.py)  
+    - [Koko Eating Bananas](/algorithms/binarysearch/koko_eating_bananas.py)  
     - [Min In Rotated Sorted Array](/algorithms/binarysearch/min_in_rotated_sorted_array.py)  
     - [Minimum Size Subarray](/algorithms/binarysearch/minimum_size_subarray.py)  
     - [Next Greater Letter](/algorithms/binarysearch/next_greater_letter.py)  
     - [Peak Index Mountain Array](/algorithms/binarysearch/peak_index_mountain_array.py)  
+    - [Random Pick With Weight](/algorithms/binarysearch/random_pick_with_weight.py)  
     - [Search 2D Matrix Ii](/algorithms/binarysearch/search_2d_matrix_II.py)  
     - [Search 2D Matrix](/algorithms/binarysearch/search_2d_matrix.py)  
     - [Search Insert Position](/algorithms/binarysearch/search_insert_position.py)  
@@ -141,12 +147,16 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Complement Base 10 Integer](/algorithms/bits/complement_base_10_integer.py)  
     - [Count 1 Bits](/algorithms/bits/count_1_bits.py)  
     - [Count Set Bits Prime](/algorithms/bits/count_set_bits_prime.py)  
+    - [Counting Bits](/algorithms/bits/counting_bits.py)  
+    - [Find Max Xor Pair](/algorithms/bits/find_max_xor_pair.py)  
     - [Is One Bit Character](/algorithms/bits/is_one_bit_character.py)  
     - [Number With Alternating Bits](/algorithms/bits/number_with_alternating_bits.py)  
     - [Prefix Divisible 5](/algorithms/bits/prefix_divisible_5.py)  
     - [Reverse Bits](/algorithms/bits/reverse_bits.py)  
+    - [Single Number Ii](/algorithms/bits/single_number_ii.py)  
     - [Single Number](/algorithms/bits/single_number.py)  
     - [Sum Two Numbers](/algorithms/bits/sum_two_numbers.py)  
+    - [Total Hamming Distance](/algorithms/bits/total_hamming_distance.py)  
   
 * [**Binary Search Tree**](/algorithms/bst)  
     - [*Bst Implementation*](/algorithms/bst/bst_implementation.py)  
@@ -171,6 +181,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Capacity To Ship Packages](/algorithms/dp/capacity_to_ship_packages.py)  
     - [Climbing Stairs](/algorithms/dp/climbing_stairs.py)  
     - [Continuous Subarray Sum](/algorithms/dp/continuous_subarray_sum.py)  
+    - [Decode Ways](/algorithms/dp/decode_ways.py)  
     - [Delete Operations For Two Strings](/algorithms/dp/delete_operations_for_two_strings.py)  
     - [Edit Distance](/algorithms/dp/edit_distance.py)  
     - [Fibonacci](/algorithms/dp/fibonacci.py)  
@@ -225,6 +236,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Pacific Atlantic Water Flow](/algorithms/graphs/pacific_atlantic_water_flow.py)  
     - [Perfect Squares](/algorithms/graphs/perfect_squares.py)  
     - [Redundant Connection](/algorithms/graphs/redundant_connection.py)  
+    - [Regions Cut By Slashes](/algorithms/graphs/regions_cut_by_slashes.py)  
     - [Rotton Oranges](/algorithms/graphs/rotton_oranges.py)  
     - [Shortest Bridge](/algorithms/graphs/shortest_bridge.py)  
     - [Surround Region](/algorithms/graphs/surround_region.py)  
@@ -256,6 +268,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Banned Words](/algorithms/hashtables/banned_words.py)  
     - [Boomerang Points](/algorithms/hashtables/boomerang_points.py)  
     - [Bulls And Cows](/algorithms/hashtables/bulls_and_cows.py)  
+    - [Contiguous Array](/algorithms/hashtables/contiguous_array.py)  
     - [Deck Of Cards](/algorithms/hashtables/deck_of_cards.py)  
     - [Distant Barcodes](/algorithms/hashtables/distant_barcodes.py)  
     - [Encode Decode](/algorithms/hashtables/encode_decode.py)  
@@ -314,6 +327,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Delete Duplicates All](/algorithms/linkedlist/delete_duplicates_all.py)  
     - [Delete Duplicates](/algorithms/linkedlist/delete_duplicates.py)  
     - [Delete Node Without Head](/algorithms/linkedlist/delete_node_without_head.py)  
+    - [Insertion Sort List](/algorithms/linkedlist/insertion_sort_list.py)  
     - [Intersection](/algorithms/linkedlist/intersection.py)  
     - [Linked Cycle](/algorithms/linkedlist/linked_cycle.py)  
     - [Linked List Cycle Ii](/algorithms/linkedlist/linked_list_cycle_II.py)  
@@ -348,6 +362,8 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Count Primes](/algorithms/math/count_primes.py)  
     - [Count Zeroes Factorial](/algorithms/math/count_zeroes_factorial.py)  
     - [Divide Two Numbers](/algorithms/math/divide_two_numbers.py)  
+    - [Elimination Game](/algorithms/math/elimination_game.py)  
+    - [Finding Position](/algorithms/math/finding_position.py)  
     - [Game Of Nim](/algorithms/math/game_of_nim.py)  
     - [Hamming Distance](/algorithms/math/hamming_distance.py)  
     - [Happy Numbers](/algorithms/math/happy_numbers.py)  
@@ -372,8 +388,10 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Ugly Numbers](/algorithms/math/ugly_numbers.py)  
     - [Valid Boomerang](/algorithms/math/valid_boomerang.py)  
     - [Valid Number](/algorithms/math/valid_number.py)  
+    - [Valid Triangle Number](/algorithms/math/valid_triangle_number.py)  
   
 * [**Matrix**](/algorithms/matrix)  
+    - [Battleships In A Board](/algorithms/matrix/battleships_in_a_board.py)  
     - [Brick Wall](/algorithms/matrix/brick_wall.py)  
     - [Flip Image](/algorithms/matrix/flip_image.py)  
     - [Game Of Life](/algorithms/matrix/game_of_life.py)  
@@ -514,6 +532,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 * [**Trees**](/algorithms/trees)  
     - [*Tree Implementation*](/algorithms/trees/tree_implementation.py)  
     - [*Trie Implementation*](/algorithms/trees/trie_implementation.py)  
+    - [Add Row To Tree](/algorithms/trees/add_row_to_tree.py)  
     - [Array Bst](/algorithms/trees/array_bst.py)  
     - [Average Levels](/algorithms/trees/average_levels.py)  
     - [Bst To Greater Tree](/algorithms/trees/bst_to_greater_tree.py)  

@@ -38,6 +38,6 @@ def search_rotated(nums, target):
             if nums[mid] <= target <= nums[right]:
                 left = mid + 1
             else:
-                right = mid + 1
+                right = mid - 1
 
     return -1

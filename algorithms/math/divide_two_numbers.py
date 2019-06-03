@@ -60,4 +60,3 @@ def divide_two_numbers_v2(dividend, divisor):
 
     if sign: return max(-result, -2**31)
     else: return min(result, 2**31-1)
-
