@@ -39,3 +39,4 @@ def get_permutation(n, k):
         numbers.remove(numbers[index])
 
     return permutation
+

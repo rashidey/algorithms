@@ -1,4 +1,4 @@
-'''
+'''pri
 The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other.
 
 
@@ -55,6 +55,3 @@ def nqueens(n):
     result = []
     solve(board, 0)
     return result
-
-
-

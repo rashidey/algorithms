@@ -35,7 +35,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 
 ## Progress
 **Data Structures** : 13  
-**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 501
+**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 510
 
 ## List of Implementations
 
@@ -73,6 +73,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Merge Sorted Array](/algorithms/arrays/merge_sorted_array.py)  
     - [Minimum Moves To Equal Array](/algorithms/arrays/minimum_moves_to_equal_array.py)  
     - [Move Zeroes](/algorithms/arrays/move_zeroes.py)  
+    - [My Calendar Ii](/algorithms/arrays/my_calendar_II.py)  
     - [Next Greater Element](/algorithms/arrays/next_greater_element.py)  
     - [Non Decreasing Array](/algorithms/arrays/non_decreasing_array.py)  
     - [Number Plus One](/algorithms/arrays/number_plus_one.py)  
@@ -165,11 +166,13 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Delete Node](/algorithms/bst/delete_node.py)  
     - [Find Mode Bst](/algorithms/bst/find_mode_bst.py)  
     - [Increasing Order Search Tree](/algorithms/bst/increasing_order_search_tree.py)  
+    - [Insert Into Bst](/algorithms/bst/insert_into_bst.py)  
     - [Kth Smallest Element](/algorithms/bst/kth_smallest_element.py)  
     - [List To Bst](/algorithms/bst/list_to_bst.py)  
     - [Lowest Common Ancestor Bst](/algorithms/bst/lowest_common_ancestor_bst.py)  
     - [Min Distance Bst](/algorithms/bst/min_distance_bst.py)  
     - [Minimum Diff Bst](/algorithms/bst/minimum_diff_bst.py)  
+    - [My Calendar](/algorithms/bst/my_calendar.py)  
     - [Range Sum Bst](/algorithms/bst/range_sum_bst.py)  
     - [Recover Bst](/algorithms/bst/recover_bst.py)  
     - [Search Bst](/algorithms/bst/search_bst.py)  
@@ -212,6 +215,7 @@ I have written basic tests for most of the modules. To run all the tests at once
   
 * [**Graphs**](/algorithms/graphs)  
     - [*Graph Implementation*](/algorithms/graphs/graph_implementation.py)  
+    - [Accounts Merge](/algorithms/graphs/accounts_merge.py)  
     - [Bt Right View](/algorithms/graphs/bt_right_view.py)  
     - [Clone Graph](/algorithms/graphs/clone_graph.py)  
     - [Color The Border](/algorithms/graphs/color_the_border.py)  
@@ -233,6 +237,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Network Delay Time](/algorithms/graphs/network_delay_time.py)  
     - [Number Islands](/algorithms/graphs/number_islands.py)  
     - [Number Of Enclaves](/algorithms/graphs/number_of_enclaves.py)  
+    - [Number Of Sqaureful Arrays](/algorithms/graphs/number_of_sqaureful_arrays.py)  
     - [Pacific Atlantic Water Flow](/algorithms/graphs/pacific_atlantic_water_flow.py)  
     - [Perfect Squares](/algorithms/graphs/perfect_squares.py)  
     - [Redundant Connection](/algorithms/graphs/redundant_connection.py)  
@@ -241,6 +246,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Shortest Bridge](/algorithms/graphs/shortest_bridge.py)  
     - [Surround Region](/algorithms/graphs/surround_region.py)  
     - [Town Judge](/algorithms/graphs/town_judge.py)  
+    - [Unique Paths Iii](/algorithms/graphs/unique_paths_III.py)  
     - [Word Ladder Two](/algorithms/graphs/word_ladder_two.py)  
     - [Word Ladder](/algorithms/graphs/word_ladder.py)  
     - [Word Search](/algorithms/graphs/word_search.py)  
@@ -440,6 +446,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Delete Columns To Make Sorted](/algorithms/sort/delete_columns_to_make_sorted.py)  
     - [Height Checker](/algorithms/sort/height_checker.py)  
     - [Insertion Sort](/algorithms/sort/insertion_sort.py)  
+    - [K Closest Points To Origin](/algorithms/sort/k_closest_points_to_origin.py)  
     - [Longest Harmonious Sequence](/algorithms/sort/longest_harmonious_sequence.py)  
     - [Max Gap](/algorithms/sort/max_gap.py)  
     - [Merge Sort](/algorithms/sort/merge_sort.py)  
@@ -452,7 +459,9 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Sort Three Colors](/algorithms/sort/sort_three_colors.py)  
   
 * [**Stack**](/algorithms/stack)  
+    - [Asteroid Collinsion](/algorithms/stack/asteroid_collinsion.py)  
     - [Baseball Game](/algorithms/stack/baseball_game.py)  
+    - [Daily Temperatures](/algorithms/stack/daily_temperatures.py)  
     - [Duplicate Removal](/algorithms/stack/duplicate_removal.py)  
     - [Evaluate Reverse Polish Notation](/algorithms/stack/evaluate_reverse_polish_notation.py)  
     - [Exclusive Fuction Time](/algorithms/stack/exclusive_fuction_time.py)  

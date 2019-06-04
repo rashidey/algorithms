@@ -31,4 +31,3 @@ def subsets(nums:list) -> list:
 
     backtrack([], 0)
     return result
-
