@@ -28,5 +28,4 @@ class PQ:
                 del self.entry_finder[task]
                 return task
         raise KeyError('pop from an empty priority queue')
-
-
+        

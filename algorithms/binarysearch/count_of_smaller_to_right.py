@@ -21,3 +21,6 @@ def count_smaller(nums):
         result.append(bisect.bisect_left(sorted_nums, num))
         bisect.insort(sorted_nums, num)
     return result[::-1]
+
+
+

@@ -44,7 +44,62 @@ class MaxQue:
         return self.que[0][0]
 
 
-def max_sliding_window(nums, k: int):
+
+from heapq import *
+import itertools
+
+class PQMax:
+    
+    def __init__(self):
+        self.pq = []                       
+        self.entry_finder = {}              
+        self.REMOVED = '<removed-task>'           
+        self.counter = itertools.count()
+
+    def add_task(self, task, priority):
+        if task in self.entry_finder:
+            self.remove_task(task, priority)
+        entry = [task, next(self.counter), priority]
+        self.entry_finder[(task, priority)] = entry
+        heappush(self.pq, entry)
+
+    def remove_task(self, task, priority):
+        entry = self.entry_finder.pop((task, priority))
+        entry[-1] = self.REMOVED
+
+    def pop_task(self):
+        while self.pq:
+            task, _, priority = heappop(self.pq)
+            if priority is not self.REMOVED:
+                del self.entry_finder[(task, priority)]
+                return task, priority
+        raise KeyError('pop from an empty priority queue')
+
+    def get_max(self):
+        maxx, index = self.pop_task()
+        self.add_task(maxx, index)
+        return -maxx
+
+    
+def max_sliding_window(nums, k):
+    pq = PQMax()
+    
+    for i in range(k):
+        pq.add_task(-nums[i], i)
+    
+    result = []
+    result.append(pq.get_max())
+
+    for i in range(k, len(nums)):
+        pq.remove_task(-nums[i - k], i - k)
+        pq.add_task(-nums[i], i)
+        result.append(pq.get_max())
+    
+    return result 
+
+
+
+def max_sliding_window_v2(nums, k: int):
     que = MaxQue()
     result = []
     for i in range(k):
