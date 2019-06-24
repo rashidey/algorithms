@@ -35,7 +35,7 @@ I have written basic tests for most of the modules. To run all the tests at once
 
 ## Progress
 **Data Structures** : 13  
-**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 533
+**Algorithms** &nbsp; &nbsp; &nbsp; &nbsp; : 539
 
 ## List of Implementations
 
@@ -100,6 +100,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Combinations Sum](/algorithms/backtracking/combinations_sum.py)  
     - [Combinations](/algorithms/backtracking/combinations.py)  
     - [Decoded String At Index](/algorithms/backtracking/decoded_string_at_index.py)  
+    - [Flatten Nested List](/algorithms/backtracking/flatten_nested_list.py)  
     - [Generate Paranthesis](/algorithms/backtracking/generate_paranthesis.py)  
     - [Letter Case Permutations](/algorithms/backtracking/letter_case_permutations.py)  
     - [Letter Combinations](/algorithms/backtracking/letter_combinations.py)  
@@ -406,6 +407,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Rectangle Overlap](/algorithms/math/rectangle_overlap.py)  
     - [Self Dividing Numbers](/algorithms/math/self_dividing_numbers.py)  
     - [Smallest Integer Divisible By K](/algorithms/math/smallest_integer_divisible_by_k.py)  
+    - [Statistics From Sample](/algorithms/math/statistics_from_sample.py)  
     - [Total Time](/algorithms/math/total_time.py)  
     - [Ugly Numbers](/algorithms/math/ugly_numbers.py)  
     - [Valid Boomerang](/algorithms/math/valid_boomerang.py)  
@@ -451,6 +453,7 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [*Circular Deque Implementation*](/algorithms/queues/circular_deque_implementation.py)  
     - [*Circular Queue Implementation*](/algorithms/queues/circular_queue_implementation.py)  
     - [*Queue Implementation*](/algorithms/queues/queue_implementation.py)  
+    - [Car Pooling](/algorithms/queues/car_pooling.py)  
     - [Gas Station](/algorithms/queues/gas_station.py)  
     - [Max Sliding Window](/algorithms/queues/max_sliding_window.py)  
     - [Queue Using Stacks](/algorithms/queues/queue_using_stacks.py)  
@@ -482,12 +485,15 @@ I have written basic tests for most of the modules. To run all the tests at once
     - [Duplicate Removal](/algorithms/stack/duplicate_removal.py)  
     - [Evaluate Reverse Polish Notation](/algorithms/stack/evaluate_reverse_polish_notation.py)  
     - [Exclusive Fuction Time](/algorithms/stack/exclusive_fuction_time.py)  
+    - [Largest Rectangle In Histogram](/algorithms/stack/largest_rectangle_in_histogram.py)  
     - [Longest Valid Paranthesis](/algorithms/stack/longest_valid_paranthesis.py)  
+    - [Maximal Rectangle](/algorithms/stack/maximal_rectangle.py)  
     - [Min Stack](/algorithms/stack/min_stack.py)  
     - [Next Greater Element Ii](/algorithms/stack/next_greater_element_II.py)  
     - [One Three Two Pattern](/algorithms/stack/one_three_two_pattern.py)  
     - [Remove K Digits](/algorithms/stack/remove_k_digits.py)  
     - [Simplify Path](/algorithms/stack/simplify_path.py)  
+    - [Trap Rainwater](/algorithms/stack/trap_rainwater.py)  
     - [Valid Paran](/algorithms/stack/valid_paran.py)  
     - [Validate Stack Sequence](/algorithms/stack/validate_stack_sequence.py)  
   
